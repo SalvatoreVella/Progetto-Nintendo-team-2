@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -22,25 +23,26 @@
             </svg>
           </div>
         </a>
-        <div class="form-wrapper">
-          <form action="search">
-            <button><svg xmlns="http://www.w3.org/2000/svg" data-name="Magnifying glass"
-              viewBox="0 0 32 32" class="SearchInputstyles__SearchIcon-sc-n42o5d-1 eiSVUj" width="18"
-              data-testid="MagnifyingGlassIcon" color="currentColor">
-              <path d="m31.564 28.745-8.73-8.73a12.66 12.66 0 1 0-2.804 2.834l8.715 8.715a1.5 1.5 0 0 0 2.114 0l.705-.705a1.5 1.5 0 0 0 0-2.114zm-18.966-7.433A8.611 8.611 0 1 1 21.21 12.7a8.62 8.62 0 0 1-8.612 8.612z" fill="currentColor" /></svg>
-              Search games, hardware, news, etc
-            </button>
-              <ul>
-                <li> <a href="#">All categories</a></li>
-                <li><a href="#">Games</a></li>
-                <li><a href="#">Hardware</a></li>
-                <li><a href="#">Marchandise</a></li>
-                <li> <a href="#">News & Events</a></li>
-                <li><a href="#">Support</a></li>
-              </ul>
-              </select>
-          </form>
-        </div>
+        <form class="form-wrapper" action="search">
+          <button class="main-button"><svg xmlns="http://www.w3.org/2000/svg" data-name="Magnifying glass" viewBox="0 0 32 32"
+              class="SearchInputstyles__SearchIcon-sc-n42o5d-1 eiSVUj" width="18" data-testid="MagnifyingGlassIcon"
+              color="currentColor">
+              <path
+                d="m31.564 28.745-8.73-8.73a12.66 12.66 0 1 0-2.804 2.834l8.715 8.715a1.5 1.5 0 0 0 2.114 0l.705-.705a1.5 1.5 0 0 0 0-2.114zm-18.966-7.433A8.611 8.611 0 1 1 21.21 12.7a8.62 8.62 0 0 1-8.612 8.612z"
+                fill="currentColor" />
+            </svg>
+            Search games, hardware, news, etc
+          </button>
+          <ul>
+            <li> <a href="#">All categories &nbsp; <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="SearchBarSelectstyles__DropdownIndicatorReplacement-sc-unqtte-4 bgILBu" width="14" data-testid="ChevronDownIcon" color="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M27.7 5.3 32 9.8 16 26.7 0 9.8l4.3-4.5L16 17.7z"/></svg></a></li>
+            <li class="none"><a href="#">Games</a></li>
+            <li class="none"><a href="#">Hardware</a></li>
+            <li class="none"><a href="#">Marchandise</a></li>
+            <li class="none"> <a href="#">News & Events</a></li>
+            <li class="none"><a href="#">Support</a></li>
+          </ul>
+          </select>
+        </form>
       </div>
       <div class="nav-first-row-right">
         <h3><a href="https://en-americas-support.nintendo.com/"><svg xmlns="http://www.w3.org/2000/svg"
@@ -203,14 +205,14 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="18" data-testid="DPadIcon"
           color="currentcolor">
           <path
-          d="M30.1 10.4h-8.5V1.9c0-1-.8-1.9-1.9-1.9h-7.5c-1 0-1.9.8-1.9 1.9v8.5H1.9c-1 0-1.9.8-1.9 1.9v7.5c0 1 .8 1.9 1.9 1.9h8.5v8.5c0 1 .8 1.9 1.9 1.9h7.5c1 0 1.9-.8 1.9-1.9v-8.5h8.5c1 0 1.9-.8 1.9-1.9v-7.5c-.1-1.1-.9-1.9-2-1.9zM7.5 16.9H3.8c-.5 0-.9-.4-.9-.9s.4-.9.9-.9h3.8c.5 0 .9.4.9.9s-.5.9-1 .9zm9.4 11.3c0 .5-.4.9-.9.9s-.9-.4-.9-.9v-3.8c0-.5.4-.9.9-.9s.9.4.9.9v3.8zm0-20.7c0 .5-.4.9-.9.9s-.9-.4-.9-.9V3.8c0-.5.4-.9.9-.9s.9.4.9.9v3.7zm11.3 9.4h-3.8c-.5 0-.9-.4-.9-.9s.4-.9.9-.9h3.8c.5 0 .9.4.9.9.1.5-.3.9-.9.9z"
-          fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" />
+            d="M30.1 10.4h-8.5V1.9c0-1-.8-1.9-1.9-1.9h-7.5c-1 0-1.9.8-1.9 1.9v8.5H1.9c-1 0-1.9.8-1.9 1.9v7.5c0 1 .8 1.9 1.9 1.9h8.5v8.5c0 1 .8 1.9 1.9 1.9h7.5c1 0 1.9-.8 1.9-1.9v-8.5h8.5c1 0 1.9-.8 1.9-1.9v-7.5c-.1-1.1-.9-1.9-2-1.9zM7.5 16.9H3.8c-.5 0-.9-.4-.9-.9s.4-.9.9-.9h3.8c.5 0 .9.4.9.9s-.5.9-1 .9zm9.4 11.3c0 .5-.4.9-.9.9s-.9-.4-.9-.9v-3.8c0-.5.4-.9.9-.9s.9.4.9.9v3.8zm0-20.7c0 .5-.4.9-.9.9s-.9-.4-.9-.9V3.8c0-.5.4-.9.9-.9s.9.4.9.9v3.7zm11.3 9.4h-3.8c-.5 0-.9-.4-.9-.9s.4-.9.9-.9h3.8c.5 0 .9.4.9.9.1.5-.3.9-.9.9z"
+            fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" />
         </svg>
-          Games <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+        Games <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
           class="SearchBarSelectstyles__DropdownIndicatorReplacement-sc-unqtte-4 bgILBu" width="14"
           data-testid="ChevronDownIcon" color="currentColor">
           <path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"
-          d="M27.7 5.3 32 9.8 16 26.7 0 9.8l4.3-4.5L16 17.7z" />
+            d="M27.7 5.3 32 9.8 16 26.7 0 9.8l4.3-4.5L16 17.7z" />
         </svg>
       </h3>
       <div class="games-menu none">
@@ -349,7 +351,12 @@
         </a>
       </h3>
       <h3>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" data-testid="StarPlayNintendoIcon" color="currentColor"><path d="M18.9 19.1c-.9 0-1-1.5-1-3.4s0-3.5 1-3.4c.9.1 1.1 1.4 1.1 3.3-.1 2-.2 3.5-1.1 3.5m-5.8 0c-.9 0-1-1.6-1-3.4 0-1.9.2-3.2 1.1-3.3 1-.1 1 1.5 1 3.4-.1 1.8-.2 3.3-1.1 3.3M32 12.4c-.1-.3-1.4-.6-5.6-1.1-2.6-.3-5.1-.5-5.2-.5-.2 0-.4-.2-.5-.4-.6-1.6-1.3-3.3-2-4.8C17.1 1.8 16.4.7 15.9.7c-.4 0-1 1.1-2.8 5-1.1 2.4-2 4.8-2 4.8-.1.2-.3.4-.5.4 0 0-2.5.1-5.1.4-4.1.4-5.4.7-5.5 1-.1.4.8 1.3 3.9 4.2 1.9 1.8 3.9 3.4 3.9 3.4.2.1.2.3.2.4v.1s-.6 2.5-1.2 5.1c-.6 3-1.1 5.4-.7 5.7.4.4 1.8-.5 5.2-2.4 2.3-1.3 4.4-2.7 4.5-2.7.2-.1.4-.1.6 0 0 0 2.2 1.4 4.4 2.7 3.4 2 4.7 2.7 5.2 2.4.4-.3 0-2.1-.7-5.7-.5-2.6-1.2-5.1-1.2-5.1v-.1c0-.2.1-.3.2-.4 0 0 1.9-1.6 3.9-3.3 3-2.9 3.9-3.9 3.8-4.2" fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"/></svg> 
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" data-testid="StarPlayNintendoIcon"
+          color="currentColor">
+          <path
+            d="M18.9 19.1c-.9 0-1-1.5-1-3.4s0-3.5 1-3.4c.9.1 1.1 1.4 1.1 3.3-.1 2-.2 3.5-1.1 3.5m-5.8 0c-.9 0-1-1.6-1-3.4 0-1.9.2-3.2 1.1-3.3 1-.1 1 1.5 1 3.4-.1 1.8-.2 3.3-1.1 3.3M32 12.4c-.1-.3-1.4-.6-5.6-1.1-2.6-.3-5.1-.5-5.2-.5-.2 0-.4-.2-.5-.4-.6-1.6-1.3-3.3-2-4.8C17.1 1.8 16.4.7 15.9.7c-.4 0-1 1.1-2.8 5-1.1 2.4-2 4.8-2 4.8-.1.2-.3.4-.5.4 0 0-2.5.1-5.1.4-4.1.4-5.4.7-5.5 1-.1.4.8 1.3 3.9 4.2 1.9 1.8 3.9 3.4 3.9 3.4.2.1.2.3.2.4v.1s-.6 2.5-1.2 5.1c-.6 3-1.1 5.4-.7 5.7.4.4 1.8-.5 5.2-2.4 2.3-1.3 4.4-2.7 4.5-2.7.2-.1.4-.1.6 0 0 0 2.2 1.4 4.4 2.7 3.4 2 4.7 2.7 5.2 2.4.4-.3 0-2.1-.7-5.7-.5-2.6-1.2-5.1-1.2-5.1v-.1c0-.2.1-.3.2-.4 0 0 1.9-1.6 3.9-3.3 3-2.9 3.9-3.9 3.8-4.2"
+            fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" />
+        </svg>
         Play Nintendo <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
           class="SearchBarSelectstyles__DropdownIndicatorReplacement-sc-unqtte-4 bgILBu" width="14"
           data-testid="ChevronDownIcon" color="currentColor">
