@@ -1,0 +1,28 @@
+@font-face {
+    font-family: museo;
+    src: url(assets/fonts/MuseoSans500/MuseoSans_500.otf);
+}
+@font-face {
+    font-family: museo100;
+    src: url(assets/fonts/MuseoSans100/MuseoSans-100.otf);
+}
+
+html {
+    font-family: 'museo', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+    color: #484848;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root {
+    --red: rgb(230, 33, 18);
+}
+
+a{
+    color: #484848;
+}
