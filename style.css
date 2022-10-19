@@ -1,10 +1,6 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .upper-nav{
@@ -22,8 +18,8 @@
 
 .main-logo {
     width: 105px;
-    height: 52px;
-    background-color: rgb(230, 0, 18);
+    height: 50px;
+    background-color:var(--red);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,13 +34,16 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
     border-bottom: 1px solid #484848b9;
     margin: 0 0 0.5rem 0.8rem;
+    width: 450px;
+    font-size: 0.85rem;
+    font-weight: bold;    
 }
 
-.form-wrapper ul li:first-child {
-    margin: 0 1rem 0 ;
+.form-wrapper ul li:first-child  {
+    margin: 0 1rem 0 0;
+    padding: 0.45rem 0 0 0;
 }
 
 .nav-first-row-right {
@@ -52,13 +51,22 @@
     flex-direction: row;
     align-items: center;
     gap: 2rem;
-    padding-right: 1rem;
     font-size: 0.8rem;
 }
 
+.form-wrapper ul li:first-child svg{
+    display: flex;
+    margin-left: 2rem;
+}
 .form-wrapper a {
     display: flex;
     flex-direction: row;
+}
+
+h3 a, h3, .main.button {
+    display:flex;
+    gap: 0.4rem;
+    align-items: center;
 }
 
 a{
@@ -68,5 +76,16 @@ a{
 .main-button {
     background-color: inherit;
     border: none;
-    margin: 0 3rem 0 0;
+    margin: 0 4.5rem 0 0;
+    font-family: museo100;
+}
+
+.nav-second-row {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    background-color:white;
+    justify-content: center;
+    margin: 0.7rem 0 0 0;
+    font-size: small;    
 }
