@@ -1,6 +1,7 @@
 nav {
     position: sticky;
     top: 0;
+    background-color:white;
 }
 
 .upper-nav{
@@ -13,7 +14,6 @@ nav {
 .nav-first-row-left {
     display: flex;
     flex-direction: row;
-    background-color:white;
 }
 
 .main-logo {
@@ -107,12 +107,13 @@ h3 a, h3, .main.button {
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid #75757556;
-    height: 45px;
+    height: 43px;
 }
 
-.nav-second-row h3 {
+.nav-second-row a,.nav-second-row h3 {
     cursor: pointer;
     transition: all 0.3s;
+    padding-top: 2px;
 }
 
 .nav-second-row h3, .nav-second-row a {
@@ -122,4 +123,139 @@ h3 a, h3, .main.button {
 
 .nav-second-row h3 svg {
     padding-left: 1.5px;
+}
+
+/* Fine della Navbar */
+
+.image-container {
+    background: linear-gradient(#987dee, #fff9cd);
+    background-size: 100px;
+    height: 35.3vw;
+    max-height: 500px;
+    width: 100vw;
+    margin-bottom: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 1440px) {
+    .image-container {
+        max-height: 500px;
+        margin-bottom: 2.8rem;
+    }
+}
+
+main {
+    margin-bottom: 1.17rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-image img{
+    width: 96vw;
+    margin: 1.95rem 2rem;
+    border-radius: 4px;
+    max-width: 1440px;
+}
+
+
+.sub-image-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 96vw;
+    max-width: 1440px;
+    margin: 2.05rem 2.1rem;
+    
+}
+
+h2 {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.title-button-flex{
+    display: flex;
+    align-items: center;
+}
+
+.cartoon-violence-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 0.755rem;
+    font-family: museo100;
+    padding: 2px 2px 0 0;
+}
+
+.cartoon-violence-logo div hr {
+    border: .5px solid rgb(70, 70, 70);
+    margin: .23rem -1px;
+}
+
+.hr-main {
+    border: 0.5px solid #b4b4b482;
+    width: 96vw;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.featured h2, .online-store-main h2, .gaming-systems h2 {
+    width: 96vw;
+    margin: 3.2rem auto 0.1rem auto;
+    max-width: 1145px;
+    margin: 3.2rem auto 2.5rem auto;
+}
+
+.flex-wrap-featured {
+    display: flex;
+    overflow: scroll;
+    gap: 2.25rem;
+    margin-bottom: 3rem;
+}
+
+hr {
+    border: 0.5px solid #b4b4b482;
+}
+
+.online-store-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+picture img, .gaming-systems img {
+    width: 96vw;
+    max-width: 1145px;
+}
+
+.store-flex {
+    font-size: 1.13rem;
+    width: 96vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 2.1rem 5rem 2.1rem;
+    max-width: 1145px;
+}
+
+.gaming-systems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gaming-systems-flex {
+    font-size: 1.13rem;
+    width: 96vw;
+    display: flex;
+    justify-content: flex-start;
+    margin: 3rem 2.1rem 5rem 2.1rem;
+    max-width: 1145px;
+}
+
+.gaming-systems-flex button {
+    margin-left: 2rem;
 }
