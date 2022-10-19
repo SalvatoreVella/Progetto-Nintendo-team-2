@@ -1,6 +1,6 @@
-*{
-    text-decoration: none;
-    list-style-type: none;
+nav {
+    position: sticky;
+    top: 0;
 }
 
 .upper-nav{
@@ -18,7 +18,7 @@
 
 .main-logo {
     width: 105px;
-    height: 50px;
+    height: 51px;
     background-color:var(--red);
     display: flex;
     justify-content: center;
@@ -32,32 +32,38 @@
 
 .form-wrapper {
     display: flex;
-    flex-direction: row;
     align-items: center;
     border-bottom: 1px solid #484848b9;
-    margin: 0 0 0.5rem 0.8rem;
+    margin: 0 0 0.53rem 1rem;
     width: 450px;
     font-size: 0.85rem;
-    font-weight: bold;    
+    font-weight: bold;   
+    letter-spacing: 0.2px; 
 }
 
 .form-wrapper ul li:first-child  {
-    margin: 0 1rem 0 0;
     padding: 0.45rem 0 0 0;
 }
 
-.nav-first-row-right {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 2rem;
-    font-size: 0.8rem;
+.form-wrapper ul li:first-child a, a, .main-button, .form-wrapper {
+    transition: all 0.3s;
 }
 
 .form-wrapper ul li:first-child svg{
     display: flex;
-    margin-left: 2rem;
+    position: absolute;
+    left: 34.2rem;
+    top: 1.13rem;
 }
+
+.form-wrapper ul li:first-child a:hover, a:hover, .main-button:hover, .nav-second-row h3:hover {
+    color: var(--red);
+}
+
+.form-wrapper:hover {
+    border-bottom: 1px solid var(--red);
+}
+
 .form-wrapper a {
     display: flex;
     flex-direction: row;
@@ -69,23 +75,51 @@ h3 a, h3, .main.button {
     align-items: center;
 }
 
-a{
-    color: #484848;
-}
-
 .main-button {
     background-color: inherit;
     border: none;
-    margin: 0 4.5rem 0 0;
+    margin: 0 4.4rem -.6rem 0;
     font-family: museo100;
+    font-size: 0.87rem;
+    display: flex;
+    color: #616161;
 }
+
+.main-button svg {
+    margin-right: 0.6rem;
+}
+
+.nav-first-row-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.85rem;
+    font-size: 0.73rem;
+    padding-right: 1.3rem;
+    letter-spacing: .1px;
+}
+
 
 .nav-second-row {
     display: flex;
-    gap: 1rem;
-    flex-direction: row;
+    gap: 2.45rem;
     background-color:white;
     justify-content: center;
-    margin: 0.7rem 0 0 0;
-    font-size: small;    
+    align-items: center;
+    border-bottom: 1px solid #75757556;
+    height: 45px;
+}
+
+.nav-second-row h3 {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.nav-second-row h3, .nav-second-row a {
+    font-size: .98rem;
+    letter-spacing: .15px;
+}
+
+.nav-second-row h3 svg {
+    padding-left: 1.5px;
 }

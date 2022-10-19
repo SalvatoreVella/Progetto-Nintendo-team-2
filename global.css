@@ -16,8 +16,13 @@ html {
     margin: 0;
     padding: 0;
     text-decoration: none;
+    list-style-type: none;
 }
 
 :root {
     --red: rgb(230, 33, 18);
+}
+
+a{
+    color: #484848;
 }
