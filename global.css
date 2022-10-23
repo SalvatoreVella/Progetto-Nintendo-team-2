@@ -28,27 +28,67 @@ a{
 }
 
 .red-button{
-    box-sizing: content-box;
     color: white;
     background-color: var(--red);
-    font-family: museo;
     border: 1px solid var(--red);
-    display: block;
     border-radius: 0.25rem;
-    border: 1px solid var(--red);
-    height: auto;
-    width: auto;
-    padding: 0.75rem 1rem 0.75rem 1rem;
+    padding: 0.75rem 1.5rem;
     font-size:1.125rem;
     white-space: nowrap;
-    transition: all 0.3s;    
-    margin-left: 2rem;
+    transition: all 0.5s;
+    margin: 2rem 1rem 2rem 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: -1rem;
+}
+.store-button {
+    top: -1.75rem;
+    right: -1rem;
+}
+
+.gs-button {
+    top: -2.5rem;
+}
+
+.news-button {
+    top: unset;
+    bottom: 2rem;
+}
+
+
+@keyframes boing {
+    30%{
+        padding-top: calc(1rem + 5px);
+        padding-bottom: calc(1rem + 5px);
+        margin-top: 1.44rem;
+        margin-bottom: 1.44rem;
+    }
+    40% {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+    60% {
+        padding-top: calc(1rem - 3px);
+        padding-bottom: calc(1rem - 3px);
+        margin-top: calc(1.44rem + 8px);
+        margin-bottom: calc(1.44rem + 8px);
+    }
+    85% {
+        padding-top: calc(1rem + 2px);
+        padding-bottom: calc(1rem + 2px);
+        margin-top: calc(1.44rem  + 3px);
+        margin-bottom: calc(1.44rem + 3px);
+    }
+    100%{
+        padding: 1rem 2rem;
+        margin: 1.75rem .5rem 1.75rem .5rem;
+    }
 }
 
 .red-button:hover {
-    padding: 1rem 1.25rem ; 
-    margin-left: calc(2rem - (1.25rem - 1rem));   
+    animation: boing 400ms;
     background-color: #ab160d;
     border: 1px solid #ab160d;
 }
-
