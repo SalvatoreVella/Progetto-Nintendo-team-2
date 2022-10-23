@@ -1,7 +1,8 @@
 nav {
     position: sticky;
+    z-index: 100;
     top: 0;
-    background-color:rgb(246, 244, 244);
+    background-color: white;
 }
 
 .upper-nav{
@@ -128,7 +129,7 @@ h3 a, h3, .main.button {
 /* Fine della Navbar */
 
 .image-container {
-    background: linear-gradient(#987dee, #fff9cd);
+    background: linear-gradient(#987dee, #fef8cc);
     background-size: 100px;
     height: 35.3vw;
     max-height: 500px;
