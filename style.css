@@ -147,7 +147,7 @@ h3 a, h3, .main.button {
     border: none;
     background-color: white;
     cursor: pointer;
-    border-radius: 0.7rem;
+    border-radius: 1rem;
 }
 
 .mob-nav-button-red {
@@ -221,7 +221,7 @@ main {
 
 .main-image img{
     width: 96vw;
-    margin: 1.95rem 2rem;
+    margin: 1.95rem 0rem;
     border-radius: 4px;
     max-width: 1440px;
 }
@@ -287,28 +287,53 @@ h2, h3 {
 
 @media (max-width:1023px) {
     .image-container {
-            min-height: 72.88vw;
+        height: 0;
+    }
+    .main-image {
+        z-index: 3;
     }
     .main-image img {
         width: 100vw;
-        margin-top: 0.05rem;
+        margin: 0.05rem 0 0 0;
         border-radius: 0;
     }
     .sub-image-flex, .title-button-flex {
     flex-direction: column;
     justify-content: center;
+    margin-right: 0;
+    margin-left: 0;
+    z-index: 2;
     }
     .title-button-flex {
-        background: linear-gradient(#cfc6ea, #ffdcc5) !important;
-        padding: 15.6vw 0 calc(2.17rem + 2vw) 0;
+        background: linear-gradient(#987dee, #ffdcc5);
+        padding: calc(90vw - 1rem) 0 0 0;
         width: 100vw;
         text-align: center;
         z-index: -1;
     }
+    .title-button-flex h2 {
+        margin-bottom: -4rem;
+    }
+    .cartoon-violence-logo {
+        margin-top: 2.5rem;
+    }
+    .red-button {
+        position: relative;
+        top: 3.4rem;
+        width: 96vw;
+        z-index: 90;
+    }
     .gs-button {
-        position: absolute;
-        bottom: 0;
-        left: 0;
+        position: static;
+    }
+}
+
+@media (max-width:622px) {
+    .cartoon-violence-logo {
+        display: none;
+    }
+    .red-button {
+        width: 93vw;
     }
 }
 
@@ -337,7 +362,7 @@ img {
     width: 96vw;
     display: flex;
     justify-content: space-between;
-    margin: 3rem 2.1rem 5rem 2.1rem;
+    margin: 3rem 2.1rem 3rem 2.1rem;
     max-width: 1145px;
     position: relative;
 }
@@ -362,13 +387,83 @@ img {
     position: relative;
 }
 
-.news {
-    position: relative;
+@media (max-width:1023px) {
+    .online-store-main {
+        display: flex;
+        flex-direction: column;
+    }
+    .store-flex {
+        flex-direction: column;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .store-flex h3 {
+        width: 96vw;
+    }
+    .store-button {
+        position: static;
+        align-self: center;
+        margin-left: 0%;
+        width: 96vw;
+    }
+    .gaming-systems-flex {
+        flex-direction: column;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .gs-button {
+        position: static;
+        margin-left: 0;
+        width: 96vw;
+    }
+    .gs-button:hover, .store-button:hover {
+        animation: boing3 400ms forwards;
+    }
 }
 
-img {
-    max-width: 90vw;
+.news {
+    padding: 3rem 0 10rem 0;
+    position: relative;
+    max-width: 96vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
 }
+
+.news h2 {
+    margin-bottom: 1.5rem;
+}
+
+.main-news, .other-news {
+    display: flex;
+}
+
+@media (max-width:1023px) {
+    .news {
+        padding-bottom: 0;
+    }
+    .news-button {
+        position: static;
+    }
+    .news-button {
+        margin-left: 0;
+    }
+    .news-button:hover {
+        animation: boing3 400ms forwards;
+    }
+}
+
+.news img {
+    max-width: 18vw;
+}
+
+.card-container {
+    display: flex;
+align-items: center;
+overflow: scroll;
+}
+
+
 .footer-esrb-logo {
 max-width: 300px;
 }
