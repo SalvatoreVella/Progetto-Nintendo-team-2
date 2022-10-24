@@ -145,3 +145,66 @@ a{
     background-color: #ab160d;
     border: 1px solid #ab160d;
 }
+
+.characters-item .img-container{
+    min-width: 10.75rem;
+    max-width: 17.06rem;
+    min-height: 10.75rem;
+    max-height: 17.06rem;
+    border-radius: 0.25rem;
+    aspect-ratio: 1 / 1;
+}
+
+.img-container {
+    overflow: hidden;
+    margin-bottom: 0.55rem;
+}
+
+.characters-item img {
+    width: 100%;
+    border-radius: 0.25rem;
+    transition: all 0.3s;
+    aspect-ratio: 1 / 1;
+}
+
+.characters-item:first-of-type img {
+    background-image: url(assets/images/mario-bg.png);
+    background-position: center;
+    background-size: 120%;
+}
+
+.characters-item:nth-of-type(2) img {
+    background-image: url(assets/images/1600x1600_NCOM_Home_Characters_TLOZ_BOTW_BG.jpeg);
+    background-position: center;
+    background-size: 120%;
+}
+
+.characters-item:nth-of-type(3) img {
+    background-image: url(assets/images/Ncom_CharacterRail_1600x1600_Splatoon_BG.png);
+    background-position: center;
+    background-size: 120%;
+}
+
+.characters-item:last-of-type img {
+    background-image: url(assets/images/1600x1600_NCOM_Home_Characters_Kirby_BG.jpeg);
+    background-position: center;
+    background-size: 120%;
+}
+
+.characters-item img:hover {
+    background-size: 87.5%;
+    transform: scale(1.15);
+    transform-origin: 50% 50%;
+    
+}
+
+.characters-item h3 {
+    font-size: 1.31rem;
+}
+
+.characters-flex {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    max-width: 100vw;
+}

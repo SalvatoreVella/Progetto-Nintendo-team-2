@@ -130,8 +130,9 @@ h3 a, h3, .main.button {
 .mobile-bottom-nav {
     box-sizing: border-box;
     position: sticky;
-    top: 89.8vh;
-    width: 27.5rem;
+    top: 89.8%;
+    max-width: 27.5rem;
+    width: 96vw;
     height: 3.65rem;
     background-color: white;
     border-radius: 2rem;
@@ -141,7 +142,8 @@ h3 a, h3, .main.button {
 
 .mob-nav-button {
     color: #484848;
-    padding: 0.86rem 1.95rem 0.81rem 1.95rem;
+    padding-top: 0.86rem;
+    padding-bottom: 0.81rem;
     border: none;
     background-color: white;
     cursor: pointer;
@@ -154,6 +156,7 @@ h3 a, h3, .main.button {
     padding: 0.8rem 0.87rem 0.72rem 0.87rem;
     margin-bottom: .39rem;
     border-radius: 2rem;
+    flex-basis: content;
 }
 
 
@@ -161,7 +164,6 @@ h3 a, h3, .main.button {
     .nav-mobile {
         display: flex;
         justify-content: flex-start;
-        align-items: center;
         position: sticky;
         top: 0;
         z-index: 100;
@@ -182,9 +184,10 @@ h3 a, h3, .main.button {
     }
     .mobile-bottom-nav {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: flex-end;
         margin: 0 auto;
+        z-index: 100;
     }
 }
 
@@ -283,7 +286,30 @@ h2, h3 {
 }
 
 @media (max-width:1023px) {
-
+    .image-container {
+            min-height: 72.88vw;
+    }
+    .main-image img {
+        width: 100vw;
+        margin-top: 0.05rem;
+        border-radius: 0;
+    }
+    .sub-image-flex, .title-button-flex {
+    flex-direction: column;
+    justify-content: center;
+    }
+    .title-button-flex {
+        background: linear-gradient(#cfc6ea, #ffdcc5) !important;
+        padding: 15.6vw 0 calc(2.17rem + 2vw) 0;
+        width: 100vw;
+        text-align: center;
+        z-index: -1;
+    }
+    .gs-button {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
 }
 
 hr {
@@ -338,4 +364,11 @@ img {
 
 .news {
     position: relative;
+}
+
+img {
+    max-width: 90vw;
+}
+.footer-esrb-logo {
+max-width: 300px;
 }
