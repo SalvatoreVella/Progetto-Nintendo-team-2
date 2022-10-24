@@ -1,5 +1,6 @@
 nav {
     position: sticky;
+    z-index: 100;
     top: 0;
     background-color:white;
 }
@@ -124,6 +125,68 @@ h3 a, h3, .main.button {
 .nav-second-row h3 svg {
     padding-left: 1.5px;
 }
+        /* Mobile nav */
+
+.mobile-bottom-nav {
+    box-sizing: border-box;
+    position: sticky;
+    top: 89.8vh;
+    width: 27.5rem;
+    height: 3.65rem;
+    background-color: white;
+    border-radius: 2rem;
+    border: 1px solid rgba(237, 237, 237, 0.984);
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.25);
+}
+
+.mob-nav-button {
+    color: #484848;
+    padding: 0.86rem 1.95rem 0.81rem 1.95rem;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 0.7rem;
+}
+
+.mob-nav-button-red {
+    background-color: var(--red);
+    color: white;
+    padding: 0.8rem 0.87rem 0.72rem 0.87rem;
+    margin-bottom: .39rem;
+    border-radius: 2rem;
+}
+
+
+@media (max-width:1023px) {
+    .nav-mobile {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        height: 2.88rem;
+        background-color: var(--red);
+        width: 100vw;
+    }
+    .nav-mobile svg {
+        margin-left: 1rem;
+        color: white;
+    }
+    main {
+        margin-top: -3.7rem;
+    }
+
+    nav {
+        display: none;
+    }
+    .mobile-bottom-nav {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin: 0 auto;
+    }
+}
 
 /* Fine della Navbar */
 
@@ -214,6 +277,10 @@ h2 {
     overflow: scroll;
     gap: 2.25rem;
     margin-bottom: 3rem;
+}
+
+@media (max-width:1023px) {
+
 }
 
 hr {
