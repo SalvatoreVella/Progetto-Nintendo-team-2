@@ -1,3 +1,5 @@
+            /* NAVBAR */
+
 nav {
     position: sticky;
     z-index: 100;
@@ -125,7 +127,7 @@ h3 a, h3, .main.button {
 .nav-second-row h3 svg {
     padding-left: 1.5px;
 }
-        /* Mobile nav */
+                    /* MOBILE NAV */
 
 .mobile-bottom-nav {
     box-sizing: border-box;
@@ -143,19 +145,25 @@ h3 a, h3, .main.button {
     color: #484848;
     padding-top: 0.86rem;
     padding-bottom: 0.81rem;
+    width: 17.1vw;
+    max-width: 5.4rem;
     border: none;
     background-color: white;
     cursor: pointer;
     border-radius: 1rem;
 }
+/* 
+.mob-nav-button:nth-of-type(3) {
+    width: 5vw;
+} */
 
 .mob-nav-button-red {
     background-color: var(--red);
     color: white;
+    width: auto;
     padding: 0.8rem 0.87rem 0.72rem 0.87rem;
-    margin-bottom: .39rem;
+    margin: 0 0 .39rem 0;
     border-radius: 2rem;
-    flex-basis: content;
 }
 
 
@@ -185,7 +193,7 @@ h3 a, h3, .main.button {
     }
     .mobile-bottom-nav {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: flex-end;
         z-index: 150;
         position: sticky;
@@ -193,7 +201,8 @@ h3 a, h3, .main.button {
     }
 }
 
-/* Fine della Navbar */
+            /* SEZIONE MAIN */
+
 
 .image-container {
     background: linear-gradient(#987dee, #fef8cc);
@@ -347,6 +356,9 @@ h2, h3 {
     }
 }
 
+            /* SEZIONI ONLINE STORE E GAMING SYSTEMS*/
+
+
 hr {
     border: 0.5px solid #b4b4b482;
 }
@@ -429,6 +441,7 @@ img {
     }
 }
 
+            /* SEZIONE NEWS */
 .news {
     padding: 3rem 0 10rem 0;
     position: relative;
@@ -459,8 +472,11 @@ img {
 }
 
 .news img {
-    max-width: 18vw;
+    max-width: 18vw;  /* Aggiunto per gestire il responsive, si può eliminare per la stilizzazione definitiva*/
 }
+
+
+            /* SEZIONE CHARACTERS */
 
 
 .characters {
@@ -499,6 +515,9 @@ img {
     }
 }
 
+            /* SEZIONE DIGITAL NEW RELEASES*/
+
+
 .card-container {
     display: flex;
 align-items: center;
@@ -507,5 +526,5 @@ overflow: scroll;
 
 
 .footer-esrb-logo {
-max-width: 300px;
+max-width: 300px;   /* Aggiunto per gestire il responsive, si può eliminare per la stilizzazione definitiva*/
 }
