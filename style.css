@@ -330,7 +330,7 @@ h2, h3 {
         z-index: 99;
     }
     .red-button:hover {
-        animation: boing4 400ms forwards;
+        animation: boing3 400ms forwards;
     }
 }
 
@@ -421,8 +421,8 @@ img {
         position: static;
         margin-left: 0%;
     }
-    .gs-button:hover, .store-button:hover {
-        animation: boing3 400ms forwards;
+    .gs-button:hover, .store-button:hover, .news-button:hover {
+        animation: boing4 400ms forwards;
     }
 }
 
@@ -453,13 +453,47 @@ img {
     .news-button {
         margin-left: 0;
     }
-    .news-button:hover {
-        animation: boing3 400ms forwards;
-    }
 }
 
 .news img {
     max-width: 18vw;
+}
+
+
+.characters {
+    width: 96vw;
+    margin: 0 auto;
+    margin-top: 3rem;
+    max-width: 1140px;
+}
+
+.characters-item h3 {
+    font-size: 1.31rem;
+}
+
+.characters-flex {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    max-width: 96vw;
+    margin: 0 auto;
+    padding: 1rem 0 3rem 0;
+}
+
+@media (max-width:768px) {
+    .characters-flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media (max-width:360px) {
+    .characters, .characters-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .card-container {

@@ -147,39 +147,7 @@ a{
 
 }
 
-
 @keyframes boing3 {
-    30%{
-        padding-top: calc(1rem + 5px);
-        padding-bottom: calc(1rem + 5px);
-        margin-top: 1.44rem;
-        margin-bottom: 1.44rem;
-    }
-    40% {
-        margin-left: -7px;
-        margin-right: -20px;
-        width: 102.5%;
-    }
-    60% {
-        padding-top: calc(1rem - 3px);
-        padding-bottom: calc(1rem - 3px);
-        margin-top: calc(1.44rem + 8px);
-        margin-bottom: calc(1.44rem + 8px);
-    }
-    85% {
-        padding-top: calc(1rem + 2px);
-        padding-bottom: calc(1rem + 2px);
-        margin-top: calc(1.44rem  + 3px);
-        margin-bottom: calc(1.44rem + 3px);
-    }
-    100%{
-        padding: 1rem 2rem;
-        margin: 1.75rem -7px 1.75rem -7px;
-        width: 102.5%;
-    }
-}
-
-@keyframes boing4 {
     30%{
         padding-top: calc(1rem + 5px);
         padding-bottom: calc(1rem + 5px);
@@ -189,7 +157,7 @@ a{
     40% {
         padding-left: calc(2rem + 5px);
         padding-right: calc(2rem + 5px);
-        margin-left: -5px;
+        margin-left: -.3rem;
         margin-right: -5px;
         width: 98vw;
     }
@@ -212,6 +180,39 @@ a{
     }
 }
 
+@keyframes boing4 {
+    30%{
+        padding-top: calc(1rem + 5px);
+        padding-bottom: calc(1rem + 5px);
+        margin-top: 1.44rem;
+        margin-bottom: 1.44rem;
+    }
+    40% {
+        padding-left: calc(2rem + 5px);
+        padding-right: calc(2rem + 5px);
+        margin-left: -1vw;
+        margin-right: -5px;
+        width: 98vw;
+    }
+    60% {
+        padding-top: calc(1rem - 3px);
+        padding-bottom: calc(1rem - 3px);
+        margin-top: calc(1.44rem + 8px);
+        margin-bottom: calc(1.44rem + 8px);
+    }
+    85% {
+        padding-top: calc(1rem + 2px);
+        padding-bottom: calc(1rem + 2px);
+        margin-top: calc(1.44rem  + 3px);
+        margin-bottom: calc(1.44rem + 3px);
+    }
+    100%{
+        padding: 1rem 2rem;
+        margin: 1.75rem 0 1.75rem -1vw;
+        width: 98vw;
+    }
+}
+
 
 .see-full-list:hover {
     animation: boing2 400ms forwards;
@@ -221,8 +222,8 @@ a{
 
 .characters-item .img-container {
     min-width: 10.5rem;
-    max-width: 22.06rem;
-    min-height: 10.75rem;
+    max-width: 23.06rem;
+    min-height: 10.5rem;
     max-height: 23.5rem;
     border-radius: 0.25rem;
     overflow: hidden;
@@ -270,41 +271,4 @@ a{
     transform: scale(1.15);
     transform-origin: 50% 50%;
     
-}
-
-.characters {
-    width: 96vw;
-    margin: 0 auto;
-    margin-top: 3rem;
-    max-width: 1140px;
-}
-
-.characters-item h3 {
-    font-size: 1.31rem;
-}
-
-.characters-flex {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    max-width: 96vw;
-    margin: 0 auto;
-    padding: 1rem 0 3rem 0;
-}
-
-@media (max-width:768px) {
-    .characters-flex {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-}
-
-@media (max-width:360px) {
-    .characters, .characters-flex {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-    }
 }
