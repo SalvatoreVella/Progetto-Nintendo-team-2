@@ -165,7 +165,6 @@ h3 a, h3, .main.button {
         display: flex;
         justify-content: flex-start;
         position: sticky;
-        top: 0;
         z-index: 100;
         height: 2.88rem;
         background-color: var(--red);
@@ -259,6 +258,10 @@ h2, h3 {
     padding: 2px 2px 0 0;
 }
 
+.cv-link:hover {
+    color: #484848;
+}
+
 .cartoon-violence-logo div hr {
     border: .5px solid rgb(70, 70, 70);
     margin: .23rem -1px;
@@ -310,21 +313,24 @@ h2, h3 {
         width: 100vw;
         text-align: center;
         z-index: -1;
+        margin-bottom: 6.5rem;
     }
     .title-button-flex h2 {
         margin-bottom: -4rem;
     }
     .cartoon-violence-logo {
-        margin-top: 2.5rem;
+        position: absolute;
+        bottom: -1rem;
+        left: calc(50vw - 8.8rem);
     }
     .red-button {
         position: relative;
         top: 3.4rem;
         width: 96vw;
-        z-index: 90;
+        z-index: 99;
     }
-    .gs-button {
-        position: static;
+    .red-button:hover {
+        animation: boing4 400ms forwards;
     }
 }
 
@@ -332,8 +338,9 @@ h2, h3 {
     .cartoon-violence-logo {
         display: none;
     }
-    .red-button {
-        width: 93vw;
+
+    .title-button-flex {
+        margin-bottom: 0.2rem;
     }
 }
 
@@ -402,9 +409,8 @@ img {
     }
     .store-button {
         position: static;
-        align-self: center;
         margin-left: 0%;
-        width: 96vw;
+
     }
     .gaming-systems-flex {
         flex-direction: column;
@@ -413,8 +419,7 @@ img {
     }
     .gs-button {
         position: static;
-        margin-left: 0;
-        width: 96vw;
+        margin-left: 0%;
     }
     .gs-button:hover, .store-button:hover {
         animation: boing3 400ms forwards;
