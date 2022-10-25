@@ -129,8 +129,7 @@ h3 a, h3, .main.button {
 
 .mobile-bottom-nav {
     box-sizing: border-box;
-    position: sticky;
-    top: 89.8%;
+    margin: 0 auto;
     max-width: 27.5rem;
     width: 96vw;
     height: 3.65rem;
@@ -181,12 +180,16 @@ h3 a, h3, .main.button {
     nav {
         display: none;
     }
+    body {
+        overflow: auto;
+    }
     .mobile-bottom-nav {
         display: flex;
         justify-content: space-evenly;
         align-items: flex-end;
-        margin: 0 auto;
-        z-index: 100;
+        z-index: 150;
+        position: sticky;
+        top: 90.5vh;
     }
 }
 
