@@ -6,10 +6,15 @@
     font-family: museo100;
     src: url(assets/fonts/MuseoSans100/MuseoSans-100.otf);
 }
+:root {
+    --red: rgb(230, 33, 18);
+    --red-button-hover: #ab160d;
+    --black: #484848;
+}
 
 html {
     font-family: 'museo', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
-    color: #484848;
+    color: var(--black);
 }
 
 * {
@@ -19,107 +24,52 @@ html {
     list-style-type: none;
 }
 
-:root {
-    --red: rgb(230, 33, 18);
-}
-
 a{
-    color: #484848;
+    color: var(--black);
 }
 
-
-            /* BOTTONI */
-
-
-.red-button{
-    color: white;
-    background-color: var(--red);
-    border: 1px solid var(--red);
-    border-radius: 0.25rem;
-    padding: 0.75rem 1.5rem;
-    font-size:1.125rem;
-    white-space: nowrap;
-    transition: background-color 0.5s;
-    margin: 2rem 1rem 2rem 1rem;
-    cursor: pointer;
-    position: absolute;
-    top: -1rem;
-    font-family: museo;
-}
-.store-button {
-    top: -1.75rem;
-    right: -1rem;
+hr {
+    border: 0.5px solid #b4b4b482;
 }
 
-.gs-button {
-    top: -2.5rem;
+.none{
+    display: none;
 }
 
-.news-button {
-    left: 0;
-    top: unset;
-    bottom: 1rem;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    align-items: center;
-}
-
+            /* ANIMAZIONI BOTTONI */
 
 @keyframes boing {
     30%{
         padding-top: calc(1rem + 5px);
         padding-bottom: calc(1rem + 5px);
-        margin-top: 1.44rem;
-        margin-bottom: 1.44rem;
+        margin-top: -.56rem;
+        margin-bottom: -.56rem;
     }
     40% {
         padding-left: 2rem;
         padding-right: 2rem;
-        margin-left: .5rem;
-        margin-right: .5rem;
+        margin-left: 1.5rem;
+        margin-right: -.5rem;
     }
     60% {
         padding-top: calc(1rem - 3px);
         padding-bottom: calc(1rem - 3px);
-        margin-top: calc(1.44rem + 8px);
-        margin-bottom: calc(1.44rem + 8px);
+        margin-top: calc(-.56rem + 8px);
+        margin-bottom: calc(-.56rem + 8px);
     }
     85% {
         padding-top: calc(1rem + 2px);
         padding-bottom: calc(1rem + 2px);
-        margin-top: calc(1.44rem  + 3px);
-        margin-bottom: calc(1.44rem + 3px);
+        margin-top: calc(-.56rem  + 3px);
+        margin-bottom: calc(-.56rem + 3px);
     }
     100%{
         padding: 1rem 2rem;
-        margin: 1.75rem .5rem 1.75rem .5rem;
+        margin: -.25rem -.5rem -.25rem 1.5rem;
     }
 }
 
-.red-button:hover {
-    animation: boing 400ms forwards;
-    background-color: #ab160d;
-    border: 1px solid #ab160d;
-    max-width: 100vw;
-}
-
-.see-full-list {
-    color: white;
-    background-color: var(--red);
-    border: 1px solid var(--red);
-    border-radius: 0.25rem;
-    padding: 10rem 1.5rem;
-    font-size:1.125rem;
-    white-space: nowrap;
-    transition: all 0.5s;
-    margin: 2rem 1rem 2rem 1rem;
-    cursor: pointer;
-    top: -1rem;
-    
-}
-
-@keyframes boing2 {
+@keyframes boing-long-button {
     30%{
         padding-top: calc(10rem + 5px);
         padding-bottom: calc(10rem + 5px);
@@ -151,7 +101,7 @@ a{
 
 }
 
-@keyframes boing3 {
+@keyframes boing-wide-button {
     30%{
         padding-top: calc(1rem + 5px);
         padding-bottom: calc(1rem + 5px);
@@ -184,7 +134,7 @@ a{
     }
 }
 
-@keyframes boing4 {
+@keyframes boing-wide-button2 {
     30%{
         padding-top: calc(1rem + 5px);
         padding-bottom: calc(1rem + 5px);
@@ -217,13 +167,67 @@ a{
     }
 }
 
+            /* BOTTONI */
 
-.see-full-list:hover {
-    animation: boing2 400ms forwards;
-    background-color: #ab160d;
-    border: 1px solid #ab160d;
+
+.red-button {
+    color: white;
+    background-color: var(--red);
+    border: 1px solid var(--red);
+    border-radius: 0.25rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.125rem;
+    white-space: nowrap;
+    transition: background-color 0.5s;
+    margin-left: 2rem;
+    cursor: pointer;
+    font-family: museo;
 }
 
+.news-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.see-full-list {
+    padding: 10rem 1.5rem;
+}
+
+.red-button:hover {
+    animation: boing 400ms forwards;
+    background-color: var(--red-button-hover);
+    border: 1px solid var(--red-button-hover);
+}
+
+.see-full-list:hover {
+    animation: boing-long-button 400ms forwards;
+}
+
+@media (max-width:1023px) {
+    .red-button {
+        width: 96vw;
+    }
+    .red-button:hover {
+        animation: boing-wide-button 400ms forwards;
+    }
+    .store-button {
+        position: static;
+        margin-left: 0%;
+    }
+    .gs-button {
+        position: static;
+        margin-left: 0%;
+    }
+    .gs-button:hover, .store-button:hover, .news-button:hover {
+        animation: boing-wide-button 400ms forwards;
+    }
+    .news-button {
+        position: static;
+        margin-left: 0;
+    }
+}
 
             /* CARD SEZIONE CHARACTERS */
 
@@ -238,8 +242,8 @@ a{
 }
 
 .img-container {
-    overflow: hidden;
     margin-bottom: 0.55rem;
+    aspect-ratio: 1 / 1;
 }
 
 .characters-item img {
