@@ -311,27 +311,42 @@ h2 {
     h2 {
         font-size: 1.3rem;
     }
-
-            /* SEZIONI ONLINE STORE E GAMING SYSTEMS*/
-
-
 }
 
 
             /* SEZIONE FEATURED*/
 
 
+.featured {
+    padding: 3.2rem 0 3rem 0;
+}
+
 .featured h2 {
     width: 96vw;
     max-width: 1145px;
-    margin: 3.2rem auto 2.5rem auto;
+    margin: auto;
+    padding-bottom: 2.75rem;
 }
 
 .flex-wrap-featured {
     display: flex;
     overflow: scroll;
-    gap: 2.25rem;
-    margin-bottom: 3rem;
+    gap: 2rem;
+    align-items: flex-end;
+    height: 18rem;
+    padding: 0 2rem 1.2rem 2rem;
+}
+
+@media (max-width:768px) {
+    .featured {
+        padding: 1.5rem 0 2.15rem 0;
+    }
+    .featured h2 {
+        padding-bottom: 2rem;
+    }
+    .flex-wrap-featured {
+        padding: 0 1rem 1.2rem 1rem;
+    }
 }
 
 

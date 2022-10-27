@@ -2,10 +2,12 @@
     font-family: museo;
     src: url(assets/fonts/MuseoSans500/MuseoSans_500.otf);
 }
+
 @font-face {
     font-family: museo100;
     src: url(assets/fonts/MuseoSans100/MuseoSans-100.otf);
 }
+
 :root {
     --red: rgb(230, 33, 18);
     --red-button-hover: #ab160d;
@@ -13,7 +15,7 @@
 }
 
 html {
-    font-family: 'museo', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+    font-family: 'museo', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: var(--black);
 }
 
@@ -24,7 +26,15 @@ html {
     list-style-type: none;
 }
 
-a{
+:root {
+    --red: rgb(230, 33, 18);
+}
+
+a {
+    color: #484848;
+}
+
+a {
     color: var(--black);
 }
 
@@ -32,99 +42,107 @@ hr {
     border: 0.5px solid #b4b4b482;
 }
 
-.none{
+.none {
     display: none;
 }
 
-            /* ANIMAZIONI BOTTONI */
+/* ANIMAZIONI BOTTONI */
 
 @keyframes boing {
-    30%{
+    30% {
         padding-top: calc(1rem + 5px);
         padding-bottom: calc(1rem + 5px);
         margin-top: -.56rem;
         margin-bottom: -.56rem;
     }
+
     40% {
         padding-left: 2rem;
         padding-right: 2rem;
         margin-left: 1.5rem;
         margin-right: -.5rem;
     }
+
     60% {
         padding-top: calc(1rem - 3px);
         padding-bottom: calc(1rem - 3px);
         margin-top: calc(-.56rem + 8px);
         margin-bottom: calc(-.56rem + 8px);
     }
+
     85% {
         padding-top: calc(1rem + 2px);
         padding-bottom: calc(1rem + 2px);
-        margin-top: calc(-.56rem  + 3px);
+        margin-top: calc(-.56rem + 3px);
         margin-bottom: calc(-.56rem + 3px);
     }
-    100%{
+
+    100% {
         padding: 1rem 2rem;
         margin: -.25rem -.5rem -.25rem 1.5rem;
     }
 }
+
 @keyframes boing-out {
     0% {
         padding: 1rem 2rem;
         margin: -.25rem -.5rem -.25rem 1.5rem;
     }
+
     100% {
         padding: 0.75rem 1.5rem;
     }
 }
 
 @keyframes boing-long-button {
-    30%{
+    30% {
         padding-top: calc(10rem + 5px);
         padding-bottom: calc(10rem + 5px);
         margin-top: 1.44rem;
         margin-bottom: 1.44rem;
     }
+
     40% {
         padding-left: 2rem;
         padding-right: 2rem;
         margin-left: .5rem;
         margin-right: .5rem;
     }
+
     60% {
         padding-top: calc(10rem - 3px);
         padding-bottom: calc(10rem - 3px);
         margin-top: calc(1.44rem + 8px);
         margin-bottom: calc(1.44rem + 8px);
     }
+
     85% {
         padding-top: calc(10rem + 2px);
         padding-bottom: calc(10rem + 2px);
-        margin-top: calc(1.44rem  + 3px);
+        margin-top: calc(1.44rem + 3px);
         margin-bottom: calc(1.44rem + 3px);
     }
-    100%{
+
+    100% {
         padding: 10rem 2rem;
         margin: 1.75rem .5rem 1.75rem .5rem;
     }
 }
 
 @keyframes boing-long-out {
-    0% {
+    0% {}
 
-    }
-    100% {
-        
-    }
+    100% {}
 }
 
 @keyframes boing-wide-button {
-    30%{
+    30% {
         padding-top: calc(1rem + 5px);
         padding-bottom: calc(1rem + 5px);
         margin-top: -.56rem;
         margin-bottom: -.56rem;
     }
+
     40% {
         padding-left: calc(2rem + 5px);
         padding-right: calc(2rem + 5px);
@@ -132,19 +150,23 @@ hr {
         margin-right: -.3rem;
         width: 98vw;
     }
+
     60% {
         padding-top: calc(1rem - 3px);
         padding-bottom: calc(1rem - 3px);
         margin-top: calc(-.56rem + 8px);
         margin-bottom: calc(-.56rem + 8px);
     }
+
     85% {
         padding-top: calc(1rem + 2px);
         padding-bottom: calc(1rem + 2px);
-        margin-top: calc(-.56rem  + 3px);
+
+        margin-top: calc(-.56rem + 3px);
         margin-bottom: calc(-.56rem + 3px);
     }
-    100%{
+
+    100% {
         padding: 1rem 2rem;
         margin: -.25rem 0;
         width: 98vw;
@@ -163,8 +185,29 @@ hr {
     }
 }
 
+/* ANIMAZIONI CARD */
 
-            /* BOTTONI */
+
+@keyframes gap-transition-in {
+    0% {
+        gap: 0;
+    }
+    100% {
+        gap: 1rem;
+    }
+}
+
+@keyframes gap-transition-out {
+    0% {
+        gap: 1rem;
+    }
+    100% {
+        gap: 0;
+    }
+}
+
+
+/* BOTTONI */
 
 
 .red-button {
@@ -209,13 +252,70 @@ hr {
         margin-left: 0;
         animation: boing-wide-out 0.4s forwards;
     }
+
     .red-button:hover {
         animation: boing-wide-button 400ms forwards;
     }
 }
 
+/* CARD SEZIONE FEATURED*/
 
-            /* CARD SEZIONE CHARACTERS */
+
+.card-feat {
+    border-radius: 0.2rem;
+    box-sizing: border-box;
+    border: 1px solid #b4b4b482;
+    display: flex;
+    width: 16.4rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 1.3rem;
+    animation: gap-transition-out 0.3s forwards;
+}
+
+.card-feat:hover {
+    animation: gap-transition-in 0.3s forwards;
+}
+
+.card-feat img {
+    width: 100%;
+    padding-bottom: 1rem;
+    border-radius: 0.2rem 0.2rem 0 0;
+}
+
+.card-feat p {
+    font-family: museo100;
+    padding-left: .4rem;
+    font-size: .88rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    height: 4.75rem;
+}
+
+.card-footer {
+    color: var(--black);
+    border-left: var(--red) solid 2px;
+}
+
+@media (max-width:500px) {
+    .card-feat {
+        width: 12.875rem;
+    }
+    .card-feat h4 {
+        font-size: .88rem;
+    }
+    .card-feat p {
+        font-size: .75rem;
+    }
+}
+
+/* CARD SEZIONE CHARACTERS */
 
 
 .characters-item .img-container {
@@ -272,7 +372,7 @@ hr {
     background-size: 87.5%;
     transform: scale(1.15);
     transform-origin: 50% 50%;
-    
+
 }
 
 @media (max-width:428px) {
