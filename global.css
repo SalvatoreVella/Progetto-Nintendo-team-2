@@ -105,31 +105,31 @@ hr {
     30%{
         padding-top: calc(1rem + 5px);
         padding-bottom: calc(1rem + 5px);
-        margin-top: 1.44rem;
-        margin-bottom: 1.44rem;
+        margin-top: -.56rem;
+        margin-bottom: -.56rem;
     }
     40% {
         padding-left: calc(2rem + 5px);
         padding-right: calc(2rem + 5px);
         margin-left: -.3rem;
-        margin-right: -5px;
+        margin-right: -.3rem;
         width: 98vw;
     }
     60% {
         padding-top: calc(1rem - 3px);
         padding-bottom: calc(1rem - 3px);
-        margin-top: calc(1.44rem + 8px);
-        margin-bottom: calc(1.44rem + 8px);
+        margin-top: calc(-.56rem + 8px);
+        margin-bottom: calc(-.56rem + 8px);
     }
     85% {
         padding-top: calc(1rem + 2px);
         padding-bottom: calc(1rem + 2px);
-        margin-top: calc(1.44rem  + 3px);
-        margin-bottom: calc(1.44rem + 3px);
+        margin-top: calc(-.56rem  + 3px);
+        margin-bottom: calc(-.56rem + 3px);
     }
     100%{
         padding: 1rem 2rem;
-        margin: 1.75rem 0 1.75rem 0;
+        margin: -.25rem 0;
         width: 98vw;
     }
 }
@@ -208,24 +208,10 @@ hr {
 @media (max-width:1023px) {
     .red-button {
         width: 96vw;
+        margin-left: 0;
     }
     .red-button:hover {
         animation: boing-wide-button 400ms forwards;
-    }
-    .store-button {
-        position: static;
-        margin-left: 0%;
-    }
-    .gs-button {
-        position: static;
-        margin-left: 0%;
-    }
-    .gs-button:hover, .store-button:hover, .news-button:hover {
-        animation: boing-wide-button 400ms forwards;
-    }
-    .news-button {
-        position: static;
-        margin-left: 0;
     }
 }
 
@@ -251,6 +237,10 @@ hr {
     border-radius: 0.25rem;
     transition: all 0.3s;
     aspect-ratio: 1 / 1;
+}
+
+.characters-item h3 {
+    font-size: 1.31rem;
 }
 
 .characters-item:first-of-type img {
@@ -283,4 +273,10 @@ hr {
     transform: scale(1.15);
     transform-origin: 50% 50%;
     
+}
+
+@media (max-width:428px) {
+    .characters-item h3 {
+        font-size: 1.1rem;
+    }
 }

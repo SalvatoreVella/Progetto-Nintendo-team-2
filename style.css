@@ -124,7 +124,7 @@ h3 a, h3, .main.button {
 .nav-mobile {
     justify-content: flex-start;
     position: sticky;
-    z-index: 100;
+    top: 0;
     height: 2.88rem;
     background-color: var(--red);
     width: 100vw;
@@ -204,7 +204,6 @@ main {
     background: linear-gradient(#987dee, #fef8cc);
     background-size: 100% 90%;
     background-repeat: no-repeat;
-    height: fit-content;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -265,48 +264,49 @@ h2 {
 
 @media (max-width:1023px) {
     .image-container {
-        height: 0;
-    }
-    .main-image {
-        z-index: 3;
+        padding-bottom: 0;
     }
     .main-image img {
-        width: 100vw;
-        margin: 0.05rem 0 0 0;
+        width: 100%;
+        margin: 0;
         border-radius: 0;
     }
     .sub-image-flex, .title-button-flex {
         flex-direction: column;
-        justify-content: center;
-        margin-right: 0;
-        margin-left: 0;
-        z-index: 2;
+        justify-content: space-between;
+        gap: 1rem;
+        width: 100%;
     }
     .title-button-flex {
-        background: linear-gradient(#987dee, #ffdcc5);
-        padding: calc(90vw - 1rem) 0 0 0;
-        width: 100vw;
         text-align: center;
-        z-index: -1;
-        margin-bottom: 6.5rem;
+        background: linear-gradient(#F1C9BF, #FED4B9);
+        background-size: 100% 90%;
+        background-repeat: no-repeat;
+        margin-top: -.3rem;
+        margin-bottom: .2rem;
+
     }
     .title-button-flex h2 {
-        margin-bottom: -4rem;
-    }
-    .cartoon-violence-logo {
-        position: absolute;
-        bottom: -1rem;
-        left: calc(50vw - 8.8rem);
+        padding-top: 1.6rem;
     }
 }
 
 @media (max-width:622px) {
+    main {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
     .cartoon-violence-logo {
         display: none;
     }
-
     .title-button-flex {
         margin-bottom: 0.2rem;
+    }
+}
+
+@media (max-width:428px) {
+    h2 {
+        font-size: 1.3rem;
     }
 }
 
@@ -339,7 +339,7 @@ h2 {
     width: 96vw;
     max-width: 1145px;
     margin: auto;
-    padding: 3rem 2.1rem 4.3rem 2.1rem;
+    padding: 3rem 0 4.3rem 0;
 }
 
 .online-store-main h2, .gaming-systems h2 {
@@ -372,22 +372,32 @@ picture img, .gaming-systems img {
 }
 
 @media (max-width:1023px) {
-    .online-store-main {
-        display: flex;
-        flex-direction: column;
+    .online-store-main h2, .gaming-systems h2 {
+        padding-bottom: 1rem;
     }
-    .store-flex {
-        flex-direction: column;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
+    .online-store-main, .gaming-systems {
+        padding-bottom: 3rem;
     }
-    .store-flex h3 {
+    .store-flex, .gaming-systems-flex {
+        flex-direction: column;
+        padding: 0;
+    }
+    .store-flex h3, .gaming-systems h3 {
         width: 96vw;
     }
-    .gaming-systems-flex {
+    .store-flex h3, .gaming-systems-flex h3 {
+        padding: 2rem 0;
+    }
+}
+
+@media (max-width:768px) {
+    .online-store-main, .gaming-systems {
+        padding: 1.5rem 0 2.15rem 0;
         flex-direction: column;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
+    }
+    .store-flex, .gaming-systems-flex {
+        font-size: .92rem;
+        padding: 0;
     }
 }
 
@@ -408,6 +418,7 @@ picture img, .gaming-systems img {
 .main-news, .other-news {
     display: flex;
     padding: 3rem 0;
+    max-width: 20vw;
 }
 
 @media (max-width:1023px) {
@@ -426,13 +437,9 @@ picture img, .gaming-systems img {
 
 .characters {
     width: 96vw;
-    margin: 0 auto;
+    margin: auto;
     padding-top: 3rem;
     max-width: 1140px;
-}
-
-.characters-item h3 {
-    font-size: 1.31rem;
 }
 
 .characters-flex {
