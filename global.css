@@ -2,13 +2,14 @@
     font-family: museo;
     src: url(assets/fonts/MuseoSans500/MuseoSans_500.otf);
 }
+
 @font-face {
     font-family: museo100;
     src: url(assets/fonts/MuseoSans100/MuseoSans-100.otf);
 }
 
 html {
-    font-family: 'museo', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+    font-family: 'museo', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #484848;
 }
 
@@ -23,21 +24,21 @@ html {
     --red: rgb(230, 33, 18);
 }
 
-a{
+a {
     color: #484848;
 }
 
 
-            /* BOTTONI */
+/* BOTTONI */
 
 
-.red-button{
+.red-button {
     color: white;
     background-color: var(--red);
     border: 1px solid var(--red);
     border-radius: 0.25rem;
     padding: 0.75rem 1.5rem;
-    font-size:1.125rem;
+    font-size: 1.125rem;
     white-space: nowrap;
     transition: background-color 0.5s;
     margin: 2rem 1rem 2rem 1rem;
@@ -46,6 +47,7 @@ a{
     top: -1rem;
     font-family: museo;
 }
+
 .store-button {
     top: -1.75rem;
     right: -1rem;
@@ -67,31 +69,35 @@ a{
 
 
 @keyframes boing {
-    30%{
+    30% {
         padding-top: calc(1rem + 5px);
         padding-bottom: calc(1rem + 5px);
         margin-top: 1.44rem;
         margin-bottom: 1.44rem;
     }
+
     40% {
         padding-left: 2rem;
         padding-right: 2rem;
         margin-left: .5rem;
         margin-right: .5rem;
     }
+
     60% {
         padding-top: calc(1rem - 3px);
         padding-bottom: calc(1rem - 3px);
         margin-top: calc(1.44rem + 8px);
         margin-bottom: calc(1.44rem + 8px);
     }
+
     85% {
         padding-top: calc(1rem + 2px);
         padding-bottom: calc(1rem + 2px);
-        margin-top: calc(1.44rem  + 3px);
+        margin-top: calc(1.44rem + 3px);
         margin-bottom: calc(1.44rem + 3px);
     }
-    100%{
+
+    100% {
         padding: 1rem 2rem;
         margin: 1.75rem .5rem 1.75rem .5rem;
     }
@@ -110,41 +116,45 @@ a{
     border: 1px solid var(--red);
     border-radius: 0.25rem;
     padding: 10rem 1.5rem;
-    font-size:1.125rem;
+    font-size: 1.125rem;
     white-space: nowrap;
     transition: all 0.5s;
     margin: 2rem 1rem 2rem 1rem;
     cursor: pointer;
     top: -1rem;
-    
+
 }
 
 @keyframes boing2 {
-    30%{
+    30% {
         padding-top: calc(10rem + 5px);
         padding-bottom: calc(10rem + 5px);
         margin-top: 1.44rem;
         margin-bottom: 1.44rem;
     }
+
     40% {
         padding-left: 2rem;
         padding-right: 2rem;
         margin-left: .5rem;
         margin-right: .5rem;
     }
+
     60% {
         padding-top: calc(10rem - 3px);
         padding-bottom: calc(10rem - 3px);
         margin-top: calc(1.44rem + 8px);
         margin-bottom: calc(1.44rem + 8px);
     }
+
     85% {
         padding-top: calc(10rem + 2px);
         padding-bottom: calc(10rem + 2px);
-        margin-top: calc(1.44rem  + 3px);
+        margin-top: calc(1.44rem + 3px);
         margin-bottom: calc(1.44rem + 3px);
     }
-    100%{
+
+    100% {
         padding: 10rem 2rem;
         margin: 1.75rem .5rem 1.75rem .5rem;
     }
@@ -152,12 +162,13 @@ a{
 }
 
 @keyframes boing3 {
-    30%{
+    30% {
         padding-top: calc(1rem + 5px);
         padding-bottom: calc(1rem + 5px);
         margin-top: 1.44rem;
         margin-bottom: 1.44rem;
     }
+
     40% {
         padding-left: calc(2rem + 5px);
         padding-right: calc(2rem + 5px);
@@ -165,19 +176,22 @@ a{
         margin-right: -5px;
         width: 98vw;
     }
+
     60% {
         padding-top: calc(1rem - 3px);
         padding-bottom: calc(1rem - 3px);
         margin-top: calc(1.44rem + 8px);
         margin-bottom: calc(1.44rem + 8px);
     }
+
     85% {
         padding-top: calc(1rem + 2px);
         padding-bottom: calc(1rem + 2px);
-        margin-top: calc(1.44rem  + 3px);
+        margin-top: calc(1.44rem + 3px);
         margin-bottom: calc(1.44rem + 3px);
     }
-    100%{
+
+    100% {
         padding: 1rem 2rem;
         margin: 1.75rem 0 1.75rem 0;
         width: 98vw;
@@ -185,12 +199,13 @@ a{
 }
 
 @keyframes boing4 {
-    30%{
+    30% {
         padding-top: calc(1rem + 5px);
         padding-bottom: calc(1rem + 5px);
         margin-top: 1.44rem;
         margin-bottom: 1.44rem;
     }
+
     40% {
         padding-left: calc(2rem + 5px);
         padding-right: calc(2rem + 5px);
@@ -198,19 +213,22 @@ a{
         margin-right: -5px;
         width: 98vw;
     }
+
     60% {
         padding-top: calc(1rem - 3px);
         padding-bottom: calc(1rem - 3px);
         margin-top: calc(1.44rem + 8px);
         margin-bottom: calc(1.44rem + 8px);
     }
+
     85% {
         padding-top: calc(1rem + 2px);
         padding-bottom: calc(1rem + 2px);
-        margin-top: calc(1.44rem  + 3px);
+        margin-top: calc(1.44rem + 3px);
         margin-bottom: calc(1.44rem + 3px);
     }
-    100%{
+
+    100% {
         padding: 1rem 2rem;
         margin: 1.75rem 0 1.75rem -1vw;
         width: 98vw;
@@ -223,75 +241,86 @@ a{
     background-color: #ab160d;
     border: 1px solid #ab160d;
 }
-              /* CARD SEZIONE FEATURED*/
+
+/* CARD SEZIONE FEATURED*/
 
 @keyframes gap-transition-in {
     0% {
         gap: 0;
     }
+
     100% {
-            gap: 1rem;
-        }
+        gap: 1rem;
     }
+}
+
 @keyframes gap-transition-out {
     0% {
         gap: 1rem;
     }
+
     100% {
         gap: 0;
     }
 }
-        .featured h2  {
-        padding-right: 19rem;
-        padding-bottom: 24px;
-        margin:0;
-        }
-        .featured{
-           box-sizing: border-box;
-           border-radius: 0.25rem;
-           width: 100%;
-           
-        }
-        .card-feat{
-            border: 1px solid red;
-            box-sizing: border-box;
-            border-radius:0.2rem ;
-            display: flex;
-           flex-direction: column;
-           justify-content: flex-end;
-           padding-bottom:1rem; 
-           animation: gap-transition-out 0.3s forwards; 
 
-        }
-        .card-feat:hover{
-           animation: gap-transition-in 0.3s forwards;  
-        }
-        
-        .featured img{
-         width: 260px;
-         height: 146.25px;
-         padding-bottom: 1rem;
-        }
-        
-        h4 , p{
-            margin-left: 1rem;
-            margin-right:1rem ; 
-             
-        }
-        p{
-           font-family: museo-sans;
-        }
-        
-        .card{
-           display: flex;
-           flex-direction: column;
-           justify-content: space-between;
-           padding: 0 16px;
-           box-sizing: border-box;
-           height: 100.8px;
-        }
-        
-       /* CARD SEZIONE CHARACTERS */
+.featured h2 {
+    padding-right: 19rem;
+    padding-bottom: 24px;
+    margin: 0;
+}
+
+.featured {
+    box-sizing: border-box;
+    border-radius: 0.25rem;
+    width: 100%;
+
+
+}
+
+.card-feat {
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+    border: 1px solid #b4b4b482;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 1.5rem;
+    animation: gap-transition-out 0.3s forwards;
+}
+
+.card-feat:hover {
+    animation: gap-transition-in 0.3s forwards;
+}
+
+.featured img {
+    width: 260px;
+    height: 146.25px;
+    padding-bottom: 1rem;
+}
+
+p {
+    font-family: museo100;
+    padding-left: .4rem;
+    font-size: .85rem;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 16px;
+    box-sizing: border-box;
+    height: 100.8px;
+}
+
+.footer {
+    color: #484848;
+    border-left: var(--red) solid 2px;
+}
+
+/* CARD SEZIONE CHARACTERS */
 
 
 .characters-item .img-container {
@@ -344,5 +373,5 @@ a{
     background-size: 87.5%;
     transform: scale(1.15);
     transform-origin: 50% 50%;
-    
+
 }
