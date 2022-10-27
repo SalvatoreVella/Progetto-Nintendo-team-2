@@ -480,8 +480,15 @@ picture img, .gaming-systems img {
     }
 }
 
-            /* SEZIONE DIGITAL NEW RELEASES*/
+            /* SEZIONI DIGITAL NEW RELEASES E DIGITAL BEST SELLERS */
 
+
+.digital-best-sellers, .digital-new-releases {
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    width: 96vw;
+    margin: auto;
+}
 
 .footer-esrb-logo {
 max-width: 300px;   /* Aggiunto per gestire il responsive, si può eliminare per la stilizzazione definitiva*/
