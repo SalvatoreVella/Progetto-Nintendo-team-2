@@ -27,6 +27,10 @@ a{
     color: #484848;
 }
 
+
+            /* BOTTONI */
+
+
 .red-button{
     color: white;
     background-color: var(--red);
@@ -35,7 +39,7 @@ a{
     padding: 0.75rem 1.5rem;
     font-size:1.125rem;
     white-space: nowrap;
-    transition: all 0.5s;
+    transition: background-color 0.5s;
     margin: 2rem 1rem 2rem 1rem;
     cursor: pointer;
     position: absolute;
@@ -155,8 +159,11 @@ a{
         margin-bottom: 1.44rem;
     }
     40% {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: calc(2rem + 5px);
+        padding-right: calc(2rem + 5px);
+        margin-left: -.3rem;
+        margin-right: -5px;
+        width: 98vw;
     }
     60% {
         padding-top: calc(1rem - 3px);
@@ -173,6 +180,7 @@ a{
     100%{
         padding: 1rem 2rem;
         margin: 1.75rem 0 1.75rem 0;
+        width: 98vw;
     }
 }
 
@@ -184,10 +192,11 @@ a{
         margin-bottom: 1.44rem;
     }
     40% {
-        padding-left: 2rem;
-        padding-right: 2rem;
-        margin-left: 1rem;
-        margin-right: .5rem;
+        padding-left: calc(2rem + 5px);
+        padding-right: calc(2rem + 5px);
+        margin-left: -1vw;
+        margin-right: -5px;
+        width: 98vw;
     }
     60% {
         padding-top: calc(1rem - 3px);
@@ -203,9 +212,11 @@ a{
     }
     100%{
         padding: 1rem 2rem;
-        margin: 1.75rem .5rem 1.75rem 1rem;
+        margin: 1.75rem 0 1.75rem -1vw;
+        width: 98vw;
     }
 }
+
 
 .see-full-list:hover {
     animation: boing2 400ms forwards;
@@ -213,11 +224,15 @@ a{
     border: 1px solid #ab160d;
 }
 
+
+            /* CARD SEZIONE CHARACTERS */
+
+
 .characters-item .img-container {
-    min-width: 10.75rem;
-    max-width: 17.06rem;
-    min-height: 10.75rem;
-    max-height: 17.06rem;
+    min-width: 10.5rem;
+    max-width: 23.06rem;
+    min-height: 10.5rem;
+    max-height: 23.5rem;
     border-radius: 0.25rem;
     overflow: hidden;
 }
@@ -264,16 +279,4 @@ a{
     transform: scale(1.15);
     transform-origin: 50% 50%;
     
-}
-
-.characters-item h3 {
-    font-size: 1.31rem;
-}
-
-.characters-flex {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: space-around;
-    max-width: 96vw;
 }
