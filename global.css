@@ -223,9 +223,57 @@ a{
     background-color: #ab160d;
     border: 1px solid #ab160d;
 }
+              /* CARD SEZIONE FEATURED*/
+        .featured h2  {
+        padding-right: 19rem;
+        padding-bottom: 24px;
+        margin:0;
+        }
+        .featured{
+           box-sizing: border-box;
+           border-radius: 0.25rem;
+           width: 100%;
+           
+        }
+        .card-feat{
+            border: 1px solid red;
+            box-sizing: border-box;
+            border-radius:0.2rem ;
+            display: flex;
+           flex-direction: column;
+           justify-content: flex-end;
+           padding-bottom:1rem;  
 
-
-            /* CARD SEZIONE CHARACTERS */
+        }
+        .card-feat:hover{
+           gap:1rem ;  
+        }
+        
+        .featured img{
+         width: 260px;
+         height: 146.25px;
+         padding-bottom: 1rem;
+        }
+        
+        h4 , p{
+            margin-left: 1rem;
+            margin-right:1rem ; 
+             
+        }
+        p{
+           font-family: museo-sans;
+        }
+        
+        .card{
+           display: flex;
+           flex-direction: column;
+           justify-content: space-between;
+           padding: 0 16px;
+           box-sizing: border-box;
+           height: 100.8px;
+        }
+        
+       /* CARD SEZIONE CHARACTERS */
 
 
 .characters-item .img-container {

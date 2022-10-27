@@ -298,6 +298,9 @@ h2, h3 {
     overflow: scroll;
     gap: 2.25rem;
     margin-bottom: 3rem;
+    align-items: flex-end;
+    height: 22rem;
+    padding-bottom: 1.5rem;
 }
 
 @media (max-width:1023px) {
