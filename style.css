@@ -332,6 +332,9 @@ h2 {
     overflow: scroll;
     gap: 2.25rem;
     margin-bottom: 3rem;
+    align-items: flex-end;
+    height: 22rem;
+    padding-bottom: 1.5rem;
 }
 
 
@@ -478,13 +481,6 @@ picture img, .gaming-systems img {
 }
 
             /* SEZIONE DIGITAL NEW RELEASES*/
-
-
-.card-container {
-    display: flex;
-align-items: center;
-overflow: scroll;
-}
 
 
 .footer-esrb-logo {
