@@ -453,10 +453,67 @@ img {
 
 .news h2 {
     margin-bottom: 1.5rem;
+    padding-left: 15rem;
+    padding-bottom: 2rem;
+
 }
 
-.main-news, .other-news {
+.main-news{
     display: flex;
+    position: relative;
+    line-height: 22.5px;
+    padding: 0 14rem 0 14rem;
+    margin: 0.5rem;
+}
+
+.main-news-card img {
+    border-radius: 0.3rem;
+    width: 550px;
+    height: 300px;
+}
+
+    
+  
+
+
+.main-news-card p{
+    padding: 1rem 0 1rem 0;
+    font-size: 16px;
+   }
+
+
+.other-news {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 3rem 20rem 0 20rem;
+    font-size: 16px;
+    line-height: 1.4
+}
+
+.other-news-card img {
+    border-radius: 0.3rem;
+    width: 260px;
+    height: 150px;
+
+}
+
+.other-news p {
+padding: 1rem 0 1rem 0;
+}
+
+
+.link {
+     color: var(--red);
+     text-decoration: underline;
+     text-underline-offset: 0.2rem;
+     text-decoration-thickness: 0.1rem;
+
+}
+
+.red-button-news-button {
+    margin: 15rem;
 }
 
 @media (max-width:1023px) {
@@ -471,9 +528,7 @@ img {
     }
 }
 
-.news img {
-    max-width: 18vw;  /* Aggiunto per gestire il responsive, si può eliminare per la stilizzazione definitiva*/
-}
+
 
 
             /* SEZIONE CHARACTERS */
