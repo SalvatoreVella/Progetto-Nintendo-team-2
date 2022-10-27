@@ -224,6 +224,23 @@ a{
     border: 1px solid #ab160d;
 }
               /* CARD SEZIONE FEATURED*/
+
+@keyframes gap-transition-in {
+    0% {
+        gap: 0;
+    }
+    100% {
+            gap: 1rem;
+        }
+    }
+@keyframes gap-transition-out {
+    0% {
+        gap: 1rem;
+    }
+    100% {
+        gap: 0;
+    }
+}
         .featured h2  {
         padding-right: 19rem;
         padding-bottom: 24px;
@@ -242,11 +259,12 @@ a{
             display: flex;
            flex-direction: column;
            justify-content: flex-end;
-           padding-bottom:1rem;  
+           padding-bottom:1rem; 
+           animation: gap-transition-out 0.3s forwards; 
 
         }
         .card-feat:hover{
-           gap:1rem ;  
+           animation: gap-transition-in 0.3s forwards;  
         }
         
         .featured img{
