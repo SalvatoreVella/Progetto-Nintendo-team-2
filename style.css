@@ -408,17 +408,20 @@ picture img, .gaming-systems img {
     max-width: 1145px;
     display: flex;
     flex-direction: column;
-    margin: auto;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .news h2 {
     margin-bottom: 1.5rem;
+    align-self: flex-start;
 }
 
 .main-news, .other-news {
     display: flex;
-    padding: 3rem 0;
+    padding: 4rem 0;
     max-width: 20vw;
+    align-self: flex-start;
 }
 
 @media (max-width:1023px) {

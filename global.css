@@ -68,6 +68,15 @@ hr {
         margin: -.25rem -.5rem -.25rem 1.5rem;
     }
 }
+@keyframes boing-out {
+    0% {
+        padding: 1rem 2rem;
+        margin: -.25rem -.5rem -.25rem 1.5rem;
+    }
+    100% {
+        padding: 0.75rem 1.5rem;
+    }
+}
 
 @keyframes boing-long-button {
     30%{
@@ -98,7 +107,15 @@ hr {
         padding: 10rem 2rem;
         margin: 1.75rem .5rem 1.75rem .5rem;
     }
+}
 
+@keyframes boing-long-out {
+    0% {
+
+    }
+    100% {
+        
+    }
 }
 
 @keyframes boing-wide-button {
@@ -131,6 +148,18 @@ hr {
         padding: 1rem 2rem;
         margin: -.25rem 0;
         width: 98vw;
+    }
+}
+
+@keyframes boing-wide-out {
+    0% {
+        padding: 1rem 2rem;
+        margin: -.25rem 0;
+        width: 98vw;
+    }
+    100% {
+        width: 96vw;
+        margin-left: 0;
     }
 }
 
@@ -179,6 +208,7 @@ hr {
     font-size: 1.125rem;
     white-space: nowrap;
     transition: background-color 0.5s;
+    animation: boing-out 0.4s forwards;
     margin-left: 2rem;
     cursor: pointer;
     font-family: museo;
@@ -209,6 +239,7 @@ hr {
     .red-button {
         width: 96vw;
         margin-left: 0;
+        animation: boing-wide-out 0.4s forwards;
     }
     .red-button:hover {
         animation: boing-wide-button 400ms forwards;
