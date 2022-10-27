@@ -280,3 +280,101 @@ a{
     transform-origin: 50% 50%;
     
 }
+
+
+            /* CARD SEZIONE DIGITAL BEST SELLERS */
+
+.titolo-e-link{
+    display: flex;
+    align-items: center;
+    width: 96vw;
+    margin: 0 auto;
+    margin-top: 3rem;
+    max-width: 1140px;
+}
+
+.titolo-e-link>a{
+    color: red;
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+    text-decoration-thickness: 0.1rem;
+}
+
+.separator{
+    border-right: 1px solid lightgray;
+    padding-right: 1rem;
+}
+
+.card-container{
+    display: flex;
+    align-items: center;
+    width: 96vw;
+    margin: 2rem auto;
+    margin-top: 3rem;
+    max-width: 1140px;
+    gap: 2rem;
+}
+.card-b-sellers{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    border-radius: 0.3rem;
+    width: 17rem;
+    padding-bottom: 0.4rem;
+
+}
+
+.card-b-sellers img{
+    width: 100%;
+    
+}
+
+.space-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 1rem; 
+    padding-left: 1rem; 
+}
+
+.space-title h4{
+padding-bottom: 5rem;
+}
+
+
+.prezzo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.console{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    width: auto;
+    font-size: 0.85rem;
+    justify-content: space-between;
+
+}
+
+.console p{
+    height: 1rem;
+    font-family: museo100;
+    border-left: 2px solid var(--red);
+    padding-left: 0.4rem;
+}
+
+.console svg{
+font-weight: bold;
+color: var(--red);
+}
+
+.demo{
+    background-color: blue;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white
+}
