@@ -512,10 +512,6 @@ padding: 1rem 0 1rem 0;
 
 }
 
-.red-button-news-button {
-    margin: 15rem;
-}
-
 @media (max-width:1023px) {
     .news {
         padding-bottom: 0;
