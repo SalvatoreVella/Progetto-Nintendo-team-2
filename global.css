@@ -484,6 +484,8 @@ color: var(--red);
 
 .card-b-sellers:hover{
     animation: gap-transition-in 0.3s forwards;
+
+
 }
 
 .animazione p{
