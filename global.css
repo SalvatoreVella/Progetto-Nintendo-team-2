@@ -234,16 +234,17 @@ a{
            border-radius: 0.25rem;
            width: 100%;
            
+           
         }
         .card-feat{
-            border: 1px solid red;
+            border-radius: 0.25rem;
             box-sizing: border-box;
             border-radius:0.2rem ;
             display: flex;
            flex-direction: column;
            justify-content: flex-end;
-           padding-bottom:1rem;  
-
+           padding-bottom:1rem;
+             
         }
         .card-feat:hover{
            gap:1rem ;  
@@ -271,6 +272,10 @@ a{
            padding: 0 16px;
            box-sizing: border-box;
            height: 100.8px;
+        }
+        .footer{
+            color:#484848;
+            border-left: #ab160d solid 0.20rem;
         }
         
        /* CARD SEZIONE CHARACTERS */
