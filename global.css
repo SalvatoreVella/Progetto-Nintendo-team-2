@@ -163,38 +163,6 @@ hr {
     }
 }
 
-@keyframes boing-wide-button2 {
-    30%{
-        padding-top: calc(1rem + 5px);
-        padding-bottom: calc(1rem + 5px);
-        margin-top: 1.44rem;
-        margin-bottom: 1.44rem;
-    }
-    40% {
-        padding-left: calc(2rem + 5px);
-        padding-right: calc(2rem + 5px);
-        margin-left: -1vw;
-        margin-right: -5px;
-        width: 98vw;
-    }
-    60% {
-        padding-top: calc(1rem - 3px);
-        padding-bottom: calc(1rem - 3px);
-        margin-top: calc(1.44rem + 8px);
-        margin-bottom: calc(1.44rem + 8px);
-    }
-    85% {
-        padding-top: calc(1rem + 2px);
-        padding-bottom: calc(1rem + 2px);
-        margin-top: calc(1.44rem  + 3px);
-        margin-bottom: calc(1.44rem + 3px);
-    }
-    100%{
-        padding: 1rem 2rem;
-        margin: 1.75rem 0 1.75rem -1vw;
-        width: 98vw;
-    }
-}
 
             /* BOTTONI */
 
@@ -245,6 +213,7 @@ hr {
         animation: boing-wide-button 400ms forwards;
     }
 }
+
 
             /* CARD SEZIONE CHARACTERS */
 

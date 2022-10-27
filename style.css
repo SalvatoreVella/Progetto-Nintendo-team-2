@@ -147,7 +147,6 @@ h3 a, h3, .main.button {
     box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.25);
     justify-content: center;
     align-items: flex-end;
-    z-index: 150;
     position: sticky;
     top: 90.5vh;
 }
@@ -163,6 +162,10 @@ h3 a, h3, .main.button {
     cursor: pointer;
     border-radius: 1rem;
 }
+/* 
+.mob-nav-button:nth-of-type(3) {
+    width: 5vw;
+} */
 
 .mob-nav-button-red {
     background-color: var(--red);
@@ -187,10 +190,10 @@ h3 a, h3, .main.button {
     main {
         margin-top: -3.7rem;
     }
-
 }
 
             /* SEZIONE MAIN */
+            
 
 main {
     margin-bottom: 1.17rem;
@@ -308,6 +311,10 @@ h2 {
     h2 {
         font-size: 1.3rem;
     }
+
+            /* SEZIONI ONLINE STORE E GAMING SYSTEMS*/
+
+
 }
 
 
