@@ -261,7 +261,7 @@ hr {
     justify-content: flex-end;
     height: 17.5rem;
 }
-.card-feat {
+.card-feat a {
     border-radius: 0.2rem;
     box-sizing: border-box;
     border: 1px solid #b4b4b482;
@@ -273,7 +273,7 @@ hr {
     animation: gap-transition-out 0.3s forwards;
 }
 
-.card-feat:hover {
+.card-feat a:hover {
     animation: gap-transition-in 0.3s forwards;
 }
 
@@ -307,7 +307,7 @@ hr {
     .fake-container {
         height: 14.4rem;
     }
-    .card-feat {
+    .card-feat a {
         width: 12.875rem;
     }
     .card-feat h4 {
@@ -378,10 +378,17 @@ hr {
 }
 
 
-            /* CARD SEZIONE DIGITAL BEST SELLERS */
+            /* CARD SEZIONI DIGITAL BEST SELLERS E DIGITAL NEW RELEASES*/
 
 
-.card-b-sellers{
+.fake-container-digital {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 23.96rem;
+}
+
+.card-b-sellers a {
     display: flex;
     flex-direction: column;
     border: 1px solid #b4b4b482;
@@ -443,7 +450,7 @@ hr {
     padding-right: 0.25rem;
 }
 
-.card-b-sellers:hover{
+.card-b-sellers a:hover{
     animation: gap-transition-in 0.3s forwards;
 }
 
@@ -455,8 +462,26 @@ hr {
     font-size: 1rem;
 }
 
-@media(max-width:428px) {
-    .characters-item h3 {
-        font-size: 1.1rem;
+@media (max-width:428px) {
+    .fake-container-digital {
+        height: 17.125rem;
+    }
+    .card-b-sellers img {
+        padding-bottom: .7rem;
+    }
+    .space-title {
+        height: 7rem;
+    }
+    .card-b-sellers a {
+        width: 12.875rem;
+    }
+    .card-b-sellers h4 {
+        font-size: .88rem;
+    }
+    .prezzo p {
+        font-size: 0.85rem;
+    }
+    .console p {
+        font-size: .77rem;
     }
 }

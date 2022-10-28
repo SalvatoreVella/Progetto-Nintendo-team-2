@@ -494,6 +494,7 @@ picture img, .gaming-systems img {
     padding-bottom: .5rem;
     width: 96vw;
     margin: auto;
+    max-width: 1145px;
 }
 
 .digital-new-releases {
@@ -504,8 +505,6 @@ picture img, .gaming-systems img {
     display: flex;
     align-items: center;
     width: 96vw;
-    margin: 0 auto;
-    max-width: 1145px;
 }
 
 .titolo-e-link > a {
@@ -532,12 +531,30 @@ picture img, .gaming-systems img {
     padding: 0 2rem;
 }
 
-.fake-container-digital {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 23.96rem;
+@media (max-width:768px) {
+    .digital-best-sellers, .digital-new-releases {
+        padding-top: 2rem;
+    }
 }
+
+@media (max-width:428px) {
+    .titolo-e-link {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .8rem;
+    }
+    .titolo-e-link > a {
+        font-size: .9rem;
+        padding: 0;
+    }
+    .separator {
+        border: none;
+    }
+    .card-container {
+        height: 21.69rem;
+    }
+}
+
 .footer-esrb-logo {
 max-width: 300px;   /* Aggiunto per gestire il responsive, si può eliminare per la stilizzazione definitiva*/
 }
