@@ -458,11 +458,11 @@ img {
   position: relative;
   width: 96vw;
   max-width: 1145px;
+
   display: flex;
   flex-direction: column;
   margin: 0 auto;
 }
-
 
 .main-news {
   display: flex;
@@ -580,6 +580,7 @@ img {
 .other-news-card {
   max-width: 16.63rem;
   width: 20vw;
+
 }
 
 .link {
@@ -651,3 +652,4 @@ img {
 .footer-esrb-logo {
   max-width: 300px; /* Aggiunto per gestire il responsive, si può eliminare per la stilizzazione definitiva*/
 }
+
