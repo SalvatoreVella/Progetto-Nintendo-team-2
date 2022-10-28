@@ -128,6 +128,7 @@ h3 a, h3, .main.button {
     height: 2.88rem;
     background-color: var(--red);
     width: 100vw;
+    z-index: 1;
 }
 
 .nav-mobile svg {
@@ -152,7 +153,7 @@ h3 a, h3, .main.button {
 }
 
 .mob-nav-button {
-    color: #484848;
+    color: var(--black);
     padding-top: 0.86rem;
     padding-bottom: 0.81rem;
     width: 17.1vw;
@@ -162,10 +163,6 @@ h3 a, h3, .main.button {
     cursor: pointer;
     border-radius: 1rem;
 }
-/* 
-.mob-nav-button:nth-of-type(3) {
-    width: 5vw;
-} */
 
 .mob-nav-button-red {
     background-color: var(--red);
@@ -318,34 +315,31 @@ h2 {
 
 
 .featured {
-    padding: 3.2rem 0 3rem 0;
+    padding: 3.2rem 0 2.5rem 0;
 }
 
 .featured h2 {
     width: 96vw;
     max-width: 1145px;
     margin: auto;
-    padding-bottom: 2.75rem;
 }
 
 .flex-wrap-featured {
     display: flex;
     overflow: scroll;
     gap: 2rem;
-    align-items: flex-end;
-    height: 18rem;
-    padding: 0 2rem 1.2rem 2rem;
+    align-items: center;
+    height: 22.2rem;
+    padding: 0 2rem;
 }
 
 @media (max-width:768px) {
     .featured {
-        padding: 1.5rem 0 2.15rem 0;
-    }
-    .featured h2 {
-        padding-bottom: 2rem;
+        padding: 1.5rem 0 1.5rem 0;
     }
     .flex-wrap-featured {
-        padding: 0 1rem 1.2rem 1rem;
+        height: 17.9rem;
+        padding: 0 1rem;
     }
 }
 
@@ -492,15 +486,74 @@ picture img, .gaming-systems img {
     }
 }
 
-            /* SEZIONE DIGITAL NEW RELEASES*/
+            /* SEZIONI DIGITAL NEW RELEASES E DIGITAL BEST SELLERS */
 
 
-.card-container {
-    display: flex;
-align-items: center;
-overflow: scroll;
+.digital-best-sellers, .digital-new-releases {
+    padding-top: 3rem;
+    padding-bottom: .5rem;
+    width: 96vw;
+    margin: auto;
+    max-width: 1145px;
 }
 
+.digital-new-releases {
+    padding-top: 1.8rem;
+}
+
+.titolo-e-link {
+    display: flex;
+    align-items: center;
+    width: 96vw;
+}
+
+.titolo-e-link > a {
+    color: var(--red);
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+    padding-left: 1rem;
+}
+
+.separator {
+    border-right: 1px solid lightgray;
+    padding-right: 1rem;
+}
+
+.card-container {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    max-width: 1145px;
+    height: 26.875rem;
+    margin: auto;
+    gap: 2.4rem;
+    overflow: scroll;
+    padding: 0 2rem;
+}
+
+@media (max-width:768px) {
+    .digital-best-sellers, .digital-new-releases {
+        padding-top: 2rem;
+    }
+}
+
+@media (max-width:428px) {
+    .titolo-e-link {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .8rem;
+    }
+    .titolo-e-link > a {
+        font-size: .9rem;
+        padding: 0;
+    }
+    .separator {
+        border: none;
+    }
+    .card-container {
+        height: 21.69rem;
+    }
+}
 
 .footer-esrb-logo {
 max-width: 300px;   /* Aggiunto per gestire il responsive, si può eliminare per la stilizzazione definitiva*/
