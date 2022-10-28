@@ -2,14 +2,21 @@
     font-family: museo;
     src: url(assets/fonts/MuseoSans500/MuseoSans_500.otf);
 }
+
 @font-face {
     font-family: museo100;
     src: url(assets/fonts/MuseoSans100/MuseoSans-100.otf);
 }
 
+:root {
+    --red: rgb(230, 33, 18);
+    --red-button-hover: #ab160d;
+    --black: #484848;
+}
+
 html {
-    font-family: 'museo', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
-    color: #484848;
+    font-family: 'museo', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--black);
 }
 
 * {
@@ -23,209 +30,401 @@ html {
     --red: rgb(230, 33, 18);
 }
 
-a{
-    color: #484848;
+a {
+    color: var(--black);
 }
 
-
-            /* BOTTONI */
-
-
-.red-button{
-    color: white;
-    background-color: var(--red);
-    border: 1px solid var(--red);
-    border-radius: 0.25rem;
-    padding: 0.75rem 1.5rem;
-    font-size:1.125rem;
-    white-space: nowrap;
-    transition: background-color 0.5s;
-    margin: 2rem 1rem 2rem 1rem;
-    cursor: pointer;
-    position: absolute;
-    top: -1rem;
-    font-family: museo;
-}
-.store-button {
-    top: -1.75rem;
-    right: -1rem;
+hr {
+    border: 0.5px solid #b4b4b482;
 }
 
-.gs-button {
-    top: -2.5rem;
+.none {
+    display: none;
 }
 
-.news-button {
-    left: 0;
-    top: unset;
-    bottom: 1rem;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    align-items: center;
-}
-
+/* ANIMAZIONI BOTTONI */
 
 @keyframes boing {
-    30%{
+    30% {
         padding-top: calc(1rem + 5px);
         padding-bottom: calc(1rem + 5px);
-        margin-top: 1.44rem;
-        margin-bottom: 1.44rem;
+        margin-top: -.56rem;
+        margin-bottom: -.56rem;
     }
+
     40% {
         padding-left: 2rem;
         padding-right: 2rem;
-        margin-left: .5rem;
-        margin-right: .5rem;
+        margin-left: 1.5rem;
+        margin-right: -.5rem;
     }
+
     60% {
         padding-top: calc(1rem - 3px);
         padding-bottom: calc(1rem - 3px);
-        margin-top: calc(1.44rem + 8px);
-        margin-bottom: calc(1.44rem + 8px);
+        margin-top: calc(-.56rem + 8px);
+        margin-bottom: calc(-.56rem + 8px);
     }
+
     85% {
         padding-top: calc(1rem + 2px);
         padding-bottom: calc(1rem + 2px);
-        margin-top: calc(1.44rem  + 3px);
-        margin-bottom: calc(1.44rem + 3px);
+        margin-top: calc(-.56rem + 3px);
+        margin-bottom: calc(-.56rem + 3px);
     }
-    100%{
+
+    100% {
         padding: 1rem 2rem;
-        margin: 1.75rem .5rem 1.75rem .5rem;
+        margin: -.25rem -.5rem -.25rem 1.5rem;
     }
 }
 
-.red-button:hover {
-    animation: boing 400ms forwards;
-    background-color: #ab160d;
-    border: 1px solid #ab160d;
-    max-width: 100vw;
+@keyframes boing-out {
+    0% {
+        padding: 1rem 2rem;
+        margin: -.25rem -.5rem -.25rem 1.5rem;
+    }
+
+    100% {
+        padding: 0.75rem 1.5rem;
+    }
 }
 
-.see-full-list {
-    color: white;
-    background-color: var(--red);
-    border: 1px solid var(--red);
-    border-radius: 0.25rem;
-    padding: 10rem 1.5rem;
-    font-size:1.125rem;
-    white-space: nowrap;
-    transition: all 0.5s;
-    margin: 2rem 1rem 2rem 1rem;
-    cursor: pointer;
-    top: -1rem;
-    
+@keyframes boing-news-button {
+    30% {
+        padding-top: calc(1rem + 5px);
+        padding-bottom: calc(1rem + 5px);
+        margin-top: -.56rem;
+        margin-bottom: -.56rem;
+    }
+
+    40% {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-left: -.5rem;
+        margin-right: -.5rem;
+    }
+
+    60% {
+        padding-top: calc(1rem - 3px);
+        padding-bottom: calc(1rem - 3px);
+        margin-top: calc(-.56rem + 8px);
+        margin-bottom: calc(-.56rem + 8px);
+    }
+
+    85% {
+        padding-top: calc(1rem + 2px);
+        padding-bottom: calc(1rem + 2px);
+        margin-top: calc(-.56rem + 3px);
+        margin-bottom: calc(-.56rem + 3px);
+    }
+
+    100% {
+        padding: 1rem 2rem;
+        margin: -.25rem -.5rem -.25rem -.5rem;
+    }
 }
 
-@keyframes boing2 {
-    30%{
+@keyframes boing-out-news {
+    0% {
+        padding: 1rem 2rem;
+        margin: -.25rem -.5rem -.25rem -.5rem;
+    }
+
+    100% {
+        padding: 0.75rem 1.5rem;
+    }
+}
+
+@keyframes boing-long-button {
+    30% {
         padding-top: calc(10rem + 5px);
         padding-bottom: calc(10rem + 5px);
         margin-top: 1.44rem;
         margin-bottom: 1.44rem;
     }
+
     40% {
         padding-left: 2rem;
         padding-right: 2rem;
         margin-left: .5rem;
         margin-right: .5rem;
     }
+
     60% {
         padding-top: calc(10rem - 3px);
         padding-bottom: calc(10rem - 3px);
         margin-top: calc(1.44rem + 8px);
         margin-bottom: calc(1.44rem + 8px);
     }
+
     85% {
         padding-top: calc(10rem + 2px);
         padding-bottom: calc(10rem + 2px);
-        margin-top: calc(1.44rem  + 3px);
+        margin-top: calc(1.44rem + 3px);
         margin-bottom: calc(1.44rem + 3px);
     }
-    100%{
+
+    100% {
         padding: 10rem 2rem;
         margin: 1.75rem .5rem 1.75rem .5rem;
     }
-
 }
 
-@keyframes boing3 {
-    30%{
+@keyframes boing-long-out {
+    0% {}
+
+    100% {}
+}
+
+@keyframes boing-wide-button {
+    30% {
         padding-top: calc(1rem + 5px);
         padding-bottom: calc(1rem + 5px);
-        margin-top: 1.44rem;
-        margin-bottom: 1.44rem;
+        margin-top: -.56rem;
+        margin-bottom: -.56rem;
     }
+
     40% {
         padding-left: calc(2rem + 5px);
         padding-right: calc(2rem + 5px);
         margin-left: -.3rem;
-        margin-right: -5px;
+        margin-right: -.3rem;
         width: 98vw;
     }
+
     60% {
         padding-top: calc(1rem - 3px);
         padding-bottom: calc(1rem - 3px);
-        margin-top: calc(1.44rem + 8px);
-        margin-bottom: calc(1.44rem + 8px);
+        margin-top: calc(-.56rem + 8px);
+        margin-bottom: calc(-.56rem + 8px);
     }
+
     85% {
         padding-top: calc(1rem + 2px);
         padding-bottom: calc(1rem + 2px);
-        margin-top: calc(1.44rem  + 3px);
-        margin-bottom: calc(1.44rem + 3px);
+        margin-top: calc(-.56rem + 3px);
+        margin-bottom: calc(-.56rem + 3px);
     }
-    100%{
+
+    100% {
         padding: 1rem 2rem;
-        margin: 1.75rem 0 1.75rem 0;
+        margin: -.25rem 0;
         width: 98vw;
     }
 }
 
-@keyframes boing4 {
-    30%{
+@keyframes boing-wide-out {
+    0% {
+        padding: 1rem 2rem;
+        margin: -.25rem 0;
+        width: 98vw;
+    }
+    100% {
+        width: 96vw;
+        margin-left: 0;
+    }
+}
+
+@keyframes boing-wide-news {
+    30% {
         padding-top: calc(1rem + 5px);
         padding-bottom: calc(1rem + 5px);
-        margin-top: 1.44rem;
-        margin-bottom: 1.44rem;
+        margin-top: -.56rem;
+        margin-bottom: -.56rem;
     }
+
     40% {
         padding-left: calc(2rem + 5px);
         padding-right: calc(2rem + 5px);
         margin-left: -1vw;
-        margin-right: -5px;
+        margin-right: -1vw;
         width: 98vw;
     }
+
     60% {
         padding-top: calc(1rem - 3px);
         padding-bottom: calc(1rem - 3px);
-        margin-top: calc(1.44rem + 8px);
-        margin-bottom: calc(1.44rem + 8px);
+        margin-top: calc(-.56rem + 8px);
+        margin-bottom: calc(-.56rem + 8px);
     }
+
     85% {
         padding-top: calc(1rem + 2px);
         padding-bottom: calc(1rem + 2px);
-        margin-top: calc(1.44rem  + 3px);
-        margin-bottom: calc(1.44rem + 3px);
+        margin-top: calc(-.56rem + 3px);
+        margin-bottom: calc(-.56rem + 3px);
     }
-    100%{
+
+    100% {
         padding: 1rem 2rem;
-        margin: 1.75rem 0 1.75rem -1vw;
+        margin: -.25rem -1vw;
         width: 98vw;
     }
 }
 
+@keyframes boing-news-wide-out {
+    0% {
+        padding: 1rem 2rem;
+        margin: -.25rem -1vw;
+        width: 98vw;
+    }
+    100% {
+        width: 96vw;
+        margin-left: 0;
+    }
+}
 
-.see-full-list:hover {
-    animation: boing2 400ms forwards;
-    background-color: #ab160d;
-    border: 1px solid #ab160d;
+/* ANIMAZIONI CARD */
+
+
+@keyframes gap-transition-in {
+    0% {
+        gap: 0;
+    }
+    100% {
+        gap: 1rem;
+    }
+}
+
+@keyframes gap-transition-out {
+    0% {
+        gap: 1rem;
+    }
+    100% {
+        gap: 0;
+    }
 }
 
 
-            /* CARD SEZIONE CHARACTERS */
+/* BOTTONI */
+
+
+.red-button {
+    color: white;
+    background-color: var(--red);
+    border: 1px solid var(--red);
+    border-radius: 0.25rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.125rem;
+    white-space: nowrap;
+    transition: background-color 0.5s;
+    animation: boing-out 0.4s forwards;
+    margin-left: 2rem;
+    cursor: pointer;
+    font-family: museo;
+}
+
+.red-button:hover {
+    animation: boing 400ms forwards;
+    background-color: var(--red-button-hover);
+    border: 1px solid var(--red-button-hover);
+}
+
+.news-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 0;
+    animation: boing-out-news 0.4s forwards;
+}
+
+.news-button:hover {
+    animation: boing-news-button 0.4s forwards;
+}
+
+.see-full-list {
+    padding: 10rem 1.5rem;
+}
+
+.see-full-list:hover {
+    animation: boing-long-button 400ms forwards;
+}
+
+@media (max-width:1023px) {
+    .red-button {
+        width: 96vw;
+        margin-left: 0;
+        animation: boing-wide-out 0.4s forwards;
+    }
+    .red-button:hover {
+        animation: boing-wide-button 400ms forwards;
+    }
+    .news-button {
+        animation: boing-news-wide-out 0.4s forwards;
+    }
+    .news-button:hover {
+        animation: boing-wide-news 0.4s forwards;
+    }
+}
+
+/* CARD SEZIONE FEATURED*/
+
+.fake-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 17.5rem;
+}
+.card-feat a {
+    border-radius: 0.2rem;
+    box-sizing: border-box;
+    border: 1px solid #b4b4b482;
+    display: flex;
+    width: 16.4rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 1.3rem;
+    animation: gap-transition-out 0.3s forwards;
+}
+
+.card-feat a:hover {
+    animation: gap-transition-in 0.3s forwards;
+}
+
+.card-feat img {
+    width: 100%;
+    padding-bottom: 1rem;
+    border-radius: 0.2rem 0.2rem 0 0;
+}
+
+.card-feat p {
+    font-family: museo100;
+    padding-left: .4rem;
+    font-size: .88rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    height: 4.75rem;
+}
+
+.card-footer {
+    color: var(--black);
+    border-left: var(--red) solid 2px;
+}
+
+@media (max-width:500px) {
+    .fake-container {
+        height: 14.4rem;
+    }
+    .card-feat a {
+        width: 12.875rem;
+    }
+    .card-feat h4 {
+        font-size: .88rem;
+    }
+    .card-feat p {
+        font-size: .75rem;
+    }
+}
+
+/* CARD SEZIONE CHARACTERS */
 
 
 .characters-item .img-container {
@@ -238,8 +437,8 @@ a{
 }
 
 .img-container {
-    overflow: hidden;
     margin-bottom: 0.55rem;
+    aspect-ratio: 1 / 1;
 }
 
 .characters-item img {
@@ -247,6 +446,10 @@ a{
     border-radius: 0.25rem;
     transition: all 0.3s;
     aspect-ratio: 1 / 1;
+}
+
+.characters-item h3 {
+    font-size: 1.31rem;
 }
 
 .characters-item:first-of-type img {
@@ -278,5 +481,114 @@ a{
     background-size: 87.5%;
     transform: scale(1.15);
     transform-origin: 50% 50%;
+}
+
+
+            /* CARD SEZIONI DIGITAL BEST SELLERS E DIGITAL NEW RELEASES*/
+
+
+.fake-container-digital {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 23.96rem;
+}
+
+.card-b-sellers a {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #b4b4b482;
+    border-radius: 0.3rem;
+    width: 16.25rem;
+    animation: gap-transition-out 0.3s forwards;
+    justify-content: flex-end;
+
+}
+
+.demo, .new{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+.demo{
+    background-color: #0643fa;
+}
+
+.new{
+    background-color: var(--red); 
+}
+
+.card-b-sellers img{
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.space-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 1rem;
+    height: 10.95rem;
+}
+
+.prezzo p {
+    color: #484848;
+}
+
+.console{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: .4rem;
+}
+
+.console p {
+    height: 1rem;
+    font-family: museo100;
+    border-left: 2px solid var(--red);
+    padding-left: 0.4rem;
+    font-size: 0.88rem;
+}
+
+.console svg{
+    padding-right: 0.25rem;
+}
+
+.card-b-sellers a:hover{
+    animation: gap-transition-in 0.3s forwards;
+}
+
+.animazione p{
+    height: 1.5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+@media (max-width:428px) {
     
+    .fake-container-digital {
+        height: 17.125rem;
+    }
+    .card-b-sellers img {
+        padding-bottom: .7rem;
+    }
+    .space-title {
+        height: 7rem;
+    }
+    .card-b-sellers a {
+        width: 12.875rem;
+    }
+    .card-b-sellers h4 {
+        font-size: .88rem;
+    }
+    .prezzo p {
+        font-size: 0.85rem;
+    }
+    .console p {
+        font-size: .77rem;
+    }
 }
