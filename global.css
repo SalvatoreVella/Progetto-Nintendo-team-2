@@ -90,6 +90,52 @@ hr {
     }
 }
 
+@keyframes boing-news-button {
+    30% {
+        padding-top: calc(1rem + 5px);
+        padding-bottom: calc(1rem + 5px);
+        margin-top: -.56rem;
+        margin-bottom: -.56rem;
+    }
+
+    40% {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-left: -.5rem;
+        margin-right: -.5rem;
+    }
+
+    60% {
+        padding-top: calc(1rem - 3px);
+        padding-bottom: calc(1rem - 3px);
+        margin-top: calc(-.56rem + 8px);
+        margin-bottom: calc(-.56rem + 8px);
+    }
+
+    85% {
+        padding-top: calc(1rem + 2px);
+        padding-bottom: calc(1rem + 2px);
+        margin-top: calc(-.56rem + 3px);
+        margin-bottom: calc(-.56rem + 3px);
+    }
+
+    100% {
+        padding: 1rem 2rem;
+        margin: -.25rem -.5rem -.25rem -.5rem;
+    }
+}
+
+@keyframes boing-out-news {
+    0% {
+        padding: 1rem 2rem;
+        margin: -.25rem -.5rem -.25rem -.5rem;
+    }
+
+    100% {
+        padding: 0.75rem 1.5rem;
+    }
+}
+
 @keyframes boing-long-button {
     30% {
         padding-top: calc(10rem + 5px);
@@ -180,6 +226,55 @@ hr {
     }
 }
 
+@keyframes boing-wide-news {
+    30% {
+        padding-top: calc(1rem + 5px);
+        padding-bottom: calc(1rem + 5px);
+        margin-top: -.56rem;
+        margin-bottom: -.56rem;
+    }
+
+    40% {
+        padding-left: calc(2rem + 5px);
+        padding-right: calc(2rem + 5px);
+        margin-left: -1vw;
+        margin-right: -1vw;
+        width: 98vw;
+    }
+
+    60% {
+        padding-top: calc(1rem - 3px);
+        padding-bottom: calc(1rem - 3px);
+        margin-top: calc(-.56rem + 8px);
+        margin-bottom: calc(-.56rem + 8px);
+    }
+
+    85% {
+        padding-top: calc(1rem + 2px);
+        padding-bottom: calc(1rem + 2px);
+        margin-top: calc(-.56rem + 3px);
+        margin-bottom: calc(-.56rem + 3px);
+    }
+
+    100% {
+        padding: 1rem 2rem;
+        margin: -.25rem -1vw;
+        width: 98vw;
+    }
+}
+
+@keyframes boing-news-wide-out {
+    0% {
+        padding: 1rem 2rem;
+        margin: -.25rem -1vw;
+        width: 98vw;
+    }
+    100% {
+        width: 96vw;
+        margin-left: 0;
+    }
+}
+
 /* ANIMAZIONI CARD */
 
 
@@ -220,21 +315,27 @@ hr {
     font-family: museo;
 }
 
+.red-button:hover {
+    animation: boing 400ms forwards;
+    background-color: var(--red-button-hover);
+    border: 1px solid var(--red-button-hover);
+}
+
 .news-button {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    margin-left: 0;
+    animation: boing-out-news 0.4s forwards;
+}
+
+.news-button:hover {
+    animation: boing-news-button 0.4s forwards;
 }
 
 .see-full-list {
     padding: 10rem 1.5rem;
-}
-
-.red-button:hover {
-    animation: boing 400ms forwards;
-    background-color: var(--red-button-hover);
-    border: 1px solid var(--red-button-hover);
 }
 
 .see-full-list:hover {
@@ -247,9 +348,14 @@ hr {
         margin-left: 0;
         animation: boing-wide-out 0.4s forwards;
     }
-
     .red-button:hover {
         animation: boing-wide-button 400ms forwards;
+    }
+    .news-button {
+        animation: boing-news-wide-out 0.4s forwards;
+    }
+    .news-button:hover {
+        animation: boing-wide-news 0.4s forwards;
     }
 }
 
@@ -463,6 +569,7 @@ hr {
 }
 
 @media (max-width:428px) {
+    
     .fake-container-digital {
         height: 17.125rem;
     }
