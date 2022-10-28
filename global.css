@@ -255,7 +255,12 @@ hr {
 
 /* CARD SEZIONE FEATURED*/
 
-
+.fake-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 17.5rem;
+}
 .card-feat {
     border-radius: 0.2rem;
     box-sizing: border-box;
@@ -299,6 +304,9 @@ hr {
 }
 
 @media (max-width:500px) {
+    .fake-container {
+        height: 14.4rem;
+    }
     .card-feat {
         width: 12.875rem;
     }

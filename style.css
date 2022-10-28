@@ -315,34 +315,31 @@ h2 {
 
 
 .featured {
-    padding: 3.2rem 0 3rem 0;
+    padding: 3.2rem 0 2.5rem 0;
 }
 
 .featured h2 {
     width: 96vw;
     max-width: 1145px;
     margin: auto;
-    padding-bottom: 2.75rem;
 }
 
 .flex-wrap-featured {
     display: flex;
     overflow: scroll;
     gap: 2rem;
-    align-items: flex-end;
-    height: 18rem;
-    padding: 0 2rem 1.2rem 2rem;
+    align-items: center;
+    height: 22.2rem;
+    padding: 0 2rem;
 }
 
 @media (max-width:768px) {
     .featured {
-        padding: 1.5rem 0 2.15rem 0;
-    }
-    .featured h2 {
-        padding-bottom: 2rem;
+        padding: 1.5rem 0 1.5rem 0;
     }
     .flex-wrap-featured {
-        padding: 0 1rem 1.2rem 1rem;
+        height: 17.9rem;
+        padding: 0 1rem;
     }
 }
 
@@ -499,13 +496,16 @@ picture img, .gaming-systems img {
     margin: auto;
 }
 
+.digital-new-releases {
+    padding-top: 1.8rem;
+}
+
 .titolo-e-link {
     display: flex;
     align-items: center;
     width: 96vw;
     margin: 0 auto;
     max-width: 1145px;
-    padding-bottom: 1.4rem;
 }
 
 .titolo-e-link > a {
@@ -521,16 +521,23 @@ picture img, .gaming-systems img {
 }
 
 .card-container {
+    box-sizing: border-box;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     max-width: 1145px;
-    height: 24rem;
+    height: 26.875rem;
     margin: auto;
     gap: 2.4rem;
     overflow: scroll;
     padding: 0 2rem;
 }
 
+.fake-container-digital {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 23.96rem;
+}
 .footer-esrb-logo {
 max-width: 300px;   /* Aggiunto per gestire il responsive, si può eliminare per la stilizzazione definitiva*/
 }
