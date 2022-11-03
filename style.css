@@ -824,7 +824,8 @@ picture img,
 
 
 .red {
-    background-color: var(--red)
+    background-color: var(--red);
+    margin-top: 6.5rem;
 }
 
 .red-footer {
@@ -856,11 +857,14 @@ picture img,
     display: flex;
     justify-content: space-around;
     gap: 60px;
-    padding-right: 1.5rem;
+    padding-right: 1rem;
 
 }
 
 @media(max-width: 768px) {
+    .red {
+        margin-top: 4.5rem;
+    }
     .red-footer {
         flex-direction: column;
         height: 11.4rem;
@@ -871,13 +875,17 @@ picture img,
     .Big-nintendo-icon,
     .footer-icons {
         padding: 0;
-
     }
 
     .footer-icons {
         gap: 2rem;
     }
+}
 
+@media (max-width:428px) {
+    .red {
+        margin-top: 3.2rem;
+    }
 }
 
 
