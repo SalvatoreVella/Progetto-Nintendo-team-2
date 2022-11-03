@@ -709,3 +709,99 @@ img {
  }
   
 }
+
+
+/* SEZIONE FOOTER 2 */
+
+.white-footer{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 2rem 0;
+  max-width: 1470px;
+  margin: auto;
+
+}
+
+.footer-esrb-logo{
+  height: 84.8px;
+  display: flex;
+  justify-content: flex-end;
+  width: 96vw;
+  max-width: 1470px;
+  margin: auto;
+  padding-bottom: 3.5rem;
+}
+
+.sub-grid{
+  display: grid;
+  grid-column: span 2;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1.7fr;
+}
+
+.white-footer a{
+  color: var(--red);
+  text-transform: capitalize;
+
+}
+
+.footer-links-section h4:hover{
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+  text-decoration-thickness: 1.5px;
+}
+
+.white-footer a:hover{
+text-decoration: underline;
+text-underline-offset: 0.25rem;
+text-decoration-thickness: 1.5px;
+color: #ab160d;
+}
+
+.footer-links-section{
+  margin-top: 1rem;
+  border-left: 1px solid lightgray;
+  padding-left: 1.25rem;
+
+}
+
+.footer-links-section h4{
+  padding-bottom: 1.75rem;
+}
+
+.footer-links-section li{
+  padding-bottom: 1rem;
+}
+
+.border-none{
+  border: none;
+}
+
+.single-margin{
+  margin-top: 2rem;
+}
+
+.black-footer-section{
+  background-color: #242424;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 6.5rem;
+}
+
+.black-footer-section ul{
+display: flex;
+gap: 1rem;
+
+}
+
+.black-footer-section a{
+color: white;
+}
+
+.change-region{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
