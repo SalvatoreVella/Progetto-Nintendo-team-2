@@ -137,44 +137,44 @@ hr {
 }
 
 @keyframes boing-long-button {
-    30% {
-        padding-top: calc(10rem + 5px);
-        padding-bottom: calc(10rem + 5px);
-        margin-top: 1.44rem;
-        margin-bottom: 1.44rem;
+    20% {
+        padding-top: calc(11.2rem + 5px);
+        padding-bottom: calc(11.2rem + 5px);
+    }
+    
+    50% {
+        padding-top: calc(11.2rem + 3px);
+        padding-bottom: calc(11.2rem + 3px);
     }
 
-    40% {
-        padding-left: 2rem;
-        padding-right: 2rem;
-        margin-left: .5rem;
-        margin-right: .5rem;
+    70% {
+        padding-left: calc(1.5rem + 5px);
+        padding-right: calc(1.5rem + 5px);
+        margin-left: -5px;
+        margin-right: -5px;
     }
-
-    60% {
-        padding-top: calc(10rem - 3px);
-        padding-bottom: calc(10rem - 3px);
-        margin-top: calc(1.44rem + 8px);
-        margin-bottom: calc(1.44rem + 8px);
-    }
-
+    
     85% {
-        padding-top: calc(10rem + 2px);
-        padding-bottom: calc(10rem + 2px);
-        margin-top: calc(1.44rem + 3px);
-        margin-bottom: calc(1.44rem + 3px);
+        padding-top: calc(11.2rem + 6px);
+        padding-bottom: calc(11.2rem + 6px);
     }
 
     100% {
-        padding: 10rem 2rem;
-        margin: 1.75rem .5rem 1.75rem .5rem;
+        padding: calc(11.2rem + 5px) calc(1.5rem + 5px);
+        margin: 0 -5px 0 -5px;
     }
 }
 
 @keyframes boing-long-out {
-    0% {}
+    0% { 
+        padding: calc(11.2rem + 5px) calc(1.5rem + 5px);
+        margin: 0 -5px 0 -5px;
+    }
 
-    100% {}
+    100% {
+        padding: 11.2rem 1.5rem;
+        margin: 0;
+    }
 }
 
 @keyframes boing-wide-button {
@@ -275,6 +275,48 @@ hr {
     }
 }
 
+@keyframes boing-long-responsive {
+    20% {
+        padding-top: calc(9rem + 5px);
+        padding-bottom: calc(9rem + 5px);
+    }
+    
+    50% {
+        padding-top: calc(9rem + 3px);
+        padding-bottom: calc(9rem + 3px);
+    }
+
+    70% {
+        padding-left: calc(2.17rem + 5px);
+        padding-right: calc(2.17rem + 5px);
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    
+    85% {
+        padding-top: calc(9rem + 6px);
+        padding-bottom: calc(9rem + 6px);
+    }
+
+    100% {
+        padding: calc(9rem + 5px) calc(2.17rem + 5px);
+        margin: 0 -5px 0 -5px;
+    }
+}
+
+@keyframes boing-long-responsive-out {
+    0% { 
+        padding: calc(9rem + 5px) calc(2.17rem + 5px);
+        margin: 0 -5px 0 -5px;
+    }
+
+    100% {
+        padding: 9rem 2.17rem;
+        margin: 0;
+    }
+}
+
+
 /* ANIMAZIONI CARD */
 
 
@@ -335,7 +377,9 @@ hr {
 }
 
 .see-full-list {
-    padding: 10rem 1.5rem;
+    padding: 11.2rem 1.5rem;
+    margin: 0;
+    animation: boing-long-out 400ms forwards;
 }
 
 .see-full-list:hover {
@@ -356,6 +400,24 @@ hr {
     }
     .news-button:hover {
         animation: boing-wide-news 0.4s forwards;
+    }
+    .see-full-list {
+        animation: boing-long-out 400ms forwards;
+        width: unset;
+    }
+    .see-full-list:hover {
+        animation: boing-long-button 400ms forwards;
+    }
+}
+
+@media (max-width: 428px) {
+    .see-full-list {
+        padding: 9rem 2.17rem;
+        animation: boing-long-responsive-out 400ms forwards;
+        font-size: 0.95rem;
+    }
+    .see-full-list:hover {
+        animation: boing-long-responsive 400ms forwards;
     }
 }
 
@@ -388,13 +450,20 @@ hr {
     padding-bottom: 1rem;
     border-radius: 0.2rem 0.2rem 0 0;
 }
+.card-feat h4{
+overflow: hidden;
+height: 2.6rem;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+}
 
 .card-feat p {
     font-family: museo100;
     padding-left: .4rem;
     font-size: .88rem;
+    height:16px;
 }
-
 .card {
     display: flex;
     flex-direction: column;
@@ -402,11 +471,17 @@ hr {
     padding: 0 1rem;
     box-sizing: border-box;
     height: 4.75rem;
+    
+ 
 }
-
 .card-footer {
     color: var(--black);
-    border-left: var(--red) solid 2px;
+    border-left: var(--red) solid 3px;
+    
+}
+.card-footer p{
+   margin-bottom: 16px;
+  
 }
 
 @media (max-width:500px) {
