@@ -653,3 +653,59 @@ img {
   max-width: 300px; /* Aggiunto per gestire il responsive, si può eliminare per la stilizzazione definitiva*/
 }
 
+
+
+/* SEZIONE FOOTER */
+
+.red {
+  background-color: var(--red)
+
+
+}
+.red-footer {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  -webkit-box-align: center;
+   place-items: center start;
+   height: 7.5rem;
+   max-width: 1470px;
+   margin: auto;
+   
+}
+.Big-nintendo-icon {
+  box-sizing: border-box;
+  color: white;
+  text-decoration-thickness: auto;
+  padding-left: 1rem;
+
+}
+.footer-icons li a {
+  color: white;
+}
+
+.footer-icons{
+  pointer-events: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 60px;
+  padding-right: 1.5rem;
+
+}
+
+@media(max-width: 768px) {
+  .red-footer {
+    flex-direction: column;
+    height: 11.4rem;
+    justify-content: center;
+    gap: 2rem;
+  }
+ .Big-nintendo-icon, .footer-icons {
+  padding: 0;
+ 
+ }
+ .footer-icons {
+  gap: 2rem;
+ }
+  
+}
