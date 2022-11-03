@@ -719,7 +719,7 @@ img {
   padding: 2rem 0;
   max-width: 1470px;
   margin: auto;
-
+  max-height: fit-content;
 }
 
 .footer-esrb-logo{
@@ -737,6 +737,7 @@ img {
   grid-column: span 2;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr 1.7fr;
+  max-height: 292px;
 }
 
 .white-footer a{
@@ -762,6 +763,7 @@ color: #ab160d;
   margin-top: 1rem;
   border-left: 1px solid lightgray;
   padding-left: 1.25rem;
+  max-height: 292px;
 
 }
 
@@ -804,4 +806,15 @@ color: white;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+@media(max-width: 1440px) {
+  .white-footer{
+    grid-template-columns: repeat(4, 1fr);
+  }
+ .sub-grid{
+  grid-template-columns: repeat(3, 1fr);
+  grid-column: span 3;
+  grid-template-rows: 1fr;
+ }
 }
