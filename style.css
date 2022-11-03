@@ -174,6 +174,11 @@ h3,
     background-color: white;
     cursor: pointer;
     border-radius: 1rem;
+    transition: color .3s;
+}
+
+.mob-nav-button:hover {
+    color: var(--red);
 }
 
 .mob-nav-button-red {
@@ -183,6 +188,7 @@ h3,
     padding: 0.8rem 0.87rem 0.72rem 0.87rem;
     margin: 0 0 0.39rem 0;
     border-radius: 2rem;
+    border: none;
 }
 
 @media (max-width: 1023px) {
@@ -401,6 +407,7 @@ h2 {
     .flex-wrap-featured {
         height: 17.9rem;
         padding: 0 1rem;
+        gap: 1.5rem;
     }
 }
 
@@ -505,6 +512,14 @@ picture img,
     max-width: 1145px;
     margin: 0 auto;
 }
+.news a:hover img {
+    opacity: 0.7;
+}
+
+.news a:hover .link {
+    color: #ab160d;
+    border-color: #ab160d;
+}
 
 .main-news {
     display: flex;
@@ -537,32 +552,10 @@ picture img,
     border-radius: 0.3rem;
 }
 
-.hover-img * {
-    box-sizing: border-box;
-    transition: all 0.45s ease;
-}
-
-.hover-img:before,
-.hover-img:after {
-    content: "";
-    transition: all 0.3s ease;
-    opacity: 0;
-    transform: scaleY(2);
-}
-
 .hover-img img {
     vertical-align: top;
     backface-visibility: hidden;
-}
-
-.hover-img:hover:before,
-.hover-img:hover:after {
-    transform: scale(1);
-    opacity: 1;
-}
-
-.hover-img:hover>img {
-    opacity: 0.7;
+    transition: all 0.4s;
 }
 
 .main-news-card p {
@@ -626,6 +619,7 @@ picture img,
     border-bottom: 2px solid #DD0011;
     width: fit-content;
     height: 0.4rem;
+    transition: all 0.4s;
 }
 
 @media (max-width:1023px) {
@@ -808,6 +802,7 @@ picture img,
     .card-container {
         height: 21.69rem;
         padding: 0 1rem;
+        gap: 1.5rem;
     }
 }
 
