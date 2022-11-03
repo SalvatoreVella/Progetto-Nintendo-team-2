@@ -149,6 +149,7 @@ hr {
         padding-right: 2rem;
         margin-left: .5rem;
         margin-right: .5rem;
+        max-width: calc(8.7rem + 5px);
     }
 
     60% {
@@ -336,6 +337,8 @@ hr {
 
 .see-full-list {
     padding: 10rem 1.5rem;
+    height: 23.75rem;
+    
 }
 
 .see-full-list:hover {
@@ -356,6 +359,11 @@ hr {
     }
     .news-button:hover {
         animation: boing-wide-news 0.4s forwards;
+    }
+    .see-full-list {
+        
+        max-width: 8.7rem;
+        
     }
 }
 
