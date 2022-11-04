@@ -6,8 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <meta name="description" content="Visit the official Nintendo site to shop for Nintendo Switch™ systems and video games, read the latest news, find fun gear and gifts with a Nintendo twist, ."/>
   <title>Nintendo Official Site: Consoles, Games, News and More</title>
-  <link rel="stylesheet" href="global.css" type="text/css">
+  <link rel="stylesheet" href="shared.css" type="text/css">
   <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
@@ -84,7 +85,7 @@
       </div>
     </div>
     <div class="nav-second-row">
-      <h3>
+      <h3 id="firstSubMenuButton">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="18" data-testid="MyNintendoTileIcon"
           color="currentcolor">
           <path
@@ -98,7 +99,7 @@
             d="M27.7 5.3 32 9.8 16 26.7 0 9.8l4.3-4.5L16 17.7z" />
         </svg>
       </h3>
-      <div class="nintendo-store-menu none">
+      <div id="firstSubMenu" class="nintendo-store-menu none">
         <!-- display none -->
         <div class="nintendo-store-red">
           <svg viewBox="0 0 135 18" xmlns="http://www.w3.org/2000/svg" width="188" role="presentation" alt=""
@@ -2547,28 +2548,33 @@
       </div>
       <!-- Fine della sezione bianca del footer -->
       <section class="black-footer-section">
-        <div>           
-          <span>© Nintendo. Games are property of their respective owners. Nintendo of America Inc. Headquarters are in Redmond, Washington, USA</span>
+        <div class="text-container">
+        <div class="span">           
+          <span >© Nintendo. Games are property of their respective owners. Nintendo of America Inc. Headquarters are in Redmond, Washington, USA</span>
         </div>
+        <div class="other-footer-links">
             <ul>
               <li>
-                <a href="#">contact us</a>
+                <a href="#">Contact us</a>
               </li>
               <li>
-                <a href="#">website feedback</a>
+                <a href="#">Website feedback</a>
               </li>
               <li>
-                <a href="#">terms of use</a>
+                <a href="#">Terms of Use</a>
               </li>
               <li>
-                <a href="#">documents and policies</a>
+                <a href="#">Documents & Policies</a>
               </li>
             </ul>
           <div class="change-region">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" xml:space="preserve" width="35" data-testid="FlagUsaIcon" color="currentColor"><path d="M29.7 5.7H2.3C1 5.7 0 6.7 0 8v16c0 1.3 1 2.3 2.3 2.3h27.4c1.3 0 2.3-1 2.3-2.3V8c0-1.3-1-2.3-2.3-2.3z" fill="#fff"/><path fill="#bf0a30" d="M0 10.3h32v2.3H0zM32 8H0c0-1.3 1-2.3 2.3-2.3h27.4C31 5.7 32 6.7 32 8zm0 16H0c0 1.3 1 2.3 2.3 2.3h27.4c1.3 0 2.3-1 2.3-2.3zM0 14.9h32v2.3H0zm0 4.5h32v2.3H0z"/><path d="M16 17.1H0V8c0-1.3 1-2.3 2.3-2.3H16v11.4z" fill="#002868"/></svg>
-            <a href="#">change region</a>
+            <a href="#"><span>Change region</span></a>
           </div>
+        </div>
+      </div>
       </section>
     </footer>
+    <script src="./index.js"></script>
   </body>
 </html>

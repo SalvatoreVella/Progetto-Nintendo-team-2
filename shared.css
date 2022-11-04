@@ -26,10 +26,6 @@ html {
     list-style-type: none;
 }
 
-:root {
-    --red: rgb(230, 33, 18);
-}
-
 a {
     color: var(--black);
 }
@@ -411,11 +407,16 @@ hr {
 }
 
 @media (max-width: 428px) {
+    .red-button {
+        font-size: 0.95rem;
+    }
+
     .see-full-list {
         padding: 9rem 2.17rem;
         animation: boing-long-responsive-out 400ms forwards;
         font-size: 0.95rem;
     }
+
     .see-full-list:hover {
         animation: boing-long-responsive 400ms forwards;
     }
@@ -498,6 +499,140 @@ display: -webkit-box;
         font-size: .75rem;
     }
 }
+
+
+            /* CARD SEZIONE NEWS */
+
+
+.news a:hover img {
+    opacity: 0.7;
+}
+
+.news a:hover .link {
+    color: #ab160d;
+    border-color: #ab160d;
+}
+
+.noHover {
+    font-family: museo100;
+    color: #636161;
+}
+
+.main-news img {
+    width: 100%;
+}
+
+.main-news-card {
+    width: 46vw;
+    max-width: 34.5rem;
+}
+
+.hover-img {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 0.3rem;
+}
+
+.hover-img img {
+    vertical-align: top;
+    backface-visibility: hidden;
+    transition: all 0.4s;
+}
+
+.main-news-card p {
+    padding: 1rem 0 1rem 0;
+    font-size: 16px;
+}
+
+.main-news-card p:nth-of-type(2) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 48px;
+}
+
+.main-news h3 {
+    height: 3rem;
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.other-news img {
+    border-radius: 0.25rem;
+    width: 100%;
+}
+
+.other-news p {
+    padding: 1rem 0 1rem 0;
+
+}
+
+.other-news h3 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 67px;
+    font-size: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.other-news-card {
+    max-width: 16.63rem;
+}
+
+.link {
+    color: #DD0011;
+    border-bottom: 2px solid #DD0011;
+    width: fit-content;
+    height: 0.4rem;
+    transition: all 0.4s;
+}
+
+@media (max-width:768px) {
+    .main-news-card {
+        width: 96vw;
+        max-width: unset;
+    }
+
+    .other-news-card {
+        width: 100%;
+        max-width: unset;
+    }
+}
+
+@media (max-width:428px) {
+
+    .main-news h3 {
+        font-size: 1rem;
+    }
+
+    p.noHover:nth-of-type(2) {
+        padding-bottom: 0;
+    }
+
+    p.noHover {
+        font-size: .88rem;
+    }
+
+    .other-news-card h3,
+    .link {
+        font-size: 0.88rem;
+    }
+
+    .other-news-card h3 {
+        height: 60px;
+    }
+
+    p.link {
+        padding-top: 0.4rem;
+    }
+}
+
 
 /* CARD SEZIONE CHARACTERS */
 
