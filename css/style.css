@@ -1059,9 +1059,25 @@ picture img,
     }
 }
 
-/* .nintendo-store-menu {
-    position: sticky;
-    bottom: 2rem;
-    background-color: #DD0011;
-    display: flex;
-} */
+.sub-menu {
+    position: absolute;
+    top: 6rem;
+    background-color: white;
+    width: 100vw;
+    transition: all 0.3s;
+    border-bottom: 1px solid lightgray;
+    box-shadow: 0 300rem 0 300rem #00000095;
+}
+
+h3 svg {
+    transition: transform 0.3s;
+}
+
+.reverse {
+    transform: rotate(180deg);
+}
+
+.none {
+        display: none;
+
+}
