@@ -1,11 +1,11 @@
 @font-face {
     font-family: museo;
-    src: url(assets/fonts/MuseoSans500/MuseoSans_500.otf);
+    src: url(../assets/fonts/MuseoSans500/MuseoSans_500.otf);
 }
 
 @font-face {
     font-family: museo100;
-    src: url(assets/fonts/MuseoSans100/MuseoSans-100.otf);
+    src: url(../assets/fonts/MuseoSans100/MuseoSans-100.otf);
 }
 
 :root {
@@ -32,10 +32,6 @@ a {
 
 hr {
     border: 0.5px solid #b4b4b482;
-}
-
-.none {
-    display: none;
 }
 
 /* ANIMAZIONI BOTTONI */
@@ -663,26 +659,26 @@ display: -webkit-box;
 }
 
 .characters-item:first-of-type img {
-    background-image: url(assets/images/mario-bg.png);
+    background-image: url(../assets/images/mario-bg.png);
     background-position: center;
     background-size: 120%;
 
 }
 
 .characters-item:nth-of-type(2) img {
-    background-image: url(assets/images/1600x1600_NCOM_Home_Characters_TLOZ_BOTW_BG.jpeg);
+    background-image: url(../assets/images/1600x1600_NCOM_Home_Characters_TLOZ_BOTW_BG.jpeg);
     background-position: center;
     background-size: 120%;
 }
 
 .characters-item:nth-of-type(3) img {
-    background-image: url(assets/images/Ncom_CharacterRail_1600x1600_Splatoon_BG.png);
+    background-image: url(../assets/images/Ncom_CharacterRail_1600x1600_Splatoon_BG.png);
     background-position: center;
     background-size: 120%;
 }
 
 .characters-item:last-of-type img {
-    background-image: url(assets/images/1600x1600_NCOM_Home_Characters_Kirby_BG.jpeg);
+    background-image: url(../assets/images/1600x1600_NCOM_Home_Characters_Kirby_BG.jpeg);
     background-position: center;
     background-size: 120%;
 }
