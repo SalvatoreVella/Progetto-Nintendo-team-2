@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="14px" viewBox="0 0 45 14" version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Storefront-awning-pattern</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Storefront-awning-pattern" fill="#E60012" fill-rule="nonzero">
+            <path d="M45,0 L0,0 L0,13.77368 C1.33302001,13.8377193 2.64914013,13.4539018 3.73877,12.68335 L19.28448,1.62866 C21.3662394,0.148318598 24.1570106,0.148318598 26.23877,1.62866 L41.78448,12.68335 C42.7283563,13.3500438 43.845285,13.728776 45,13.77368 L45,0 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>

@@ -130,6 +130,84 @@ h3,
     padding-left: 1.5px;
 }
 
+            /* SOTTO MENU NAVBAR DROPDOWN */
+
+.nintendo-store-menu {
+    flex-shrink: -1;
+}
+.my-nintendo-store-submenu-links-container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 0 1rem;
+    max-width: 1080px;
+}
+.nintendo-store-red {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: calc(50vw - 152px);
+    height: 64px;
+    background-color: var(--red);
+    color: white;
+}
+
+.button-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: .88rem 0 1.9rem 0;
+}
+
+.button-div button {
+    border: 1px solid var(--red);
+    background-color: white;
+    color: var(--red);
+    padding: 0.78rem 1.4rem;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.4s;
+    animation: boing-out-submenu 0.4s forwards;
+}
+
+.button-div button:hover {
+    animation: boing-submenu 0.4s forwards;
+    background-color: #fde6e6;
+}
+
+.games-submenu p {
+    padding-bottom: 0.5rem;
+}
+.games-submenu p a {
+    font-family: museo100;
+    font-size: 0.87rem;
+}
+
+.games-submenu h4 {
+    display: flex;
+    font-size: 0.98rem;
+    padding-bottom: 0.6rem;
+}
+.games-submenu h4 svg {
+    padding-right: 0.4rem;
+}
+
+
+.nintendo-store-red svg, .nintendo-store-red a svg {
+    padding-right: 1rem;
+    color: white;
+}
+
+.red-zigzag {
+    background-image: url(../assets/images/download.svg);
+    background-repeat: repeat-x;
+    height: 14px;
+    margin-bottom: 1rem;
+}
+
 /* MOBILE NAV */
 
 .nav-mobile {
@@ -633,7 +711,6 @@ picture img,
 .titolo-e-link {
     display: flex;
     align-items: center;
-    width: 96vw;
 }
 
 .titolo-e-link>a {
@@ -1057,27 +1134,4 @@ picture img,
     .change-region a span {
         font-size: 0.65rem;
     }
-}
-
-.sub-menu {
-    position: absolute;
-    top: 6rem;
-    background-color: white;
-    width: 100vw;
-    transition: all 0.3s;
-    border-bottom: 1px solid lightgray;
-    box-shadow: 0 300rem 0 300rem #00000095;
-}
-
-h3 svg {
-    transition: transform 0.3s;
-}
-
-.reverse {
-    transform: rotate(180deg);
-}
-
-.none {
-        display: none;
-
 }
