@@ -1,0 +1,872 @@
+@font-face {
+    font-family: museo;
+    src: url(../assets/fonts/MuseoSans500/MuseoSans_500.otf);
+}
+
+@font-face {
+    font-family: museo100;
+    src: url(../assets/fonts/MuseoSans100/MuseoSans-100.otf);
+}
+
+:root {
+    --red: rgb(230, 33, 18);
+    --red-button-hover: #ab160d;
+    --black: #484848;
+}
+
+html {
+    font-family: 'museo', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--black);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a {
+    color: var(--black);
+}
+
+hr {
+    border: 0.5px solid #b4b4b482;
+}
+
+/* ANIMAZIONI BOTTONI */
+
+@keyframes boing {
+    30% {
+        padding-top: calc(1rem + 5px);
+        padding-bottom: calc(1rem + 5px);
+        margin-top: -.56rem;
+        margin-bottom: -.56rem;
+    }
+
+    40% {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-left: 1.5rem;
+        margin-right: -.5rem;
+    }
+
+    60% {
+        padding-top: calc(1rem - 3px);
+        padding-bottom: calc(1rem - 3px);
+        margin-top: calc(-.56rem + 8px);
+        margin-bottom: calc(-.56rem + 8px);
+    }
+
+    85% {
+        padding-top: calc(1rem + 2px);
+        padding-bottom: calc(1rem + 2px);
+        margin-top: calc(-.56rem + 3px);
+        margin-bottom: calc(-.56rem + 3px);
+    }
+
+    100% {
+        padding: 1rem 2rem;
+        margin: -.25rem -.5rem -.25rem 1.5rem;
+    }
+}
+
+@keyframes boing-out {
+    0% {
+        padding: 1rem 2rem;
+        margin: -.25rem -.5rem -.25rem 1.5rem;
+    }
+
+    100% {
+        padding: 0.75rem 1.5rem;
+    }
+}
+
+@keyframes boing-news-button {
+    30% {
+        padding-top: calc(1rem + 5px);
+        padding-bottom: calc(1rem + 5px);
+        margin-top: -.56rem;
+        margin-bottom: -.56rem;
+    }
+
+    40% {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-left: -.5rem;
+        margin-right: -.5rem;
+    }
+
+    60% {
+        padding-top: calc(1rem - 3px);
+        padding-bottom: calc(1rem - 3px);
+        margin-top: calc(-.56rem + 8px);
+        margin-bottom: calc(-.56rem + 8px);
+    }
+
+    85% {
+        padding-top: calc(1rem + 2px);
+        padding-bottom: calc(1rem + 2px);
+        margin-top: calc(-.56rem + 3px);
+        margin-bottom: calc(-.56rem + 3px);
+    }
+
+    100% {
+        padding: 1rem 2rem;
+        margin: -.25rem -.5rem -.25rem -.5rem;
+    }
+}
+
+@keyframes boing-out-news {
+    0% {
+        padding: 1rem 2rem;
+        margin: -.25rem -.5rem -.25rem -.5rem;
+    }
+
+    100% {
+        padding: 0.75rem 1.5rem;
+    }
+}
+
+@keyframes boing-long-button {
+    20% {
+        padding-top: calc(11.2rem + 5px);
+        padding-bottom: calc(11.2rem + 5px);
+    }
+    
+    50% {
+        padding-top: calc(11.2rem + 3px);
+        padding-bottom: calc(11.2rem + 3px);
+    }
+
+    70% {
+        padding-left: calc(1.5rem + 5px);
+        padding-right: calc(1.5rem + 5px);
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    
+    85% {
+        padding-top: calc(11.2rem + 6px);
+        padding-bottom: calc(11.2rem + 6px);
+    }
+
+    100% {
+        padding: calc(11.2rem + 5px) calc(1.5rem + 5px);
+        margin: 0 -5px 0 -5px;
+    }
+}
+
+@keyframes boing-long-out {
+    0% { 
+        padding: calc(11.2rem + 5px) calc(1.5rem + 5px);
+        margin: 0 -5px 0 -5px;
+    }
+
+    100% {
+        padding: 11.2rem 1.5rem;
+        margin: 0;
+    }
+}
+
+@keyframes boing-wide-button {
+    30% {
+        padding-top: calc(1rem + 5px);
+        padding-bottom: calc(1rem + 5px);
+        margin-top: -.56rem;
+        margin-bottom: -.56rem;
+    }
+
+    40% {
+        padding-left: calc(2rem + 5px);
+        padding-right: calc(2rem + 5px);
+        margin-left: -.3rem;
+        margin-right: -.3rem;
+        width: 98vw;
+    }
+
+    60% {
+        padding-top: calc(1rem - 3px);
+        padding-bottom: calc(1rem - 3px);
+        margin-top: calc(-.56rem + 8px);
+        margin-bottom: calc(-.56rem + 8px);
+    }
+
+    85% {
+        padding-top: calc(1rem + 2px);
+        padding-bottom: calc(1rem + 2px);
+        margin-top: calc(-.56rem + 3px);
+        margin-bottom: calc(-.56rem + 3px);
+    }
+
+    100% {
+        padding: 1rem 2rem;
+        margin: -.25rem 0;
+        width: 98vw;
+    }
+}
+
+@keyframes boing-wide-out {
+    0% {
+        padding: 1rem 2rem;
+        margin: -.25rem 0;
+        width: 98vw;
+    }
+    100% {
+        width: 96vw;
+        margin-left: 0;
+    }
+}
+
+@keyframes boing-wide-news {
+    30% {
+        padding-top: calc(1rem + 5px);
+        padding-bottom: calc(1rem + 5px);
+        margin-top: -.56rem;
+        margin-bottom: -.56rem;
+    }
+
+    40% {
+        padding-left: calc(2rem + 5px);
+        padding-right: calc(2rem + 5px);
+        margin-left: -1vw;
+        margin-right: -1vw;
+        width: 98vw;
+    }
+
+    60% {
+        padding-top: calc(1rem - 3px);
+        padding-bottom: calc(1rem - 3px);
+        margin-top: calc(-.56rem + 8px);
+        margin-bottom: calc(-.56rem + 8px);
+    }
+
+    85% {
+        padding-top: calc(1rem + 2px);
+        padding-bottom: calc(1rem + 2px);
+        margin-top: calc(-.56rem + 3px);
+        margin-bottom: calc(-.56rem + 3px);
+    }
+
+    100% {
+        padding: 1rem 2rem;
+        margin: -.25rem -1vw;
+        width: 98vw;
+    }
+}
+
+@keyframes boing-news-wide-out {
+    0% {
+        padding: 1rem 2rem;
+        margin: -.25rem -1vw;
+        width: 98vw;
+    }
+    100% {
+        width: 96vw;
+        margin-left: 0;
+    }
+}
+
+@keyframes boing-long-responsive {
+    20% {
+        padding-top: calc(9rem + 5px);
+        padding-bottom: calc(9rem + 5px);
+    }
+    
+    50% {
+        padding-top: calc(9rem + 3px);
+        padding-bottom: calc(9rem + 3px);
+    }
+
+    70% {
+        padding-left: calc(2.17rem + 5px);
+        padding-right: calc(2.17rem + 5px);
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    
+    85% {
+        padding-top: calc(9rem + 6px);
+        padding-bottom: calc(9rem + 6px);
+    }
+
+    100% {
+        padding: calc(9rem + 5px) calc(2.17rem + 5px);
+        margin: 0 -5px 0 -5px;
+    }
+}
+
+@keyframes boing-long-responsive-out {
+    0% { 
+        padding: calc(9rem + 5px) calc(2.17rem + 5px);
+        margin: 0 -5px 0 -5px;
+    }
+
+    100% {
+        padding: 9rem 2.17rem;
+        margin: 0;
+    }
+}
+
+@keyframes boing-submenu {
+
+    0% {
+        margin-top: -1px;
+        margin-top: -1px;
+    }
+    30% {
+        padding-top: calc(1rem + 5px);
+        padding-bottom: calc(1rem + 5px);
+        margin-top: -.57rem;
+        margin-bottom: -.57rem;
+    }
+
+    40% {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-left: -.5rem;
+        margin-right: -.5rem;
+    }
+
+    60% {
+        padding-top: calc(1rem - 3px);
+        padding-bottom: calc(1rem - 3px);
+        margin-top: calc(-.56rem + 8px);
+        margin-bottom: calc(-.56rem + 8px);
+    }
+
+    85% {
+        padding-top: calc(1rem + 2px);
+        padding-bottom: calc(1rem + 2px);
+        margin-top: calc(-.56rem + 3px);
+        margin-bottom: calc(-.56rem + 3px);
+    }
+
+    100% {
+        padding: 1rem 2rem;
+        margin: -.25rem -.5rem -.25rem -.5rem;
+    }
+}
+
+@keyframes boing-out-submenu {
+    0% {
+        padding: 1rem 2rem;
+        margin: -.25rem -.56rem -.25rem -.56rem;
+    }
+
+    100% {
+        padding: 0.75rem 1.5rem;
+    }
+}
+
+
+/* ANIMAZIONI CARD */
+
+
+@keyframes gap-transition-in {
+    0% {
+        gap: 0;
+    }
+    100% {
+        gap: 1rem;
+    }
+}
+
+@keyframes gap-transition-out {
+    0% {
+        gap: 1rem;
+    }
+    100% {
+        gap: 0;
+    }
+}
+
+.sub-menu {
+    position: absolute;
+    top: 6rem;
+    background-color: white;
+    width: 100vw;
+    border-bottom: 1px solid lightgray;
+    box-shadow: 0 300rem 0 300rem #00000095;
+}
+
+h3 svg {
+    transition: transform 0.3s;
+}
+
+.reverse {
+    transform: rotate(180deg);
+}
+
+.none {
+        display: none;
+
+}
+
+/* BOTTONI */
+
+
+.red-button {
+    color: white;
+    background-color: var(--red);
+    border: 1px solid var(--red);
+    border-radius: 0.25rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.125rem;
+    white-space: nowrap;
+    transition: background-color 0.5s;
+    animation: boing-out 0.4s forwards;
+    margin-left: 2rem;
+    cursor: pointer;
+    font-family: museo;
+}
+
+.red-button:hover {
+    animation: boing 400ms forwards;
+    background-color: var(--red-button-hover);
+    border: 1px solid var(--red-button-hover);
+}
+
+.news-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 0;
+    animation: boing-out-news 0.4s forwards;
+}
+
+.news-button:hover {
+    animation: boing-news-button 0.4s forwards;
+}
+
+.see-full-list {
+    padding: 11.2rem 1.5rem;
+    margin: 0;
+    animation: boing-long-out 400ms forwards;
+}
+
+.see-full-list:hover {
+    animation: boing-long-button 400ms forwards;
+}
+
+@media (max-width:1023px) {
+    .red-button {
+        width: 96vw;
+        margin-left: 0;
+        animation: boing-wide-out 0.4s forwards;
+    }
+    .red-button:hover {
+        animation: boing-wide-button 400ms forwards;
+    }
+    .news-button {
+        animation: boing-news-wide-out 0.4s forwards;
+    }
+    .news-button:hover {
+        animation: boing-wide-news 0.4s forwards;
+    }
+    .see-full-list {
+        animation: boing-long-out 400ms forwards;
+        width: unset;
+    }
+    .see-full-list:hover {
+        animation: boing-long-button 400ms forwards;
+    }
+}
+
+@media (max-width: 428px) {
+    .red-button {
+        font-size: 0.95rem;
+    }
+
+    .see-full-list {
+        padding: 9rem 2.17rem;
+        animation: boing-long-responsive-out 400ms forwards;
+        font-size: 0.95rem;
+    }
+
+    .see-full-list:hover {
+        animation: boing-long-responsive 400ms forwards;
+    }
+}
+
+/* CARD SEZIONE FEATURED*/
+
+.fake-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 17.5rem;
+}
+.card-feat a {
+    border-radius: 0.2rem;
+    box-sizing: border-box;
+    border: 1px solid #b4b4b482;
+    display: flex;
+    width: 16.4rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 1.3rem;
+    animation: gap-transition-out 0.3s forwards;
+}
+
+.card-feat a:hover {
+    animation: gap-transition-in 0.3s forwards;
+}
+
+.card-feat img {
+    width: 100%;
+    padding-bottom: 1rem;
+    border-radius: 0.2rem 0.2rem 0 0;
+}
+.card-feat h4{
+overflow: hidden;
+height: 2.6rem;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+}
+
+.card-feat p {
+    font-family: museo100;
+    padding-left: .4rem;
+    font-size: .88rem;
+    height:16px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    height: 4.75rem;
+    
+ 
+}
+.card-footer {
+    color: var(--black);
+    border-left: var(--red) solid 3px;
+    
+}
+.card-footer p{
+   margin-bottom: 16px;
+  
+}
+
+@media (max-width:500px) {
+    .fake-container {
+        height: 14.4rem;
+    }
+    .card-feat a {
+        width: 12.875rem;
+    }
+    .card-feat h4 {
+        font-size: .88rem;
+    }
+    .card-feat p {
+        font-size: .75rem;
+    }
+}
+
+
+            /* CARD SEZIONE NEWS */
+
+
+.news a:hover img {
+    opacity: 0.7;
+}
+
+.news a:hover .link {
+    color: #ab160d;
+    border-color: #ab160d;
+}
+
+.noHover {
+    font-family: museo100;
+    color: #636161;
+}
+
+.main-news img {
+    width: 100%;
+}
+
+.main-news-card {
+    width: 46vw;
+    max-width: 34.5rem;
+}
+
+.hover-img {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 0.3rem;
+}
+
+.hover-img img {
+    vertical-align: top;
+    backface-visibility: hidden;
+    transition: all 0.4s;
+}
+
+.main-news-card p {
+    padding: 1rem 0 1rem 0;
+    font-size: 16px;
+}
+
+.main-news-card p:nth-of-type(2) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 48px;
+}
+
+.main-news h3 {
+    height: 3rem;
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.other-news img {
+    border-radius: 0.25rem;
+    width: 100%;
+}
+
+.other-news p {
+    padding: 1rem 0 1rem 0;
+
+}
+
+.other-news h3 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 67px;
+    font-size: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.other-news-card {
+    max-width: 16.63rem;
+}
+
+.link {
+    color: #DD0011;
+    border-bottom: 2px solid #DD0011;
+    width: fit-content;
+    height: 0.4rem;
+    transition: all 0.4s;
+}
+
+@media (max-width:768px) {
+    .main-news-card {
+        width: 96vw;
+        max-width: unset;
+    }
+
+    .other-news-card {
+        width: 100%;
+        max-width: unset;
+    }
+}
+
+@media (max-width:428px) {
+
+    .main-news h3 {
+        font-size: 1rem;
+    }
+
+    p.noHover:nth-of-type(2) {
+        padding-bottom: 0;
+    }
+
+    p.noHover {
+        font-size: .88rem;
+    }
+
+    .other-news-card h3,
+    .link {
+        font-size: 0.88rem;
+    }
+
+    .other-news-card h3 {
+        height: 60px;
+    }
+
+    p.link {
+        padding-top: 0.4rem;
+    }
+}
+
+
+/* CARD SEZIONE CHARACTERS */
+
+
+.characters-item .img-container {
+    min-width: 10.5rem;
+    max-width: 23.06rem;
+    min-height: 10.5rem;
+    max-height: 23.5rem;
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+
+.img-container {
+    margin-bottom: 0.55rem;
+    aspect-ratio: 1 / 1;
+}
+
+.characters-item img {
+    width: 100%;
+    border-radius: 0.25rem;
+    transition: all 0.3s;
+    aspect-ratio: 1 / 1;
+}
+
+.characters-item h3 {
+    font-size: 1.31rem;
+}
+
+.characters-item:first-of-type img {
+    background-image: url(../assets/images/mario-bg.png);
+    background-position: center;
+    background-size: 120%;
+
+}
+
+.characters-item:nth-of-type(2) img {
+    background-image: url(../assets/images/1600x1600_NCOM_Home_Characters_TLOZ_BOTW_BG.jpeg);
+    background-position: center;
+    background-size: 120%;
+}
+
+.characters-item:nth-of-type(3) img {
+    background-image: url(../assets/images/Ncom_CharacterRail_1600x1600_Splatoon_BG.png);
+    background-position: center;
+    background-size: 120%;
+}
+
+.characters-item:last-of-type img {
+    background-image: url(../assets/images/1600x1600_NCOM_Home_Characters_Kirby_BG.jpeg);
+    background-position: center;
+    background-size: 120%;
+}
+
+.characters-item img:hover {
+    background-size: 87.5%;
+    transform: scale(1.15);
+    transform-origin: 50% 50%;
+}
+
+
+            /* CARD SEZIONI DIGITAL BEST SELLERS E DIGITAL NEW RELEASES*/
+
+
+.fake-container-digital {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 23.96rem;
+}
+
+.card-b-sellers a {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #b4b4b482;
+    border-radius: 0.3rem;
+    width: 16.25rem;
+    animation: gap-transition-out 0.3s forwards;
+    justify-content: flex-end;
+
+}
+
+.demo, .new{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+.demo{
+    background-color: #0643fa;
+}
+
+.new{
+    background-color: var(--red); 
+}
+
+.card-b-sellers img{
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.space-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 1rem;
+    height: 10.95rem;
+}
+
+.prezzo p {
+    color: #484848;
+}
+
+.console{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: .4rem;
+}
+
+.console p {
+    height: 1rem;
+    font-family: museo100;
+    border-left: 2px solid var(--red);
+    padding-left: 0.4rem;
+    font-size: 0.88rem;
+}
+
+.console svg{
+    padding-right: 0.25rem;
+}
+
+.card-b-sellers a:hover{
+    animation: gap-transition-in 0.3s forwards;
+}
+
+.animazione p{
+    height: 1.5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+@media (max-width:428px) {
+    
+    .fake-container-digital {
+        height: 17.125rem;
+    }
+    .card-b-sellers img {
+        padding-bottom: .7rem;
+    }
+    .space-title {
+        height: 7rem;
+    }
+    .card-b-sellers a {
+        width: 12.875rem;
+    }
+    .card-b-sellers h4 {
+        font-size: .88rem;
+    }
+    .prezzo p {
+        font-size: 0.85rem;
+    }
+    .console p {
+        font-size: .77rem;
+    }
+}

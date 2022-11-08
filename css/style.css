@@ -1,0 +1,1247 @@
+/* NAVBAR */
+
+nav {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    background-color: white;
+    z-index: 1;
+}
+
+.upper-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #75757556;
+}
+
+.nav-first-row-left {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-logo {
+    width: 6.5625rem;
+    height: 3.1875rem;
+    background-color: var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.form-wrapper {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #484848b9;
+    margin: 0 0 0.53rem 1rem;
+    width: 28.125rem;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+}
+
+.form-wrapper ul li:first-child a {
+    padding: 0.45rem 0 0 0;
+    white-space: nowrap;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.form-wrapper ul li:first-child a,
+a,
+.main-button,
+.form-wrapper {
+    transition: all 0.3s;
+}
+
+.form-wrapper ul li:first-child a:hover,
+a:hover,
+.main-button:hover,
+.nav-second-row h3:hover {
+    color: var(--red);
+}
+
+.form-wrapper:hover {
+    border-bottom: 1px solid var(--red);
+}
+
+.form-wrapper a {
+    display: flex;
+    flex-direction: row;
+}
+
+h3 a,
+h3,
+.main.button {
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+}
+
+.main-button {
+    background-color: inherit;
+    border: none;
+    margin: 0 4.4rem -0.6rem 0;
+    font-family: museo100;
+    font-size: 0.87rem;
+    display: flex;
+    color: #616161;
+}
+
+.main-button svg {
+    margin-right: 0.6rem;
+}
+
+.nav-first-row-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.9rem;
+    padding-right: 1.1rem;
+    font-size: 0.73rem;
+    letter-spacing: .1px;
+}
+
+.nav-second-row {
+    display: flex;
+    gap: 2.5rem;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #75757556;
+    height: 2.6875rem;
+}
+
+.nav-second-row a,
+.nav-second-row h3 {
+    cursor: pointer;
+    transition: all 0.3s;
+    padding-top: 2px;
+}
+
+.nav-second-row h3,
+.nav-second-row a {
+    font-size: 0.98rem;
+    letter-spacing: 0.15px;
+}
+
+.nav-second-row h3 svg {
+    padding-left: 1.5px;
+}
+
+/* SOTTO MENU NAVBAR DROPDOWN */
+
+.nintendo-store-menu {
+    flex-shrink: -1;
+}
+
+.my-nintendo-store-submenu-links-container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 0 1rem;
+    max-width: 1080px;
+}
+
+.nintendo-store-red {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: calc(50vw - 152px);
+    height: 64px;
+    background-color: var(--red);
+    color: white;
+}
+
+.button-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: .88rem 0 1.9rem 0;
+}
+
+.button-div button {
+    border: 1px solid var(--red);
+    background-color: white;
+    color: var(--red);
+    padding: 0.78rem 1.4rem;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.4s;
+    animation: boing-out-submenu 0.4s forwards;
+}
+
+.button-div button:hover {
+    animation: boing-submenu 0.4s forwards;
+    background-color: #fde6e6;
+}
+
+.games-submenu p {
+    padding-bottom: 0.5rem;
+}
+
+.games-submenu p a {
+    font-family: museo100;
+    font-size: 0.87rem;
+}
+
+.games-submenu h4 {
+    display: flex;
+    font-size: 0.98rem;
+    padding-bottom: 0.6rem;
+}
+
+.games-submenu h4 svg {
+    padding-right: 0.4rem;
+}
+
+
+.nintendo-store-red svg,
+.nintendo-store-red a svg {
+    padding-right: 1rem;
+    color: white;
+}
+
+.red-zigzag {
+    background-image: url(../assets/images/download.svg);
+    background-repeat: repeat-x;
+    height: 14px;
+    margin-bottom: 1rem;
+}
+
+.games-menu-flex, .play-nintendo-flex {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 1.5rem;
+    padding: 0 1rem;
+    max-width: 1080px;
+    height: 8rem;
+    text-align: center;
+    gap: 1.75rem;
+}
+
+.games-menu-content, .play-nintendo-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 7.4rem;
+    height: 4.1rem;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    color: #484848;
+    transition: all 0.2s;
+}
+
+.games-menu-flex {
+    width: 7.4rem;
+}
+
+a p {
+    font-size: 0.88rem;
+    font-family: museo100;
+    color: #5e5e5e;
+    line-height: 1.2rem;
+}
+
+.button { 
+    padding-top: 0.5rem;
+    width: 99%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button svg {
+    color: #48484857;
+}
+
+.button svg:hover {
+    color: #484848;
+}
+
+a:hover p {
+    color: var(--red);
+}
+
+a:hover .games-menu-content, 
+a:hover .nintendo-switch-menu-content,
+a:hover .play-nintendo-content{
+    color: white;
+    background-color: var(--red);
+}
+
+.nintendo-switch-menu-flex{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 1.75rem;
+padding-bottom: 0.7rem;
+}
+
+.nintendo-switch-menu a{
+    text-align: center;
+}
+.nintendo-switch-menu-content{
+height: 4.1rem;
+width: 7.4rem;
+border: 1px solid #dbdbdb;
+border-radius: 4px;
+display: flex;
+justify-content: center;
+transition: all 0.2s;
+}
+.nintendo-switch-menu-content img{
+    max-width: 100%;
+}
+.variation{
+    width: 16.125rem;    
+}
+
+.nintendo-switch-menu a p{
+    padding-top: 0.4rem;
+}
+
+.play-nintendo-flex {
+    align-items: flex-start;
+}
+
+.play-nintendo-menu {
+    height: 9.06rem;
+}
+
+.play-nintendo-content {
+    transition: all 0.2s;
+}
+/* MOBILE NAV */
+
+.nav-mobile {
+    justify-content: flex-start;
+    position: sticky;
+    top: 0;
+    height: 2.88rem;
+    background-color: var(--red);
+    width: 100vw;
+    z-index: 1;
+}
+
+.nav-mobile svg {
+    margin-left: 1rem;
+    color: white;
+}
+
+.mobile-bottom-nav {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 27.5rem;
+    width: 96vw;
+    height: 3.65rem;
+    background-color: white;
+    border-radius: 2rem;
+    border: 1px solid rgba(237, 237, 237, 0.984);
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    align-items: flex-end;
+    position: sticky;
+    top: 90.5vh;
+    z-index: 1;
+}
+
+.mob-nav-button {
+    color: var(--black);
+    padding-top: 0.86rem;
+    padding-bottom: 0.81rem;
+    width: 17.1vw;
+    max-width: 5.4rem;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: color .3s;
+}
+
+.mob-nav-button:hover {
+    color: var(--red);
+}
+
+.mob-nav-button-red {
+    background-color: var(--red);
+    color: white;
+    width: auto;
+    padding: 0.8rem 0.87rem 0.72rem 0.87rem;
+    margin: 0 0 0.39rem 0;
+    border-radius: 2rem;
+    border: none;
+}
+
+@media (max-width: 1023px) {
+    .nav-mobile {
+        display: flex;
+        justify-content: flex-start;
+        position: sticky;
+        z-index: 100;
+        height: 2.88rem;
+        background-color: var(--red);
+        width: 100vw;
+    }
+
+    .nav-mobile svg {
+        margin-left: 1rem;
+        color: white;
+    }
+
+    main {
+        margin-top: -3.7rem;
+    }
+
+    nav {
+        display: none;
+    }
+
+    body {
+        overflow: auto;
+    }
+
+    .mobile-bottom-nav {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        z-index: 150;
+        position: sticky;
+        top: 90.5vh;
+    }
+}
+
+@media (max-width:1023px) {
+    nav {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: flex;
+    }
+
+    .mobile-bottom-nav {
+        display: flex;
+    }
+
+    main {
+        margin-top: -3.7rem;
+    }
+}
+
+/* SEZIONE MAIN */
+
+
+main {
+    margin-bottom: 1.17rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.07rem;
+}
+
+.image-container {
+    background: linear-gradient(#987dee, #fef8cc);
+    background-size: 100% 90%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.35rem;
+}
+
+.main-image img {
+    width: 96vw;
+    margin-top: 2rem;
+    border-radius: 4px;
+    max-width: 1440px;
+}
+
+.sub-image-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 96vw;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.77rem;
+    font-weight: bold;
+}
+
+.title-button-flex {
+    display: flex;
+    align-items: center;
+}
+
+.cartoon-violence-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 0.755rem;
+    font-family: museo100;
+    padding: 2px 2px 0 0;
+}
+
+.cv-link:hover {
+    color: #484848;
+}
+
+.cartoon-violence-logo div hr {
+    border: 0.5px solid rgb(70, 70, 70);
+    margin: 0.23rem -1px;
+}
+
+.hr-main {
+    border: 0.5px solid #b4b4b482;
+    width: 96vw;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+
+@media (max-width:1023px) {
+    .image-container {
+        padding-bottom: 0;
+    }
+
+    .main-image img {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .sub-image-flex,
+    .title-button-flex {
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .title-button-flex {
+        text-align: center;
+        background: linear-gradient(#F1C9BF, #FED4B9);
+        background-size: 100% 90%;
+        background-repeat: no-repeat;
+        margin-top: -.3rem;
+        margin-bottom: .2rem;
+
+    }
+
+    .title-button-flex h2 {
+        padding-top: 1.6rem;
+    }
+}
+
+@media (max-width:622px) {
+    main {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .cartoon-violence-logo {
+        display: none;
+    }
+
+    .title-button-flex {
+        margin-bottom: 0.2rem;
+    }
+}
+
+@media (max-width:428px) {
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+
+/* SEZIONE FEATURED*/
+
+
+.featured {
+    padding: 3.2rem 0 2.5rem 0;
+}
+
+.featured h2 {
+    width: 96vw;
+    max-width: 1145px;
+    margin: auto;
+}
+
+.flex-wrap-featured {
+    display: flex;
+    overflow: scroll;
+    gap: 2rem;
+    align-items: center;
+    height: 22.2rem;
+    padding: 0 2rem;
+}
+
+@media (max-width:768px) {
+    .featured {
+        padding: 1.5rem 0 1.5rem 0;
+    }
+
+    .flex-wrap-featured {
+        height: 17.9rem;
+        padding: 0 1rem;
+        gap: 1.5rem;
+    }
+}
+
+
+/* SEZIONI ONLINE STORE E GAMING SYSTEMS*/
+
+
+.online-store-main,
+.gaming-systems {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 96vw;
+    max-width: 1145px;
+    margin: auto;
+    padding: 3rem 0 4.3rem 0;
+}
+
+.online-store-main h2,
+.gaming-systems h2 {
+    align-self: flex-start;
+    padding-bottom: 2.2rem;
+}
+
+picture img,
+.gaming-systems img {
+    width: 100%;
+}
+
+.store-flex,
+.gaming-systems-flex {
+    font-size: 1.09rem;
+    letter-spacing: .4px;
+    line-height: 1.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 3rem;
+}
+
+.store-flex h3 {
+    width: 75vw;
+    max-width: 60rem;
+}
+
+.gaming-systems-flex {
+    justify-content: flex-start;
+}
+
+@media (max-width:1023px) {
+
+    .online-store-main h2,
+    .gaming-systems h2 {
+        padding-bottom: 1rem;
+    }
+
+    .online-store-main,
+    .gaming-systems {
+        padding-bottom: 3rem;
+    }
+
+    .store-flex,
+    .gaming-systems-flex {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .store-flex h3,
+    .gaming-systems h3 {
+        width: 96vw;
+    }
+
+    .store-flex h3,
+    .gaming-systems-flex h3 {
+        padding: 2rem 0;
+    }
+}
+
+@media (max-width:768px) {
+
+    .online-store-main,
+    .gaming-systems {
+        padding: 1.5rem 0 2.15rem 0;
+        flex-direction: column;
+    }
+
+    .store-flex,
+    .gaming-systems-flex {
+        font-size: .92rem;
+        padding: 0;
+    }
+}
+
+/* SEZIONE NEWS */
+
+
+.news {
+    padding: 3rem 0 3rem 0;
+    width: 96vw;
+    max-width: 1145px;
+    margin: 0 auto;
+}
+
+.main-news {
+    display: flex;
+    justify-content: center;
+    line-height: 22.5px;
+    padding-top: 4rem;
+    gap: 2rem;
+}
+
+.other-news {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 5rem 0 3rem 0;
+    font-size: 16px;
+    line-height: 1.4;
+    margin: auto;
+    width: 100%;
+}
+
+@media (max-width:1023px) {
+    .other-news {
+        padding-bottom: 2.5rem;
+    }
+}
+
+@media (max-width:768px) {
+    .news {
+        padding: 2rem 0;
+    }
+
+    .main-news {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .other-news {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1.5rem;
+        grid-row-gap: 5rem;
+    }
+}
+
+
+/* SEZIONE CHARACTERS */
+
+
+.characters {
+    width: 96vw;
+    margin: auto;
+    padding-top: 3rem;
+    max-width: 1140px;
+}
+
+.characters-flex {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    max-width: 96vw;
+    margin: 0 auto;
+    padding: 1rem 0 3rem 0;
+}
+
+@media (max-width: 768px) {
+    .characters-flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .characters,
+    .characters-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:768px) {
+    .characters-flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media (max-width:360px) {
+
+    .characters,
+    .characters-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* SEZIONI DIGITAL NEW RELEASES E DIGITAL BEST SELLERS */
+
+
+.digital-best-sellers,
+.digital-new-releases {
+    padding-top: 3rem;
+    padding-bottom: .5rem;
+    width: 96vw;
+    margin: auto;
+    max-width: 1145px;
+}
+
+.digital-new-releases {
+    padding-top: 1.8rem;
+}
+
+.titolo-e-link {
+    display: flex;
+    align-items: center;
+}
+
+.titolo-e-link>a {
+    color: var(--red);
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+    padding-left: 1rem;
+}
+
+.separator {
+    border-right: 1px solid lightgray;
+    padding-right: 1rem;
+}
+
+.card-container {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    max-width: 1145px;
+    height: 26.875rem;
+    margin: auto;
+    gap: 2.4rem;
+    overflow: scroll;
+    padding: 0 2rem;
+}
+
+@media (max-width:768px) {
+
+    .digital-best-sellers,
+    .digital-new-releases {
+        padding-top: 2rem;
+    }
+}
+
+@media (max-width:428px) {
+
+    .titolo-e-link {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .8rem;
+    }
+
+    .titolo-e-link>a {
+        font-size: .9rem;
+        padding: 0;
+    }
+
+    .separator {
+        border: none;
+    }
+
+    .card-container {
+        height: 21.69rem;
+        padding: 0 1rem;
+        gap: 1.5rem;
+    }
+}
+
+
+/* SEZIONE FOOTER ROSSA */
+
+
+.red {
+    background-color: var(--red);
+    margin-top: 6.5rem;
+}
+
+.red-footer {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    place-items: center start;
+    height: 7.5rem;
+    max-width: 1470px;
+    margin: auto;
+
+}
+
+.Big-nintendo-icon {
+    box-sizing: border-box;
+    color: white;
+    text-decoration-thickness: auto;
+    padding-left: 1rem;
+
+}
+
+.footer-icons li a {
+    color: white;
+}
+
+.footer-icons {
+    pointer-events: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 60px;
+    padding-right: 1rem;
+
+}
+
+@media(max-width: 768px) {
+    .red {
+        margin-top: 4.5rem;
+    }
+
+    .red-footer {
+        flex-direction: column;
+        height: 11.4rem;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .Big-nintendo-icon,
+    .footer-icons {
+        padding: 0;
+    }
+
+    .footer-icons {
+        gap: 2rem;
+    }
+}
+
+@media (max-width:428px) {
+    .red {
+        margin-top: 3.2rem;
+    }
+}
+
+
+/* SEZIONE FOOTER BIANCA */
+
+.white-footer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 16.93rem;
+    padding: 2rem 0;
+    max-width: 1470px;
+    margin: auto;
+    max-height: fit-content;
+}
+
+.footer-esrb-logo {
+    height: 84.8px;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1470px;
+    margin: auto;
+    padding-bottom: 3.5rem;
+    padding-right: 1rem;
+}
+
+.sub-grid {
+    display: grid;
+    grid-column: span 2;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1.7fr;
+}
+
+.white-footer a {
+    color: var(--red);
+    text-transform: capitalize;
+
+}
+
+.footer-links-section h4:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+    text-decoration-thickness: 1.5px;
+}
+
+.white-footer a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+    text-decoration-thickness: 1.5px;
+    color: #ab160d;
+}
+
+.footer-links-section {
+    margin-top: 1rem;
+    border-left: 1px solid lightgray;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.footer-links-section h3 {
+    padding-bottom: 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.footer-links-section h3:hover {
+    text-decoration: underline;
+}
+
+.footer-links-section li h3 {
+    padding-bottom: 0.4rem;
+}
+
+.border-none {
+    border: none;
+}
+
+.single-margin {
+    margin-top: 2rem;
+}
+
+@media(max-width: 1440px) {
+    .white-footer {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 16rem 6.25rem;
+        row-gap: 2rem;
+        padding-left: 1rem;
+        padding-top: 3rem;
+    }
+
+    .sub-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-column: span 3;
+        grid-template-rows: 1fr;
+    }
+
+    .border-none {
+        border-left: 1px solid lightgray;
+    }
+
+    .single-margin {
+        margin: 0;
+    }
+
+    .footer-links-section {
+        margin-top: 0;
+    }
+}
+
+@media (max-width:1023px) {
+    .white-footer {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 16rem 15rem;
+    }
+
+    .sub-grid {
+        grid-column: span 2;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .single-margin {
+        margin-top: 2rem;
+    }
+
+    .footer-esrb-logo {
+        display: flex;
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    @media (max-width:768px) {
+        .white-footer {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 16rem 12.125rem 14.813rem;
+        }
+    }
+}
+
+@media (max-width:428px) {
+
+    .white-footer,
+    .sub-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links-section ul a h3 {
+        font-size: 0.85rem;
+    }
+
+    .footer-links-section h3 {
+        font-size: 0.975rem;
+    }
+
+    .footer-links-section li h3 {
+        padding-bottom: 0.22rem;
+    }
+
+    .sub-grid {
+        padding: 0;
+        gap: 2rem;
+    }
+
+    .single-margin {
+        margin-top: 0;
+    }
+
+    .footer-links-section {
+        width: 50vw;
+    }
+}
+
+
+/* SEZIONE FOOTER NERA */
+
+
+.black-footer-section {
+    background-color: #242424;
+}
+
+.black-footer-section span {
+    font-family: museo100;
+    font-size: 0.73rem;
+}
+
+.black-footer-section ul {
+    display: flex;
+    gap: 1rem;
+
+}
+
+.black-footer-section ul li a,
+.change-region a span {
+    color: white;
+    font-size: 0.77rem;
+    transition: all 0.3s;
+
+}
+
+.black-footer-section ul li a:hover,
+.change-region a span:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+    text-decoration-thickness: 2px;
+
+}
+
+.footer-links-section ul a h3 {
+    font-size: 1rem;
+}
+
+.change-region {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+.text-container {
+    max-width: 1550px;
+    margin: 0 5vw 0 9vw;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    height: 6.5rem;
+}
+
+.other-footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    min-width: 570px;
+    padding-left: 2rem;
+}
+
+.span {
+    letter-spacing: .2px;
+    line-height: .95rem;
+}
+
+.change-region {
+    display: flex;
+    align-items: center;
+}
+
+@media(max-width: 1440px) {
+    .text-container {
+        width: 98vw;
+        margin: auto;
+    }
+}
+
+@media (max-width:1024px) {
+    .black-footer-section {
+        height: fit-content;
+    }
+
+    .text-container {
+        flex-direction: column;
+        gap: 2.2rem;
+        padding-bottom: 8.8rem;
+        padding-top: 3.5rem;
+        text-align: center;
+        margin: auto;
+    }
+
+    .other-footer-links {
+        flex-direction: column;
+        gap: 2.2rem;
+        padding: 0;
+        min-width: unset;
+    }
+
+    .span {
+        width: 96vw;
+        max-width: 24rem;
+    }
+}
+
+@media (max-width:428px) {
+    .span span {
+        font-size: 0.6rem;
+    }
+
+    .text-container {
+        padding-top: 4rem;
+        width: 94vw;
+    }
+
+    .text-container ul li a,
+    .change-region a span {
+        font-size: 0.65rem;
+    }
+}
