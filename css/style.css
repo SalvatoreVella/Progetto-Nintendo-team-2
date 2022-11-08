@@ -130,11 +130,12 @@ h3,
     padding-left: 1.5px;
 }
 
-            /* SOTTO MENU NAVBAR DROPDOWN */
+/* SOTTO MENU NAVBAR DROPDOWN */
 
 .nintendo-store-menu {
     flex-shrink: -1;
 }
+
 .my-nintendo-store-submenu-links-container {
     display: flex;
     justify-content: center;
@@ -144,6 +145,7 @@ h3,
     padding: 0 1rem;
     max-width: 1080px;
 }
+
 .nintendo-store-red {
     display: flex;
     align-items: center;
@@ -181,6 +183,7 @@ h3,
 .games-submenu p {
     padding-bottom: 0.5rem;
 }
+
 .games-submenu p a {
     font-family: museo100;
     font-size: 0.87rem;
@@ -191,12 +194,14 @@ h3,
     font-size: 0.98rem;
     padding-bottom: 0.6rem;
 }
+
 .games-submenu h4 svg {
     padding-right: 0.4rem;
 }
 
 
-.nintendo-store-red svg, .nintendo-store-red a svg {
+.nintendo-store-red svg,
+.nintendo-store-red a svg {
     padding-right: 1rem;
     color: white;
 }
@@ -207,6 +212,68 @@ h3,
     height: 14px;
     margin-bottom: 1rem;
 }
+
+.games-menu-flex {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 1.5rem;
+    padding: 0 1rem;
+    max-width: 1080px;
+    height: 8rem;
+    text-align: center;
+    gap: 1.75rem;
+}
+
+.games-menu-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 7.4rem;
+    height: 4.1rem;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    color: #484848;
+    transition: all 0.2s;
+}
+
+.games-menu-flex {
+    width: 7.4rem;
+}
+
+a p {
+    font-size: 0.88rem;
+    font-family: museo100;
+    color: #5e5e5e;
+    line-height: 1.2rem;
+}
+
+.games-menu .button{ 
+    padding-top: 0.5rem;
+    width: 99%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.games-menu .button svg {
+    color: #48484857;
+}
+
+.games-menu .button svg:hover {
+    color: #484848;
+}
+
+a:hover p {
+    color: var(--red);
+}
+
+a:hover .games-menu-content {
+    color: white;
+    background-color: var(--red);
+}
+
 
 /* MOBILE NAV */
 
