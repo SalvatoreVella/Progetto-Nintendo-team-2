@@ -213,7 +213,7 @@ h3,
     margin-bottom: 1rem;
 }
 
-.games-menu-flex {
+.games-menu-flex, .play-nintendo-flex {
     display: flex;
     justify-content: center;
     margin: auto;
@@ -225,7 +225,7 @@ h3,
     gap: 1.75rem;
 }
 
-.games-menu-content {
+.games-menu-content, .play-nintendo-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -250,7 +250,7 @@ a p {
     line-height: 1.2rem;
 }
 
-.button{ 
+.button { 
     padding-top: 0.5rem;
     width: 99%;
     display: flex;
@@ -269,7 +269,9 @@ a:hover p {
     color: var(--red);
 }
 
-a:hover .games-menu-content {
+a:hover .games-menu-content, 
+a:hover .nintendo-switch-menu-content,
+a:hover .play-nintendo-content{
     color: white;
     background-color: var(--red);
 }
@@ -292,17 +294,29 @@ border: 1px solid #dbdbdb;
 border-radius: 4px;
 display: flex;
 justify-content: center;
+transition: all 0.2s;
 }
 .nintendo-switch-menu-content img{
     max-width: 100%;
 }
-
 .variation{
     width: 16.125rem;    
 }
 
 .nintendo-switch-menu a p{
     padding-top: 0.4rem;
+}
+
+.play-nintendo-flex {
+    align-items: flex-start;
+}
+
+.play-nintendo-menu {
+    height: 9.06rem;
+}
+
+.play-nintendo-content {
+    transition: all 0.2s;
 }
 /* MOBILE NAV */
 
