@@ -250,18 +250,18 @@ a p {
     line-height: 1.2rem;
 }
 
-.games-menu .button{ 
+.button{ 
     padding-top: 0.5rem;
     width: 99%;
     display: flex;
     justify-content: flex-end;
 }
 
-.games-menu .button svg {
+.button svg {
     color: #48484857;
 }
 
-.games-menu .button svg:hover {
+.button svg:hover {
     color: #484848;
 }
 
@@ -274,7 +274,36 @@ a:hover .games-menu-content {
     background-color: var(--red);
 }
 
+.nintendo-switch-menu-flex{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 1.75rem;
+padding-bottom: 0.7rem;
+}
 
+.nintendo-switch-menu a{
+    text-align: center;
+}
+.nintendo-switch-menu-content{
+height: 4.1rem;
+width: 7.4rem;
+border: 1px solid #dbdbdb;
+border-radius: 4px;
+display: flex;
+justify-content: center;
+}
+.nintendo-switch-menu-content img{
+    max-width: 100%;
+}
+
+.variation{
+    width: 16.125rem;    
+}
+
+.nintendo-switch-menu a p{
+    padding-top: 0.4rem;
+}
 /* MOBILE NAV */
 
 .nav-mobile {
