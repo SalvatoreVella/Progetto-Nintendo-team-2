@@ -381,7 +381,11 @@ hr {
     }
 }
 
+<<<<<<< HEAD
 .sub-menu, .search-menu {
+=======
+.sub-menu {
+>>>>>>> origin/main
     position: absolute;
     top: 6rem;
     background-color: white;
