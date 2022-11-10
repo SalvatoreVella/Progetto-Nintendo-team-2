@@ -14,7 +14,8 @@ function toggleStyle(el, styleName, value) {
     }
 }
 
-let body = document.querySelector("body");
+addClassById("search", "search-menu", "none");
+addClassById("button2", "search-menu", "none");
 
 for (let i = 1; i <= 4; i++) {
     addClassById(`sub-menu-button-${i}`, `sub-menu-${i}`, "none");

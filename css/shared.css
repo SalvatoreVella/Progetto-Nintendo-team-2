@@ -381,7 +381,11 @@ hr {
     }
 }
 
+<<<<<<< HEAD
+.sub-menu, .search-menu {
+=======
 .sub-menu {
+>>>>>>> origin/main
     position: absolute;
     top: 6rem;
     background-color: white;
@@ -490,7 +494,57 @@ h3 svg {
     }
 }
 
-/* CARD SEZIONE FEATURED*/
+            /* CARD SOTTO MENU BARRA DI RICERCA*/
+
+
+.card-search a {
+    display: flex;
+    width: 21.125rem;
+    height: 4.94rem;
+    overflow: hidden;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding-right: .3rem;
+}
+
+.card-search img {
+    height: 100%;
+    padding-right: 0.69rem;
+    transition: filter 0.3s;
+}
+
+.search-card-text  {
+    font-size: .87rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.search-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-card-footer p {
+    border-left: 2px solid var(--red);
+    padding-left: .35rem;
+}
+
+.search-card-text h4 {
+    padding-top: 0.6rem;
+}
+
+.card-search a:hover img {
+    filter: brightness(70%);
+}
+
+.card-search a:hover p {
+    color: var(--black);
+}
+
+            /* CARD SEZIONE FEATURED*/
 
 .fake-container {
     display: flex;

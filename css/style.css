@@ -130,7 +130,116 @@ h3,
     padding-left: 1.5px;
 }
 
+<<<<<<< HEAD
+            /* SOTTO MENU NAVBAR DROPDOWN */
+
+
+                /* SOTTO MENU BARRA DI RICERCA*/
+
+.search-menu {
+    top: 0;
+    min-height: 21.81rem;
+
+}
+.menu-container-first-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.search-bar {
+    border-bottom: 1px solid var(--red);
+    display: flex;
+    min-width: 28.125rem;
+    padding-bottom: .5rem;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+
+}
+.lente {
+    color: var(--red);
+}
+
+.search-bar input {
+    margin-left: 0.65rem;
+    border: none;
+    background-color: white;
+    width: 17rem;
+    height: 1rem;
+    font-family: museo100;
+    margin-right: 1.1rem;
+    font-size: 0.87rem;
+}
+
+.search-bar input:focus-visible {
+border: none;
+color: var(--red);
+outline: none;
+}
+
+.search-bar li a {
+    display: flex;
+    align-items: center;
+    font-size: 0.88rem;
+}
+
+.search-bar li a svg {
+    padding-left: .5rem;
+}
+
+.button2 {
+    padding-left: 0.85rem;
+    align-self: center;
+}
+
+.second-row {
+    max-width: 1385px;
+    margin: 1rem auto;
+    width: 85vw;
+    display: flex;
+}
+
+.second-row h3 {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    transition: color 0.3s;
+}
+
+.second-row h3:not(:first-child) {
+    color: var(--red);
+    padding-bottom: 0.73rem;
+}
+
+.second-row h3:not(:first-child):hover {
+    color: #ab160d;
+    cursor: pointer;
+}
+
+.second-left {
+    width: 27.6875rem;
+    padding-right: 2.5rem;
+}
+
+.card-search-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+}
+
+@media (max-width:1440px) {
+    .second-row {
+        flex-direction: column;
+        padding-bottom: 4rem;
+    }
+}
+
+
+            /* PRIMO SOTTO MENU */
+
+=======
 /* SOTTO MENU NAVBAR DROPDOWN */
+>>>>>>> origin/main
 
 .nintendo-store-menu {
     flex-shrink: -1;
@@ -239,6 +348,12 @@ h3,
     transition: all 0.2s;
 }
 
+<<<<<<< HEAD
+            /* SECONDO SOTTO MENU */
+
+
+=======
+>>>>>>> origin/main
 .games-menu-flex {
     width: 7.4rem;
 }
@@ -276,6 +391,12 @@ a:hover .play-nintendo-content{
     background-color: var(--red);
 }
 
+<<<<<<< HEAD
+            /* TERZO SOTTO MENU */
+
+
+=======
+>>>>>>> origin/main
 .nintendo-switch-menu-flex{
 display: flex;
 align-items: center;
@@ -307,6 +428,12 @@ transition: all 0.2s;
     padding-top: 0.4rem;
 }
 
+<<<<<<< HEAD
+            /* QUARTO SOTTO MENU */
+
+
+=======
+>>>>>>> origin/main
 .play-nintendo-flex {
     align-items: flex-start;
 }
