@@ -1,11 +1,11 @@
 @font-face {
     font-family: museo;
-    src: url(assets/fonts/MuseoSans500/MuseoSans_500.otf);
+    src: url(../assets/fonts/MuseoSans500/MuseoSans_500.otf);
 }
 
 @font-face {
     font-family: museo100;
-    src: url(assets/fonts/MuseoSans100/MuseoSans-100.otf);
+    src: url(../assets/fonts/MuseoSans100/MuseoSans-100.otf);
 }
 
 :root {
@@ -26,20 +26,12 @@ html {
     list-style-type: none;
 }
 
-:root {
-    --red: rgb(230, 33, 18);
-}
-
 a {
     color: var(--black);
 }
 
 hr {
     border: 0.5px solid #b4b4b482;
-}
-
-.none {
-    display: none;
 }
 
 /* ANIMAZIONI BOTTONI */
@@ -316,6 +308,57 @@ hr {
     }
 }
 
+@keyframes boing-submenu {
+
+    0% {
+        margin-top: -1px;
+        margin-top: -1px;
+    }
+    30% {
+        padding-top: calc(1rem + 5px);
+        padding-bottom: calc(1rem + 5px);
+        margin-top: -.57rem;
+        margin-bottom: -.57rem;
+    }
+
+    40% {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-left: -.5rem;
+        margin-right: -.5rem;
+    }
+
+    60% {
+        padding-top: calc(1rem - 3px);
+        padding-bottom: calc(1rem - 3px);
+        margin-top: calc(-.56rem + 8px);
+        margin-bottom: calc(-.56rem + 8px);
+    }
+
+    85% {
+        padding-top: calc(1rem + 2px);
+        padding-bottom: calc(1rem + 2px);
+        margin-top: calc(-.56rem + 3px);
+        margin-bottom: calc(-.56rem + 3px);
+    }
+
+    100% {
+        padding: 1rem 2rem;
+        margin: -.25rem -.5rem -.25rem -.5rem;
+    }
+}
+
+@keyframes boing-out-submenu {
+    0% {
+        padding: 1rem 2rem;
+        margin: -.25rem -.56rem -.25rem -.56rem;
+    }
+
+    100% {
+        padding: 0.75rem 1.5rem;
+    }
+}
+
 
 /* ANIMAZIONI CARD */
 
@@ -338,6 +381,27 @@ hr {
     }
 }
 
+.sub-menu, .search-menu {
+    position: absolute;
+    top: 6rem;
+    background-color: white;
+    width: 100vw;
+    border-bottom: 1px solid lightgray;
+    box-shadow: 0 300rem 0 300rem #00000095;
+}
+
+h3 svg {
+    transition: transform 0.3s;
+}
+
+.reverse {
+    transform: rotate(180deg);
+}
+
+.none {
+        display: none;
+
+}
 
 /* BOTTONI */
 
@@ -411,17 +475,72 @@ hr {
 }
 
 @media (max-width: 428px) {
+    .red-button {
+        font-size: 0.95rem;
+    }
+
     .see-full-list {
         padding: 9rem 2.17rem;
         animation: boing-long-responsive-out 400ms forwards;
         font-size: 0.95rem;
     }
+
     .see-full-list:hover {
         animation: boing-long-responsive 400ms forwards;
     }
 }
 
-/* CARD SEZIONE FEATURED*/
+            /* CARD SOTTO MENU BARRA DI RICERCA*/
+
+
+.card-search a {
+    display: flex;
+    width: 21.125rem;
+    height: 4.94rem;
+    overflow: hidden;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding-right: .3rem;
+}
+
+.card-search img {
+    height: 100%;
+    padding-right: 0.69rem;
+    transition: filter 0.3s;
+}
+
+.search-card-text  {
+    font-size: .87rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.search-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-card-footer p {
+    border-left: 2px solid var(--red);
+    padding-left: .35rem;
+}
+
+.search-card-text h4 {
+    padding-top: 0.6rem;
+}
+
+.card-search a:hover img {
+    filter: brightness(70%);
+}
+
+.card-search a:hover p {
+    color: var(--black);
+}
+
+            /* CARD SEZIONE FEATURED*/
 
 .fake-container {
     display: flex;
@@ -499,6 +618,140 @@ display: -webkit-box;
     }
 }
 
+
+            /* CARD SEZIONE NEWS */
+
+
+.news a:hover img {
+    opacity: 0.7;
+}
+
+.news a:hover .link {
+    color: #ab160d;
+    border-color: #ab160d;
+}
+
+.noHover {
+    font-family: museo100;
+    color: #636161;
+}
+
+.main-news img {
+    width: 100%;
+}
+
+.main-news-card {
+    width: 46vw;
+    max-width: 34.5rem;
+}
+
+.hover-img {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 0.3rem;
+}
+
+.hover-img img {
+    vertical-align: top;
+    backface-visibility: hidden;
+    transition: all 0.4s;
+}
+
+.main-news-card p {
+    padding: 1rem 0 1rem 0;
+    font-size: 16px;
+}
+
+.main-news-card p:nth-of-type(2) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 48px;
+}
+
+.main-news h3 {
+    height: 3rem;
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.other-news img {
+    border-radius: 0.25rem;
+    width: 100%;
+}
+
+.other-news p {
+    padding: 1rem 0 1rem 0;
+
+}
+
+.other-news h3 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 67px;
+    font-size: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.other-news-card {
+    max-width: 16.63rem;
+}
+
+.link {
+    color: #DD0011;
+    border-bottom: 2px solid #DD0011;
+    width: fit-content;
+    height: 0.4rem;
+    transition: all 0.4s;
+}
+
+@media (max-width:768px) {
+    .main-news-card {
+        width: 96vw;
+        max-width: unset;
+    }
+
+    .other-news-card {
+        width: 100%;
+        max-width: unset;
+    }
+}
+
+@media (max-width:428px) {
+
+    .main-news h3 {
+        font-size: 1rem;
+    }
+
+    p.noHover:nth-of-type(2) {
+        padding-bottom: 0;
+    }
+
+    p.noHover {
+        font-size: .88rem;
+    }
+
+    .other-news-card h3,
+    .link {
+        font-size: 0.88rem;
+    }
+
+    .other-news-card h3 {
+        height: 60px;
+    }
+
+    p.link {
+        padding-top: 0.4rem;
+    }
+}
+
+
 /* CARD SEZIONE CHARACTERS */
 
 
@@ -528,26 +781,26 @@ display: -webkit-box;
 }
 
 .characters-item:first-of-type img {
-    background-image: url(assets/images/mario-bg.png);
+    background-image: url(../assets/images/mario-bg.png);
     background-position: center;
     background-size: 120%;
 
 }
 
 .characters-item:nth-of-type(2) img {
-    background-image: url(assets/images/1600x1600_NCOM_Home_Characters_TLOZ_BOTW_BG.jpeg);
+    background-image: url(../assets/images/1600x1600_NCOM_Home_Characters_TLOZ_BOTW_BG.jpeg);
     background-position: center;
     background-size: 120%;
 }
 
 .characters-item:nth-of-type(3) img {
-    background-image: url(assets/images/Ncom_CharacterRail_1600x1600_Splatoon_BG.png);
+    background-image: url(../assets/images/Ncom_CharacterRail_1600x1600_Splatoon_BG.png);
     background-position: center;
     background-size: 120%;
 }
 
 .characters-item:last-of-type img {
-    background-image: url(assets/images/1600x1600_NCOM_Home_Characters_Kirby_BG.jpeg);
+    background-image: url(../assets/images/1600x1600_NCOM_Home_Characters_Kirby_BG.jpeg);
     background-position: center;
     background-size: 120%;
 }

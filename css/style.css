@@ -130,6 +130,308 @@ h3,
     padding-left: 1.5px;
 }
 
+            /* SOTTO MENU NAVBAR DROPDOWN */
+
+
+                /* SOTTO MENU BARRA DI RICERCA*/
+
+.search-menu {
+    top: 0;
+    min-height: 21.81rem;
+
+}
+.menu-container-first-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.search-bar {
+    border-bottom: 1px solid var(--red);
+    display: flex;
+    min-width: 28.125rem;
+    padding-bottom: .5rem;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+
+}
+.lente {
+    color: var(--red);
+}
+
+.search-bar input {
+    margin-left: 0.65rem;
+    border: none;
+    background-color: white;
+    width: 17rem;
+    height: 1rem;
+    font-family: museo100;
+    margin-right: 1.1rem;
+    font-size: 0.87rem;
+}
+
+.search-bar input:focus-visible {
+border: none;
+color: var(--red);
+outline: none;
+}
+
+.search-bar li a {
+    display: flex;
+    align-items: center;
+    font-size: 0.88rem;
+}
+
+.search-bar li a svg {
+    padding-left: .5rem;
+}
+
+.button2 {
+    padding-left: 0.85rem;
+    align-self: center;
+}
+
+.second-row {
+    max-width: 1385px;
+    margin: 1rem auto;
+    width: 85vw;
+    display: flex;
+}
+
+.second-row h3 {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    transition: color 0.3s;
+}
+
+.second-row h3:not(:first-child) {
+    color: var(--red);
+    padding-bottom: 0.73rem;
+}
+
+.second-row h3:not(:first-child):hover {
+    color: #ab160d;
+    cursor: pointer;
+}
+
+.second-left {
+    width: 27.6875rem;
+    padding-right: 2.5rem;
+}
+
+.card-search-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+}
+
+@media (max-width:1440px) {
+    .second-row {
+        flex-direction: column;
+        padding-bottom: 4rem;
+    }
+}
+
+
+            /* PRIMO SOTTO MENU */
+
+
+.nintendo-store-menu {
+    flex-shrink: -1;
+}
+
+.my-nintendo-store-submenu-links-container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 0 1rem;
+    max-width: 1080px;
+}
+
+.nintendo-store-red {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: calc(50vw - 152px);
+    height: 64px;
+    background-color: var(--red);
+    color: white;
+}
+
+.button-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: .88rem 0 1.9rem 0;
+}
+
+.button-div button {
+    border: 1px solid var(--red);
+    background-color: white;
+    color: var(--red);
+    padding: 0.78rem 1.4rem;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.4s;
+    animation: boing-out-submenu 0.4s forwards;
+}
+
+.button-div button:hover {
+    animation: boing-submenu 0.4s forwards;
+    background-color: #fde6e6;
+}
+
+.games-submenu p {
+    padding-bottom: 0.5rem;
+}
+
+.games-submenu p a {
+    font-family: museo100;
+    font-size: 0.87rem;
+}
+
+.games-submenu h4 {
+    display: flex;
+    font-size: 0.98rem;
+    padding-bottom: 0.6rem;
+}
+
+.games-submenu h4 svg {
+    padding-right: 0.4rem;
+}
+
+
+.nintendo-store-red svg,
+.nintendo-store-red a svg {
+    padding-right: 1rem;
+    color: white;
+}
+
+.red-zigzag {
+    background-image: url(../assets/images/download.svg);
+    background-repeat: repeat-x;
+    height: 14px;
+    margin-bottom: 1rem;
+}
+
+.games-menu-flex, .play-nintendo-flex {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 1.5rem;
+    padding: 0 1rem;
+    max-width: 1080px;
+    height: 8rem;
+    text-align: center;
+    gap: 1.75rem;
+}
+
+.games-menu-content, .play-nintendo-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 7.4rem;
+    height: 4.1rem;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    color: #484848;
+    transition: all 0.2s;
+}
+
+            /* SECONDO SOTTO MENU */
+
+
+.games-menu-flex {
+    width: 7.4rem;
+}
+
+a p {
+    font-size: 0.88rem;
+    font-family: museo100;
+    color: #5e5e5e;
+    line-height: 1.2rem;
+}
+
+.button { 
+    padding-top: 0.5rem;
+    width: 99%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button svg {
+    color: #48484857;
+}
+
+.button svg:hover {
+    color: #484848;
+}
+
+a:hover p {
+    color: var(--red);
+}
+
+a:hover .games-menu-content, 
+a:hover .nintendo-switch-menu-content,
+a:hover .play-nintendo-content{
+    color: white;
+    background-color: var(--red);
+}
+
+            /* TERZO SOTTO MENU */
+
+
+.nintendo-switch-menu-flex{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 1.75rem;
+padding-bottom: 0.7rem;
+}
+
+.nintendo-switch-menu a{
+    text-align: center;
+}
+.nintendo-switch-menu-content{
+height: 4.1rem;
+width: 7.4rem;
+border: 1px solid #dbdbdb;
+border-radius: 4px;
+display: flex;
+justify-content: center;
+transition: all 0.2s;
+}
+.nintendo-switch-menu-content img{
+    max-width: 100%;
+}
+.variation{
+    width: 16.125rem;    
+}
+
+.nintendo-switch-menu a p{
+    padding-top: 0.4rem;
+}
+
+            /* QUARTO SOTTO MENU */
+
+
+.play-nintendo-flex {
+    align-items: flex-start;
+}
+
+.play-nintendo-menu {
+    height: 9.06rem;
+}
+
+.play-nintendo-content {
+    transition: all 0.2s;
+}
 /* MOBILE NAV */
 
 .nav-mobile {
@@ -513,15 +815,6 @@ picture img,
     margin: 0 auto;
 }
 
-.news a:hover img {
-    opacity: 0.7;
-}
-
-.news a:hover .link {
-    color: #ab160d;
-    border-color: #ab160d;
-}
-
 .main-news {
     display: flex;
     justify-content: center;
@@ -529,55 +822,6 @@ picture img,
     padding-top: 4rem;
     gap: 2rem;
 }
-
-.noHover {
-    font-family: museo100;
-    color: #636161;
-}
-
-.main-news img {
-    width: 100%;
-}
-
-.main-news-card {
-    width: 46vw;
-    max-width: 34.5rem;
-}
-
-.hover-img {
-    background-color: #000;
-    color: #fff;
-    display: inline-block;
-    overflow: hidden;
-    text-align: center;
-    border-radius: 0.3rem;
-}
-
-.hover-img img {
-    vertical-align: top;
-    backface-visibility: hidden;
-    transition: all 0.4s;
-}
-
-.main-news-card p {
-    padding: 1rem 0 1rem 0;
-    font-size: 16px;
-}
-
-.main-news-card p:nth-of-type(2) {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    height: 48px;
-}
-
-.main-news h3 {
-    height: 3rem;
-    display: flex;
-    align-items: flex-start;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
 
 .other-news {
     display: grid;
@@ -588,39 +832,6 @@ picture img,
     line-height: 1.4;
     margin: auto;
     width: 100%;
-}
-
-
-.other-news img {
-    border-radius: 0.25rem;
-    width: 100%;
-}
-
-.other-news p {
-    padding: 1rem 0 1rem 0;
-
-}
-
-.other-news h3 {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    height: 67px;
-    font-size: 1rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.other-news-card {
-    max-width: 16.63rem;
-}
-
-.link {
-    color: #DD0011;
-    border-bottom: 2px solid #DD0011;
-    width: fit-content;
-    height: 0.4rem;
-    transition: all 0.4s;
 }
 
 @media (max-width:1023px) {
@@ -640,53 +851,17 @@ picture img,
         gap: 3rem;
     }
 
-    .main-news-card {
-        width: 96vw;
-        max-width: unset;
-    }
-
     .other-news {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 1.5rem;
         grid-row-gap: 5rem;
     }
-
-    .other-news-card {
-        width: 100%;
-        max-width: unset;
-    }
 }
 
-@media (max-width:428px) {
-
-    .main-news h3 {
-        font-size: 1rem;
-    }
-
-    p.noHover:nth-of-type(2) {
-        padding-bottom: 0;
-    }
-
-    p.noHover {
-        font-size: .88rem;
-    }
-
-    .other-news-card h3,
-    .link {
-        font-size: 0.88rem;
-    }
-
-    .other-news-card h3 {
-        height: 60px;
-    }
-
-    p.link {
-        padding-top: 0.4rem;
-    }
-}
 
 /* SEZIONE CHARACTERS */
+
 
 .characters {
     width: 96vw;
@@ -760,7 +935,6 @@ picture img,
 .titolo-e-link {
     display: flex;
     align-items: center;
-    width: 96vw;
 }
 
 .titolo-e-link>a {
@@ -820,11 +994,12 @@ picture img,
 }
 
 
-/* SEZIONE FOOTER */
+/* SEZIONE FOOTER ROSSA */
 
 
 .red {
-    background-color: var(--red)
+    background-color: var(--red);
+    margin-top: 6.5rem;
 }
 
 .red-footer {
@@ -856,11 +1031,15 @@ picture img,
     display: flex;
     justify-content: space-around;
     gap: 60px;
-    padding-right: 1.5rem;
+    padding-right: 1rem;
 
 }
 
 @media(max-width: 768px) {
+    .red {
+        margin-top: 4.5rem;
+    }
+
     .red-footer {
         flex-direction: column;
         height: 11.4rem;
@@ -871,21 +1050,26 @@ picture img,
     .Big-nintendo-icon,
     .footer-icons {
         padding: 0;
-
     }
 
     .footer-icons {
         gap: 2rem;
     }
+}
 
+@media (max-width:428px) {
+    .red {
+        margin-top: 3.2rem;
+    }
 }
 
 
-/* SEZIONE FOOTER 2 */
+/* SEZIONE FOOTER BIANCA */
 
 .white-footer {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 16.93rem;
     padding: 2rem 0;
     max-width: 1470px;
     margin: auto;
@@ -896,10 +1080,10 @@ picture img,
     height: 84.8px;
     display: flex;
     justify-content: flex-end;
-    width: 96vw;
     max-width: 1470px;
     margin: auto;
     padding-bottom: 3.5rem;
+    padding-right: 1rem;
 }
 
 .sub-grid {
@@ -907,7 +1091,6 @@ picture img,
     grid-column: span 2;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 1.7fr;
-    max-height: 292px;
 }
 
 .white-footer a {
@@ -932,17 +1115,23 @@ picture img,
 .footer-links-section {
     margin-top: 1rem;
     border-left: 1px solid lightgray;
-    padding-left: 1.25rem;
-    max-height: 292px;
-
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    line-height: 1.5rem;
 }
 
-.footer-links-section h4 {
-    padding-bottom: 1.75rem;
-}
-
-.footer-links-section li {
+.footer-links-section h3 {
     padding-bottom: 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.footer-links-section h3:hover {
+    text-decoration: underline;
+}
+
+.footer-links-section li h3 {
+    padding-bottom: 0.4rem;
 }
 
 .border-none {
@@ -953,13 +1142,110 @@ picture img,
     margin-top: 2rem;
 }
 
+@media(max-width: 1440px) {
+    .white-footer {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 16rem 6.25rem;
+        row-gap: 2rem;
+        padding-left: 1rem;
+        padding-top: 3rem;
+    }
+
+    .sub-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-column: span 3;
+        grid-template-rows: 1fr;
+    }
+
+    .border-none {
+        border-left: 1px solid lightgray;
+    }
+
+    .single-margin {
+        margin: 0;
+    }
+
+    .footer-links-section {
+        margin-top: 0;
+    }
+}
+
+@media (max-width:1023px) {
+    .white-footer {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 16rem 15rem;
+    }
+
+    .sub-grid {
+        grid-column: span 2;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .single-margin {
+        margin-top: 2rem;
+    }
+
+    .footer-esrb-logo {
+        display: flex;
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    @media (max-width:768px) {
+        .white-footer {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 16rem 12.125rem 14.813rem;
+        }
+    }
+}
+
+@media (max-width:428px) {
+
+    .white-footer,
+    .sub-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links-section ul a h3 {
+        font-size: 0.85rem;
+    }
+
+    .footer-links-section h3 {
+        font-size: 0.975rem;
+    }
+
+    .footer-links-section li h3 {
+        padding-bottom: 0.22rem;
+    }
+
+    .sub-grid {
+        padding: 0;
+        gap: 2rem;
+    }
+
+    .single-margin {
+        margin-top: 0;
+    }
+
+    .footer-links-section {
+        width: 50vw;
+    }
+}
+
+
+/* SEZIONE FOOTER NERA */
+
+
 .black-footer-section {
     background-color: #242424;
-    color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 6.5rem;
+}
+
+.black-footer-section span {
+    font-family: museo100;
+    font-size: 0.73rem;
 }
 
 .black-footer-section ul {
@@ -968,8 +1254,24 @@ picture img,
 
 }
 
-.black-footer-section a {
+.black-footer-section ul li a,
+.change-region a span {
     color: white;
+    font-size: 0.77rem;
+    transition: all 0.3s;
+
+}
+
+.black-footer-section ul li a:hover,
+.change-region a span:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+    text-decoration-thickness: 2px;
+
+}
+
+.footer-links-section ul a h3 {
+    font-size: 1rem;
 }
 
 .change-region {
@@ -978,14 +1280,82 @@ picture img,
     gap: 0.5rem;
 }
 
+
+.text-container {
+    max-width: 1550px;
+    margin: 0 5vw 0 9vw;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    height: 6.5rem;
+}
+
+.other-footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    min-width: 570px;
+    padding-left: 2rem;
+}
+
+.span {
+    letter-spacing: .2px;
+    line-height: .95rem;
+}
+
+.change-region {
+    display: flex;
+    align-items: center;
+}
+
 @media(max-width: 1440px) {
-    .white-footer {
-        grid-template-columns: repeat(4, 1fr);
+    .text-container {
+        width: 98vw;
+        margin: auto;
+    }
+}
+
+@media (max-width:1024px) {
+    .black-footer-section {
+        height: fit-content;
     }
 
-    .sub-grid {
-        grid-template-columns: repeat(3, 1fr);
-        grid-column: span 3;
-        grid-template-rows: 1fr;
+    .text-container {
+        flex-direction: column;
+        gap: 2.2rem;
+        padding-bottom: 8.8rem;
+        padding-top: 3.5rem;
+        text-align: center;
+        margin: auto;
+    }
+
+    .other-footer-links {
+        flex-direction: column;
+        gap: 2.2rem;
+        padding: 0;
+        min-width: unset;
+    }
+
+    .span {
+        width: 96vw;
+        max-width: 24rem;
+    }
+}
+
+@media (max-width:428px) {
+    .span span {
+        font-size: 0.6rem;
+    }
+
+    .text-container {
+        padding-top: 4rem;
+        width: 94vw;
+    }
+
+    .text-container ul li a,
+    .change-region a span {
+        font-size: 0.65rem;
     }
 }
