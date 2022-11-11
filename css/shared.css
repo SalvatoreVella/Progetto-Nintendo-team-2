@@ -381,11 +381,7 @@ hr {
     }
 }
 
-<<<<<<< HEAD
 .sub-menu, .search-menu {
-=======
-.sub-menu {
->>>>>>> origin/main
     position: absolute;
     top: 6rem;
     background-color: white;
@@ -752,6 +748,12 @@ display: -webkit-box;
 
     p.link {
         padding-top: 0.4rem;
+    }
+
+    .main-news-card p:nth-of-type(2) {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 56px;
     }
 }
 

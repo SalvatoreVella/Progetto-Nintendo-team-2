@@ -130,7 +130,6 @@ h3,
     padding-left: 1.5px;
 }
 
-<<<<<<< HEAD
             /* SOTTO MENU NAVBAR DROPDOWN */
 
 
@@ -237,9 +236,6 @@ outline: none;
 
             /* PRIMO SOTTO MENU */
 
-=======
-/* SOTTO MENU NAVBAR DROPDOWN */
->>>>>>> origin/main
 
 .nintendo-store-menu {
     flex-shrink: -1;
@@ -348,12 +344,10 @@ outline: none;
     transition: all 0.2s;
 }
 
-<<<<<<< HEAD
+
             /* SECONDO SOTTO MENU */
 
 
-=======
->>>>>>> origin/main
 .games-menu-flex {
     width: 7.4rem;
 }
@@ -361,7 +355,7 @@ outline: none;
 a p {
     font-size: 0.88rem;
     font-family: museo100;
-    color: #5e5e5e;
+    /* color: #5e5e5e; */
     line-height: 1.2rem;
 }
 
@@ -380,7 +374,9 @@ a p {
     color: #484848;
 }
 
-a:hover p {
+.games-menu-content a:hover p , 
+.nintendo-switch-menu-content a:hover p ,
+.play-nintendo-content a:hover p  {
     color: var(--red);
 }
 
@@ -391,12 +387,10 @@ a:hover .play-nintendo-content{
     background-color: var(--red);
 }
 
-<<<<<<< HEAD
+
             /* TERZO SOTTO MENU */
 
 
-=======
->>>>>>> origin/main
 .nintendo-switch-menu-flex{
 display: flex;
 align-items: center;
@@ -428,12 +422,10 @@ transition: all 0.2s;
     padding-top: 0.4rem;
 }
 
-<<<<<<< HEAD
+
             /* QUARTO SOTTO MENU */
 
 
-=======
->>>>>>> origin/main
 .play-nintendo-flex {
     align-items: flex-start;
 }
